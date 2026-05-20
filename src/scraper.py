@@ -31,6 +31,17 @@ KEYWORDS_NEGATIVAS = [
     "full stack", "backend engineer", "frontend engineer", "software engineer",
     "fixed schedule", "9-5", "9 to 5", "monday to friday required",
     "per word", "per-word", "pay to access", "membership required",
+    # Restricciones geográficas
+    "work anywhere in the us",
+    "must be based in the us",
+    "us only",
+    "us residents only",
+    "authorized to work in the us",
+    "us citizens only",
+    "north america only",
+    "canada only",
+    "uk only",
+    "eu only",
 ]
 
 RED_FLAGS_MODALIDAD = [

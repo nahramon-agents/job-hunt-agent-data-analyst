@@ -22,6 +22,12 @@ KEYWORDS_POSITIVAS = [
     "sustainability", "social impact", "purpose-driven", "mission-driven",
     "democratize", "open access", "knowledge sharing", "human potential",
     "spiritual", "holistic", "community-driven", "ethical ai", "ai for good",
+
+    # Modalidad ideal
+    "part-time", "part time", "contract", "freelance", "project-based",
+    "project based", "flexible hours", "flexible schedule", "async",
+    "asynchronous", "outcomes-based", "results-based", "no fixed hours",
+    "work when you want", "hourly", "retainer",
 ]
 
 KEYWORDS_NEGATIVAS = [

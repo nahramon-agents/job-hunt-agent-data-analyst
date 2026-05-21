@@ -42,6 +42,19 @@ KEYWORDS_NEGATIVAS = [
     "canada only",
     "uk only",
     "eu only",
+
+    # Full-time / horario fijo
+    "full-time only",
+    "full time only",
+    "40 hours per week",
+    "40hrs per week",
+    "monday through friday",
+    "monday to friday",
+    "full-time position",
+    "this is a full-time role",
+    "full time commitment",
+    "dedicated full time",
+    "must be available 40",
 ]
 
 RED_FLAGS_MODALIDAD = [

@@ -7,13 +7,24 @@ from datetime import datetime
 # ── PERFIL DE NAHUEL ──────────────────────────────────────────────────────────
 
 KEYWORDS_POSITIVAS = [
-    # Roles
+    # Roles estratégicos
     "ai content", "content strategy", "content strategist", "content operations",
     "ai workflow", "workflow automation", "marketing automation", "digital strategy",
     "research analyst", "content researcher", "ai tools", "prompt engineer",
     "seo strategist", "growth content", "operations strategist", "ai specialist",
     "automation specialist", "marketing strategist", "content manager",
     "email marketing", "funnel", "async", "asynchronous", "flexible hours",
+    # Paid media / advertising
+    "paid media", "meta ads", "google ads", "facebook ads",
+    "ppc", "sem", "paid social", "media buyer", "ad campaigns",
+    "performance marketing", "campaign manager", "media planning",
+    "campaign optimization", "ad copy", "a/b testing",
+    # Writing / content generalist
+    "content writer", "blog writer", "article writer", "copywriter",
+    "content creation", "ghostwriter", "newsletter",
+    # Research / ops
+    "virtual assistant", "research assistant", "market research",
+    "online research", "data entry", "community manager",
     # Valores SÍ
     "personal development", "personal growth", "conscious", "consciousness",
     "mental health", "mindfulness", "meditation", "wellbeing", "well-being",
@@ -22,62 +33,29 @@ KEYWORDS_POSITIVAS = [
     "sustainability", "social impact", "purpose-driven", "mission-driven",
     "democratize", "open access", "knowledge sharing", "human potential",
     "spiritual", "holistic", "community-driven", "ethical ai", "ai for good",
-
-    # Modalidad ideal
-    "part-time", "part time", "contract", "freelance", "project-based",
-    "project based", "flexible hours", "flexible schedule", "async",
-    "asynchronous", "outcomes-based", "results-based", "no fixed hours",
-    "work when you want", "hourly", "retainer",
 ]
 
 KEYWORDS_NEGATIVAS = [
     "data engineer", "machine learning engineer", "ml engineer", "devops",
     "on-site", "onsite", "in-office", "hybrid", "in person", "presencial",
-    "sales", "cold calling", "account executive", "business development rep",
+    "cold calling", "account executive", "business development rep",
     "full stack", "backend engineer", "frontend engineer", "software engineer",
     "fixed schedule", "9-5", "9 to 5", "monday to friday required",
     "per word", "per-word", "pay to access", "membership required",
     # Restricciones geográficas
-    "work anywhere in the us",
-    "must be based in the us",
-    "us only",
-    "us residents only",
-    "authorized to work in the us",
-    "us citizens only",
-    "north america only",
-    "canada only",
-    "uk only",
-    "eu only",
-    "usa only",
-    "united states only",
-    "resident in the united states",
-    "us resident",
-    "must be a us resident",
-    "must reside in the us",
-    "must reside in the united states",
-    "location: usa",
-    "📍location: usa",
-    "remote location: usa",
-    "🇺🇸 usa only",
-
+    "usa only", "us only", "united states only", "resident in the united states",
+    "us resident", "must be a us resident", "must reside in the us",
+    "must reside in the united states", "location: usa", "remote location: usa",
     # Full-time / horario fijo
-    "full-time only",
-    "full time only",
-    "40 hours per week",
-    "40hrs per week",
-    "monday through friday",
-    "monday to friday",
-    "full-time position",
-    "this is a full-time role",
-    "full time commitment",
-    "dedicated full time",
-    "must be available 40",
+    "full-time only", "full time only", "40 hours per week", "40hrs per week",
+    "monday through friday", "full-time position", "this is a full-time role",
 ]
 
 RED_FLAGS_MODALIDAD = [
     "must be available", "business hours required", "overlap required",
     "est hours", "pst hours", "fixed shift", "weekend availability",
-    "on call", "on-call",
+    "on call", "on-call", "full time commitment", "dedicated full time",
+    "us timezone required",
 ]
 
 INDUSTRIAS_BLOQUEADAS = [
@@ -157,7 +135,7 @@ def scrape_remoteok() -> list:
         headers = {"User-Agent": "Mozilla/5.0 (job-search-agent/1.0)"}
         r = requests.get("https://remoteok.com/api", headers=headers, timeout=15)
         data = r.json()
-        for item in data[1:]:  # primer elemento es metadata
+        for item in data[1:]:
             if not isinstance(item, dict):
                 continue
             title = item.get("position", "")
@@ -167,7 +145,7 @@ def scrape_remoteok() -> list:
             tags = " ".join(item.get("tags", []))
             full_text = f"{title} {tags} {description}"
             scored = score_job(title, full_text)
-            if scored["score"] >= 5.5:
+            if scored["score"] >= 3.5:
                 jobs.append({
                     "title": title,
                     "company": company,
@@ -200,7 +178,7 @@ def scrape_weworkremotely() -> list:
                 description = item.find("description").text if item.find("description") else ""
                 url = item.find("link").text if item.find("link") else ""
                 scored = score_job(title_clean, description)
-                if scored["score"] >= 5.5:
+                if scored["score"] >= 3.5:
                     jobs.append({
                         "title": title_clean,
                         "company": company,
@@ -230,7 +208,7 @@ def scrape_remotive() -> list:
                 tags = " ".join(item.get("tags", []))
                 full_text = f"{title} {tags} {description}"
                 scored = score_job(title, full_text)
-                if scored["score"] >= 5.5:
+                if scored["score"] >= 3.5:
                     jobs.append({
                         "title": title,
                         "company": company,
@@ -240,6 +218,62 @@ def scrape_remotive() -> list:
                     })
     except Exception as e:
         print(f"[Remotive] Error: {e}")
+    return jobs
+
+
+def scrape_workingnomads() -> list:
+    jobs = []
+    try:
+        headers = {"User-Agent": "Mozilla/5.0 (job-search-agent/1.0)"}
+        categories = ["marketing", "business", "writing"]
+        for cat in categories:
+            r = requests.get(
+                f"https://www.workingnomads.com/api/exposed_jobs/?category={cat}",
+                headers=headers, timeout=15)
+            data = r.json()
+            for item in data:
+                title = item.get("title", "")
+                company = item.get("company_name", "")
+                description = item.get("description", "")
+                url = item.get("url", "")
+                scored = score_job(title, description)
+                if scored["score"] >= 3.5:
+                    jobs.append({
+                        "title": title,
+                        "company": company,
+                        "url": url,
+                        "source": "Working Nomads",
+                        **scored,
+                    })
+    except Exception as e:
+        print(f"[WorkingNomads] Error: {e}")
+    return jobs
+
+
+def scrape_jobspresso() -> list:
+    jobs = []
+    try:
+        headers = {"User-Agent": "Mozilla/5.0 (job-search-agent/1.0)"}
+        r = requests.get(
+            "https://jobspresso.co/wp-json/wp/v2/job_listing?per_page=50&status=publish",
+            headers=headers, timeout=15)
+        data = r.json()
+        for item in data:
+            title = item.get("title", {}).get("rendered", "")
+            description = item.get("content", {}).get("rendered", "")
+            url = item.get("link", "")
+            company = item.get("meta", {}).get("_company_name", "")
+            scored = score_job(title, description)
+            if scored["score"] >= 3.5:
+                jobs.append({
+                    "title": title,
+                    "company": company,
+                    "url": url,
+                    "source": "Jobspresso",
+                    **scored,
+                })
+    except Exception as e:
+        print(f"[Jobspresso] Error: {e}")
     return jobs
 
 
@@ -273,9 +307,19 @@ def get_all_jobs() -> list:
     print(f"  → {len(rem)} ofertas relevantes")
     jobs += rem
 
+    print("Scrapeando Working Nomads...")
+    wn = scrape_workingnomads()
+    print(f"  → {len(wn)} ofertas relevantes")
+    jobs += wn
+
+    print("Scrapeando Jobspresso...")
+    jp = scrape_jobspresso()
+    print(f"  → {len(jp)} ofertas relevantes")
+    jobs += jp
+
     jobs = dedup(jobs)
     jobs.sort(key=lambda x: x["score"], reverse=True)
-    print(f"\nTotal ofertas únicas con score ≥ 5.5: {len(jobs)}")
+    print(f"\nTotal ofertas únicas con score ≥ 3.5: {len(jobs)}")
     return jobs
 
 

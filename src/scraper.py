@@ -48,6 +48,17 @@ KEYWORDS_NEGATIVAS = [
     "canada only",
     "uk only",
     "eu only",
+    "usa only",
+    "united states only",
+    "resident in the united states",
+    "us resident",
+    "must be a us resident",
+    "must reside in the us",
+    "must reside in the united states",
+    "location: usa",
+    "📍location: usa",
+    "remote location: usa",
+    "🇺🇸 usa only",
 
     # Full-time / horario fijo
     "full-time only",

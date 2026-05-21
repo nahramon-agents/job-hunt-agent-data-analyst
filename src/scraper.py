@@ -44,7 +44,11 @@ KEYWORDS_NEGATIVAS = [
     # Restricciones geográficas
     "usa only", "us only", "united states only", "resident in the united states",
     "us resident", "must be a us resident", "must reside in the us",
-    "must reside in the united states", "location: usa", "remote location: usa", "work anywhere in the US"
+    "must reside in the united states", "location: usa", "remote location: usa",
+    "work anywhere in the us", "work anywhere in the united states",
+    "anywhere in the us", "based in the us", "must be located in the us",
+    "open to us", "us-based only", "us based only", "hiring in the us",
+    "only in the us", "must be us", "us citizens", "authorized to work in the us",
     # Full-time / horario fijo
     "full-time only", "full time only", "40 hours per week", "40hrs per week",
     "monday through friday", "full-time position", "this is a full-time role",
@@ -205,7 +209,10 @@ def scrape_remotive() -> list:
                 description = item.get("description", "")
                 url = item.get("url", "")
                 tags = " ".join(item.get("tags", []))
-                full_text = f"{title} {tags} {description}"
+                # Campo clave: ubicación requerida del candidato (ej: "USA", "Worldwide")
+                location = item.get("candidate_required_location", "")
+                job_type = item.get("job_type", "")
+                full_text = f"{title} {tags} {description} {location} {job_type}"
                 scored = score_job(title, full_text)
                 if scored["score"] >= 3.5:
                     jobs.append({

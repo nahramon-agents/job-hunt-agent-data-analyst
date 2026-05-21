@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import re
 from datetime import datetime
 
 # ── PERFIL DE NAHUEL ──────────────────────────────────────────────────────────
@@ -277,6 +276,109 @@ def scrape_jobspresso() -> list:
     return jobs
 
 
+def scrape_himalayas() -> list:
+    """
+    API pública de Himalayas — sin auth, filtra por part-time y contract worldwide.
+    Docs: https://himalayas.app/docs/remote-jobs-api
+    """
+    jobs = []
+    headers = {"User-Agent": "Mozilla/5.0 (job-search-agent/1.0)"}
+    # Búsquedas segmentadas por tipo de empleo y keywords clave
+    searches = [
+        {"employment_type": "contract", "limit": 20},
+        {"employment_type": "part_time", "limit": 20},
+        {"q": "content strategy", "limit": 20},
+        {"q": "marketing automation", "limit": 20},
+        {"q": "ai content", "limit": 20},
+        {"q": "paid media", "limit": 20},
+    ]
+    seen_ids = set()
+    for params in searches:
+        try:
+            r = requests.get(
+                "https://himalayas.app/jobs/api/search",
+                params=params,
+                headers=headers,
+                timeout=15)
+            data = r.json()
+            for item in data.get("jobs", []):
+                job_id = item.get("id", "")
+                if job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                title = item.get("title", "")
+                company = item.get("company", {}).get("name", "")
+                description = item.get("description", "") or item.get("descriptionHtml", "")
+                url = item.get("applicationUrl", "") or f"https://himalayas.app/jobs/{item.get('slug','')}"
+                employment_type = item.get("employmentType", "")
+                full_text = f"{title} {employment_type} {description}"
+                scored = score_job(title, full_text)
+                if scored["score"] >= 3.5:
+                    jobs.append({
+                        "title": title,
+                        "company": company,
+                        "url": url,
+                        "source": "Himalayas",
+                        **scored,
+                    })
+        except Exception as e:
+            print(f"[Himalayas] Error con params {params}: {e}")
+    return jobs
+
+
+def scrape_jobicy() -> list:
+    """
+    API pública de Jobicy — filtra por LATAM/argentina y tipos freelance/contract/part-time.
+    Docs: https://jobicy.com/jobs-rss-feed
+    """
+    jobs = []
+    headers = {"User-Agent": "Mozilla/5.0 (job-search-agent/1.0)"}
+    # Combinaciones de categoría + tipo de trabajo relevantes para Nahuel
+    queries = [
+        {"count": 50, "industry": "marketing", "job_types": "freelance"},
+        {"count": 50, "industry": "marketing", "job_types": "contract"},
+        {"count": 50, "industry": "marketing", "job_types": "part-time"},
+        {"count": 50, "industry": "copywriting", "job_types": "freelance"},
+        {"count": 50, "industry": "business", "job_types": "freelance"},
+        {"count": 50, "industry": "business", "job_types": "contract"},
+        {"count": 50, "industry": "seo", "job_types": "freelance"},
+        {"count": 50, "geo": "latam"},
+        {"count": 50, "geo": "argentina"},
+    ]
+    seen_ids = set()
+    for params in queries:
+        try:
+            r = requests.get(
+                "https://jobicy.com/api/v2/remote-jobs",
+                params=params,
+                headers=headers,
+                timeout=15)
+            data = r.json()
+            for item in data.get("jobs", []):
+                job_id = item.get("id", "")
+                if job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                title = item.get("jobTitle", "")
+                company = item.get("companyName", "")
+                description = item.get("jobDescription", "") or item.get("jobExcerpt", "")
+                url = item.get("url", "")
+                job_type = item.get("jobType", "")
+                full_text = f"{title} {job_type} {description}"
+                scored = score_job(title, full_text)
+                if scored["score"] >= 3.5:
+                    jobs.append({
+                        "title": title,
+                        "company": company,
+                        "url": url,
+                        "source": "Jobicy",
+                        **scored,
+                    })
+        except Exception as e:
+            print(f"[Jobicy] Error con params {params}: {e}")
+    return jobs
+
+
 # ── DEDUP ─────────────────────────────────────────────────────────────────────
 
 def dedup(jobs: list) -> list:
@@ -316,6 +418,16 @@ def get_all_jobs() -> list:
     jp = scrape_jobspresso()
     print(f"  → {len(jp)} ofertas relevantes")
     jobs += jp
+
+    print("Scrapeando Himalayas...")
+    him = scrape_himalayas()
+    print(f"  → {len(him)} ofertas relevantes")
+    jobs += him
+
+    print("Scrapeando Jobicy...")
+    jcy = scrape_jobicy()
+    print(f"  → {len(jcy)} ofertas relevantes")
+    jobs += jcy
 
     jobs = dedup(jobs)
     jobs.sort(key=lambda x: x["score"], reverse=True)

@@ -44,7 +44,7 @@ KEYWORDS_NEGATIVAS = [
     # Restricciones geográficas
     "usa only", "us only", "united states only", "resident in the united states",
     "us resident", "must be a us resident", "must reside in the us",
-    "must reside in the united states", "location: usa", "remote location: usa",
+    "must reside in the united states", "location: usa", "remote location: usa", "work anywhere in the US"
     # Full-time / horario fijo
     "full-time only", "full time only", "40 hours per week", "40hrs per week",
     "monday through friday", "full-time position", "this is a full-time role",

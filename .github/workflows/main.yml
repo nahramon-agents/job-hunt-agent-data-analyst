@@ -1,9 +1,10 @@
-name: Job Hunt Diario — Nahuel Ramon
+name: Job Hunt Estratégico
 
 on:
   schedule:
-    - cron: "0 11 * * 1-5"
-  workflow_dispatch:
+    # Lunes y jueves a las 8 AM Argentina (UTC-3) = 11 AM UTC
+    - cron: '0 11 * * 1,4'
+  workflow_dispatch:  # permite correr manualmente desde GitHub
 
 jobs:
   hunt:
@@ -12,18 +13,39 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # Token con permisos de escritura para auto-commit de seen_jobs.json
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Instalar dependencias
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Correr agente
+      - name: Install JobSpy para LinkedIn (opcional)
+        run: pip install python-jobspy || echo "JobSpy no disponible, LinkedIn se saltea"
+
+      - name: Run job hunt agent
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python main.py
+
+      - name: Commit seen_jobs.json actualizado
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Job Hunt Agent"
+          git add seen_jobs.json borderline_jobs.json || true
+          git diff --staged --quiet || git commit -m "🤖 Update seen_jobs + borderline [$(date +'%Y-%m-%d')]"
+          git push || echo "Nada para pushear"

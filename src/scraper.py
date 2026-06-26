@@ -747,8 +747,10 @@ def get_all_jobs() -> tuple[list, list]:
 
     print(f"\nCandidatos únicos nuevos para evaluar: {len(nuevos)}")
 
-    # Ordenar por pre_score para evaluar los más prometedores primero
+    # Ordenar por pre_score y limitar a los 30 más prometedores para Claude
     nuevos.sort(key=lambda x: x["pre_score"], reverse=True)
+    nuevos = nuevos[:30]
+    print(f"Limitando a los 30 candidatos con mayor pre_score para evaluación Claude")
 
     # ── Evaluación con Claude
     jobs_email = []

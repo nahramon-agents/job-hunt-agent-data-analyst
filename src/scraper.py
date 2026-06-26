@@ -122,7 +122,7 @@ def pre_score(title: str, description: str) -> dict:
     Devuelve score y listas para contexto.
     """
     texto = (title + " " + description).lower()
-    score = 5.0
+    score = 2.0
     encontrados = {"A": [], "B": [], "C": [], "async": [], "neg_media": [], "neg_fuerte": []}
 
     # Filtro duro: industrias bloqueadas
@@ -338,7 +338,7 @@ def scrape_remoteok() -> list:
             tags = " ".join(item.get("tags", []))
             full_text = f"{title} {tags} {description} {location}"
             pre = pre_score(title, full_text)
-            if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+            if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                 jobs.append({
                     "title": title, "company": company,
                     "url": url, "source": "Remote OK",
@@ -370,7 +370,7 @@ def scrape_weworkremotely() -> list:
                 description = item.find("description").text if item.find("description") else ""
                 url = item.find("link").text if item.find("link") else ""
                 pre = pre_score(title_clean, description)
-                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                     jobs.append({
                         "title": title_clean, "company": company,
                         "url": url, "source": f"We Work Remotely ({category})",
@@ -403,7 +403,7 @@ def scrape_remotive() -> list:
                     continue
                 full_text = f"{title} {tags} {description} {location}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Remotive",
@@ -436,7 +436,7 @@ def scrape_workingnomads() -> list:
                     continue
                 full_text = f"{title} {description} {location}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Working Nomads",
@@ -457,12 +457,17 @@ def scrape_jobspresso() -> list:
             headers=HEADERS, timeout=15)
         data = r.json()
         for item in data:
-            title = item.get("title", {}).get("rendered", "")
-            description = item.get("content", {}).get("rendered", "")
+            if not isinstance(item, dict):
+                continue
+            title_field = item.get("title", "")
+            title = title_field.get("rendered", "") if isinstance(title_field, dict) else str(title_field)
+            content_field = item.get("content", "")
+            description = content_field.get("rendered", "") if isinstance(content_field, dict) else str(content_field)
             url = item.get("link", "")
-            company = item.get("meta", {}).get("_company_name", "")
+            meta = item.get("meta", {})
+            company = meta.get("_company_name", "") if isinstance(meta, dict) else ""
             pre = pre_score(title, description)
-            if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+            if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                 jobs.append({
                     "title": title, "company": company,
                     "url": url, "source": "Jobspresso",
@@ -509,7 +514,7 @@ def scrape_himalayas() -> list:
                     continue
                 full_text = f"{title} {employment_type} {description}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Himalayas",
@@ -556,7 +561,7 @@ def scrape_jobicy() -> list:
                     continue
                 full_text = f"{title} {job_type} {description}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Jobicy",
@@ -590,7 +595,7 @@ def scrape_wellfound() -> list:
                 company_tag = item.find("company") or item.find("source")
                 company = company_tag.text if company_tag else ""
                 pre = pre_score(title, description)
-                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Wellfound",
@@ -624,7 +629,7 @@ def scrape_dynamitejobs() -> list:
                 company_tag = item.find("company") or item.find("author")
                 company = company_tag.text if company_tag else ""
                 pre = pre_score(title, description)
-                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Dynamite Jobs",
@@ -671,7 +676,7 @@ def scrape_linkedin_jobspy() -> list:
                         continue
                     full_text = f"{title} {description} {location}"
                     pre = pre_score(title, full_text)
-                    if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
+                    if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
                         jobs.append({
                             "title": title, "company": company,
                             "url": url, "source": "LinkedIn (JobSpy)",

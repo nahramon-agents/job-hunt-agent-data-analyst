@@ -35,16 +35,15 @@ KEYWORDS_B = [
     "generative ai", "llm", "content lead",
 ]
 
-# Nivel C (+0.3) — "Contexto positivo, no determinante"
+# Nivel C (+0.3) — Solo stack técnico y valores de empresa (NO títulos de roles genéricos)
 KEYWORDS_C = [
-    "newsletter", "copywriter", "content writer", "ghostwriter",
-    "community manager", "virtual assistant", "market research",
     "personal development", "personal growth", "mindfulness",
     "sustainability", "impact", "mission-driven", "purpose-driven",
-    "funnel", "content creation", "content manager",
+    "funnel", "creator brand", "online education", "cohort",
     # Stack de Nahuel
     "claude", "chatgpt", "notion", "canva", "mailerlite",
     "perplexity", "openai", "python", "sql", "zapier", "make.com",
+    "airtable", "make", "n8n",
 ]
 
 # Bonus modalidad (+1.2) — señal fuerte de diseño de vida compatible
@@ -122,7 +121,7 @@ def pre_score(title: str, description: str) -> dict:
     Devuelve score y listas para contexto.
     """
     texto = (title + " " + description).lower()
-    score = 2.0
+    score = 5.0
     encontrados = {"A": [], "B": [], "C": [], "async": [], "neg_media": [], "neg_fuerte": []}
 
     # Filtro duro: industrias bloqueadas
@@ -204,7 +203,7 @@ NO-NEGOCIABLES:
 - Sin micromanagement ni estructura rígida
 - Sin trabajar fines de semana
 
-EMPRESAS QUE SÍ (aunque no sea explícito en la oferta, si el contexto lo sugiere):
+EMPRESAS QUE SÍ:
 - Desarrollo personal, bienestar, educación transformacional
 - IA con propósito: herramientas que empoderan personas
 - Creator economy con valores, startups que democratizan oportunidades
@@ -215,11 +214,32 @@ EMPRESAS QUE NO:
 - Tecnología de vigilancia o manipulación
 - Gambling, tabaco, alcohol, fast fashion
 
+GRUPOS DE ROLES — clasificá la oferta en UNO de estos grupos:
+
+GRUPO 1 — AI Content & Story Researcher
+Roles: AI content researcher, story researcher, YouTube researcher, content research specialist, AI-assisted research, narrative researcher, documentary researcher. Empresas: YouTube studios, creator agencies, media companies, content networks, podcasters, documentalistas.
+
+GRUPO 2 — AI Content & Operations Strategist
+Roles: AI content strategist, marketing operations + AI, content operations manager, AI marketing strategist, fractional content strategist, AI workflows for content, revenue operations content. Empresas: agencias de marketing, B2B SaaS, fractional CMO setups, startups de contenido.
+
+GRUPO 3 — AI Workflow & Automation Specialist
+Roles: AI automation specialist, AI workflow architect, prompt engineer (contenido/ops), content automation specialist, knowledge workflow automation, AI ops specialist. Empresas: startups, agencias, cualquier empresa que automatice flujos de conocimiento con IA.
+
+GRUPO 4 — Data & Growth Analyst (Content & Creator)
+Roles: marketing data analyst, growth analyst, content analytics, product analytics media/creator economy, data analyst marketing, funnel performance analyst. Empresas: creator economy, SaaS de marketing, agencias de growth.
+
+GRUPO 5 — Digital Strategy & Growth Lead (Creator & Education)
+Roles: digital marketing strategist educación/creator, growth lead online courses, funnel strategist, content & lifecycle marketing, digital strategy para coaches/info-products. Empresas: coaching brands, creator educators, cohort-based courses, solopreneur agencies.
+
+GRUPO 0 — No encaja en ningún grupo
+Usá este grupo si la oferta no tiene fit real con ninguno de los 5 grupos anteriores, independientemente del score.
+
 Tu tarea: evaluar la oferta y devolver ÚNICAMENTE un JSON válido, sin texto antes ni después, sin backticks, sin markdown.
 
 El JSON debe tener exactamente estas claves:
 {
   "score": (float 0.0-10.0),
+  "grupo": (entero: 0, 1, 2, 3, 4 o 5),
   "resumen": "(2 líneas en español: qué es el rol realmente y qué tipo de empresa es)",
   "por_que_encaja": "(1-2 líneas honestas sobre el fit real)",
   "brecha_stack": "(honesto y directo: qué pide el puesto que Nahuel no tiene o tiene débil. Si no hay brecha significativa, decí 'Stack suficiente para este rol')",
@@ -227,8 +247,7 @@ El JSON debe tener exactamente estas claves:
   "red_flags": ["lista de red flags detectadas, puede ser lista vacía []"],
   "location_restriction": "(si detectás que es USA/UK/AU/CA only aunque esté implícito o escondido, describilo. Si no hay restricción clara: 'Sin restricción detectada')",
   "modalidad": "(una de: full-time / part-time / contract / freelance / unclear)",
-  "salario": "(lo que diga la oferta textualmente, o 'No especificado')",
-  "pasa_filtro": (true si score >= 6.0, false si no)
+  "salario": "(lo que diga la oferta textualmente, o 'No especificado')"
 }"""
 
 
@@ -338,7 +357,7 @@ def scrape_remoteok() -> list:
             tags = " ".join(item.get("tags", []))
             full_text = f"{title} {tags} {description} {location}"
             pre = pre_score(title, full_text)
-            if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+            if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                 jobs.append({
                     "title": title, "company": company,
                     "url": url, "source": "Remote OK",
@@ -370,7 +389,7 @@ def scrape_weworkremotely() -> list:
                 description = item.find("description").text if item.find("description") else ""
                 url = item.find("link").text if item.find("link") else ""
                 pre = pre_score(title_clean, description)
-                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                     jobs.append({
                         "title": title_clean, "company": company,
                         "url": url, "source": f"We Work Remotely ({category})",
@@ -403,7 +422,7 @@ def scrape_remotive() -> list:
                     continue
                 full_text = f"{title} {tags} {description} {location}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Remotive",
@@ -436,7 +455,7 @@ def scrape_workingnomads() -> list:
                     continue
                 full_text = f"{title} {description} {location}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Working Nomads",
@@ -457,17 +476,12 @@ def scrape_jobspresso() -> list:
             headers=HEADERS, timeout=15)
         data = r.json()
         for item in data:
-            if not isinstance(item, dict):
-                continue
-            title_field = item.get("title", "")
-            title = title_field.get("rendered", "") if isinstance(title_field, dict) else str(title_field)
-            content_field = item.get("content", "")
-            description = content_field.get("rendered", "") if isinstance(content_field, dict) else str(content_field)
+            title = item.get("title", {}).get("rendered", "")
+            description = item.get("content", {}).get("rendered", "")
             url = item.get("link", "")
-            meta = item.get("meta", {})
-            company = meta.get("_company_name", "") if isinstance(meta, dict) else ""
+            company = item.get("meta", {}).get("_company_name", "")
             pre = pre_score(title, description)
-            if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+            if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                 jobs.append({
                     "title": title, "company": company,
                     "url": url, "source": "Jobspresso",
@@ -514,7 +528,7 @@ def scrape_himalayas() -> list:
                     continue
                 full_text = f"{title} {employment_type} {description}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Himalayas",
@@ -561,7 +575,7 @@ def scrape_jobicy() -> list:
                     continue
                 full_text = f"{title} {job_type} {description}"
                 pre = pre_score(title, full_text)
-                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Jobicy",
@@ -595,7 +609,7 @@ def scrape_wellfound() -> list:
                 company_tag = item.find("company") or item.find("source")
                 company = company_tag.text if company_tag else ""
                 pre = pre_score(title, description)
-                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Wellfound",
@@ -629,7 +643,7 @@ def scrape_dynamitejobs() -> list:
                 company_tag = item.find("company") or item.find("author")
                 company = company_tag.text if company_tag else ""
                 pre = pre_score(title, description)
-                if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                     jobs.append({
                         "title": title, "company": company,
                         "url": url, "source": "Dynamite Jobs",
@@ -676,7 +690,7 @@ def scrape_linkedin_jobspy() -> list:
                         continue
                     full_text = f"{title} {description} {location}"
                     pre = pre_score(title, full_text)
-                    if not pre["bloqueada"] and pre["pre_score"] >= 5.0:
+                    if not pre["bloqueada"] and pre["pre_score"] >= 3.0:
                         jobs.append({
                             "title": title, "company": company,
                             "url": url, "source": "LinkedIn (JobSpy)",
@@ -773,6 +787,7 @@ def get_all_jobs() -> tuple[list, list]:
             # Si Claude falla, usar pre_score como fallback
             if job["pre_score"] >= 6.0:
                 job["score"] = job["pre_score"]
+                job["grupo"] = 0
                 job["resumen"] = "Evaluación automática (Claude no disponible)"
                 job["por_que_encaja"] = "—"
                 job["brecha_stack"] = "—"
@@ -781,12 +796,14 @@ def get_all_jobs() -> tuple[list, list]:
                 job["location_restriction"] = "—"
                 job["modalidad"] = "unclear"
                 job["salario"] = "No especificado"
-                jobs_email.append(job)
+                jobs_borderline.append(job)
             continue
 
         score = float(eval_result.get("score", 0))
+        grupo = int(eval_result.get("grupo", 0))
         job.update({
             "score": score,
+            "grupo": grupo,
             "resumen": eval_result.get("resumen", ""),
             "por_que_encaja": eval_result.get("por_que_encaja", ""),
             "brecha_stack": eval_result.get("brecha_stack", ""),
@@ -797,11 +814,12 @@ def get_all_jobs() -> tuple[list, list]:
             "salario": eval_result.get("salario", "No especificado"),
         })
 
-        print(f"    → Claude score: {score} | {job['posibilidad_real']}")
+        print(f"    → Claude score: {score} | Grupo {grupo} | {job['posibilidad_real']}")
 
-        if score >= 6.0:
+        if score >= 6.0 and grupo in (1, 2, 3, 4, 5):
             jobs_email.append(job)
         elif score >= 5.0:
+            # Borderline: score OK pero grupo 0, o score 5.0-5.9 con grupo definido
             jobs_borderline.append(job)
         # < 5.0 → descartado silenciosamente
 

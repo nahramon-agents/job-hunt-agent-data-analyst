@@ -1,0 +1,1103 @@
+[
+  {
+    "title": "Senior AI Engineer (LLM)",
+    "company": "Proxify",
+    "url": "https://www.workingnomads.com/job/go/1641404/",
+    "source": "Working Nomads",
+    "description": "<h3><strong>About us:</strong></h3>\n<p> </p>\n<p>Talent has no borders. Proxify's mission is to connect top developers around the world with the opportunities they deserve. So, it doesn't matter where you are; we are here to help you fast-track your independent career in the right direction. 🙂</p>\n<p>Since our launch, Proxify's developers have successfully worked with 1200+ happy clients to build their products and growth features. 5000+ talented developers trust Proxify and its network to fulfill their dreams and objectives.</p>\n<p>Proxify is shaped by a global network of supportive, talented developers interested in remote full-time jobs. Our Glassdoor (4.5/5) and Trustpilot (4.8/5) ratings reflect the trust developers place in us and our commitment to our members' success.</p>\n<p> </p>\n<p><strong>The Role:</strong></p>\n<p> </p>\n<p>We are looking for a <strong>Senior AI Engineer</strong> to lead the development and scaling of our LLM-powered solutions. While your foundation is in Python, this role is specifically designed for an expert who understands the nuances of the generative AI lifecycle—from prompt engineering and RAG architecture to fine-tuning and production-grade deployment. You will be responsible for transforming raw model capabilities into robust, reliable, and scalable backend services.</p>\n<p> </p>\n<p><strong>What we are looking for:</strong></p>\n<p> </p>\n<ul>\n<li>Expert-level Python skills with a deep understanding of asynchronous programming and backend architecture.</li>\n<li>Proven experience building and deploying production-level applications using Large Language Models (LLMs).</li>\n<li>Strong experience with SQL and NoSQL databases, specifically optimized for high-dimensional vector search.</li>\n<li>Familiarity with deploying AI models in cloud environments (AWS, GCP, or Azure) and managing CI/CD for AI services.</li>\n<li>A \"first-principles\" approach to solving the unique challenges of non-deterministic AI outputs</li>\n<li>Experience with fine",
+    "pre_score": 10,
+    "encontrados": {
+      "A": [
+        "ai workflow",
+        "prompt engineer",
+        "prompt engineering"
+      ],
+      "B": [
+        "generative ai",
+        "llm"
+      ],
+      "C": [
+        "impact",
+        "openai",
+        "python",
+        "sql"
+      ],
+      "async": [
+        "async",
+        "asynchronous"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "869f2b61949b0879e8a36a2ec79cc009",
+    "score": 10,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Lifecycle Specialist, Contract Management - LATAM",
+    "company": "Remote",
+    "url": "https://jobicy.com/jobs/142067-lifecycle-specialist-contract-management-latam",
+    "source": "Jobicy",
+    "description": "<h2><strong>About Remote</strong></h2>Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage international teams. With our core values at heart and future focused work culture, our team works tirelessly on ambitious problems, asynchronously, around the world. You can find Remoters working from 6 different continents (Antarctica left to go!) and all of our positions are fully remote.<br />With Innovation as one of the core values, we have built Automation and AI capabilities into the requirements for every role.<br />We encourage every member of the Remote team to bring their talents, experiences and culture to the table to help us build the best-in-class HR platform.<p> If you are energetic, curious, motivated and ambitious, be part of our world. Apply now and define the future of work!</p><p>This is not an active job opening, but a way for us to connect with talent as we plan for future opportunities. If you prefer to interview only for currently open roles, we kindly ask that you wait until an active position aligns with your career goals.</p><p>We’re always looking for exceptional talent to join us in our mission to make work accessible for everyone, everywhere. While this specific role isn’t currently open, we’re planning for strategic growth in 2026 and beyond. This posting is part of our future opening pipeline initiative, which helps us connect with outstanding professionals early on.</p><p>By expressing your interest in this role, you’ll have the opportunity to start a conversation with us about your expertise and learn more about Remote’s vision and goals. It’s also a chance to explore how your career goals might fit into Remote’s exciting journey of global growth. We’ll keep your information on file for 1 year and be in touch if we see a match in that time.</p><h2><strong>What this job can offer you</strong></h2><p>This is an",
+    "pre_score": 10,
+    "encontrados": {
+      "A": [],
+      "B": [],
+      "C": [
+        "impact",
+        "notion",
+        "make"
+      ],
+      "async": [
+        "async",
+        "asynchronous",
+        "flexible hours",
+        "work from anywhere",
+        "flexible work"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "968adb2acfb1385f324f575a9e282200",
+    "score": 10,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Software Quality Engineer (Mexico Remote)",
+    "company": "Turnitin, LLC",
+    "url": "https://jobicy.com/jobs/147744-senior-software-quality-engineer-mexico-remote",
+    "source": "Jobicy",
+    "description": "<h2>Company Description</h2><p>When you join Turnitin, you'll be welcomed into a company that is a recognized innovator in global education. For over 25 years, Turnitin has partnered with educators and institutions to develop learning integrity solutions that recognize the enduring value of critical thinking in a rapidly changing world. Over 16,000 academic institutions, publishers, and corporations use our services in more than 185 countries around the world: Turnitin Feedback Studio, Clarity, Originality, Gradescope, ExamSoft, Similarity, and iThenticate. Protecting the value of an authentic education is at the heart of who we are.</p><p>Experience a remote-first culture that empowers you to work with purpose and accountability in a way that best suits you, supported by a comprehensive package that prioritizes your overall well-being. Our diverse community of colleagues are all unified by a shared desire to make a difference in education.</p><p>Turnitin is a global organization with team members in over 35 countries including the United States, Mexico, United Kingdom, Australia, Japan, India, and the Philippines.</p><h2>Job Description</h2><p>The Senior Software Quality Engineer (SSQE) plays a critical role in assuring quality (adherence to requirements and user experience) by testing the company's applications. This role shares ownership over moderate to complex architecture developments, including strategy, plan, framework, and solution development. The SSQE is responsible for creating automation frameworks from scratch, solving high complexity problems, developing Continuous Testing (CT) models, and acting as a Point of Contact (POC) for technical guidance across the product domain. They exhibit advanced, wide-ranging experience, using in-depth professional knowledge, acumen, and concepts to develop and resolve complex models and procedures creatively and effectively.</p><p><strong>Responsibilities: </strong></p><ul><li>Defines, develops, and implements quality",
+    "pre_score": 10,
+    "encontrados": {
+      "A": [
+        "prompt engineer",
+        "prompt engineering"
+      ],
+      "B": [
+        "ai tools",
+        "generative ai"
+      ],
+      "C": [
+        "impact",
+        "chatgpt",
+        "make"
+      ],
+      "async": [],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "abe4d322ce88316a1ccb4896334cc5ec",
+    "score": 10,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Lifecycle Specialist, Employee Relations & Transitions - LATAM",
+    "company": "Remote",
+    "url": "https://jobicy.com/jobs/146279-lifecycle-specialist-employee-relations-transitions-latam",
+    "source": "Jobicy",
+    "description": "<div><h2><strong>About Remote</strong></h2>\n<div>Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage international teams. With our core values at heart and future focused work culture, our team works tirelessly on ambitious problems, asynchronously, around the world. You can find Remoters working from 6 different continents (Antarctica left to go!) and all of our positions are fully remote.<br />With Innovation as one of the core values, we have built Automation and AI capabilities into the requirements for every role.<br />We encourage every member of the Remote team to bring their talents, experiences and culture to the table to help us build the best-in-class HR platform.</div>\n<div> </div>\n<div>If you are energetic, curious, motivated and ambitious, be part of our world. Apply now and define the future of work!</div></div><h2><strong>What this job can offer you</strong></h2><p>As a critical extension of our clients’ HR teams, we navigate and advise on the intricate paths of global employment with unmatched speed, expertise, and precision. The vision of the Lifecycle team at Remote is not just about maintaining the gold standard in HR practices; it’s about elevating it, integrating cutting-edge technology solutions, and enriching customer experiences in over 80+ countries. On this team, your work directly influences our ability to sustain and extend our compliance coverage, continuously enhance our customer journeys, and significantly increase our operational capacity. You’re not just part of a team; you’re at the forefront of shaping the future of work, ensuring every interaction is fast, intuitive, and profoundly impactful. Dive into a role where your passion for innovation, commitment to excellence, and drive to make a global difference aligns with our mission to empower organizations worldwide to employ anyone, anywhere — com",
+    "pre_score": 10,
+    "encontrados": {
+      "A": [],
+      "B": [],
+      "C": [
+        "impact",
+        "notion",
+        "make"
+      ],
+      "async": [
+        "async",
+        "asynchronous",
+        "flexible hours",
+        "work from anywhere",
+        "flexible work"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "bd7ae2e456d75f972748818bc74df88f",
+    "score": 10,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Quality Engineer (Florianópolis)",
+    "company": "LawnStarter",
+    "url": "https://remotive.com/remote-jobs/qa/senior-quality-engineer-florianopolis-2090994",
+    "source": "Remotive",
+    "description": "<p><strong>This is a remote role for candidates located in </strong><strong>Florianópolis, Brazil</strong></p>\n<p> </p>\n<p><strong>About LawnStarter</strong></p>\n<p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $100M in annual bookings. We're expanding beyond lawn care to become the one-stop shop for all home services, operating across three brands (LawnStarter, Lawn Love, Home Gnome) on a single shared platform.</p>\n<p> </p>\n<p><strong>About Engineering at LawnStarter</strong></p>\n<p>We've spent the last two years rebuilding the platform from the ground up: new customer app, new Pro onboarding, job distribution engine, and data infrastructure. The foundation is solid. Now we're moving into expanded service verticals, dynamic pricing, and AI-powered features at scale. Quality needs to keep up.</p>\n<p>Our stack is PHP (Laravel) and React/React Native, with Cypress as our primary test framework. We actively use Claude Code as part of our engineering workflow, not as an experiment, but as a core part of how we work.</p>\n<p> </p>\n<p><strong>The Role</strong></p>\n<p>As we scale into new service verticals and grow the engineering team, quality can't be reactive. This role exists to make quality proactive: owning the automation coverage, shaping the bug process, and partnering closely with Product, Design, and the Data team to catch problems before they reach customers.</p>\n<p>You'll report to the Engineering Manager and be embedded across the engineering organization. This is hands-on and strategic, helping raise the quality ceiling for the whole team.</p>\n<p><strong>What makes this role different:</strong></p>\n<ul style=\"\">\n<li style=\"\"><strong>Cross-functional influence</strong>: You work directly with engineers, PMs, Designers, and the Data team to surface risks early, understand requirements deeply, and propose better solutions. You may be embedded in one or two delivery teams.</li>\n<li style=\"\"><strong>Automat",
+    "pre_score": 9.7,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "ai-powered"
+      ],
+      "C": [
+        "claude",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async",
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "c42d1795d41012e10244d28a2a0c7de5",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Quality Engineer (São Paulo)",
+    "company": "LawnStarter",
+    "url": "https://remotive.com/remote-jobs/qa/senior-quality-engineer-sao-paulo-2090995",
+    "source": "Remotive",
+    "description": "<p><strong>This is a remote role for candidates located in <span style=\"white-space: normal;\">São Paulo</span>, Brazil</strong></p>\n<p> </p>\n<p><strong>About LawnStarter</strong></p>\n<p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $100M in annual bookings. We're expanding beyond lawn care to become the one-stop shop for all home services, operating across three brands (LawnStarter, Lawn Love, Home Gnome) on a single shared platform.</p>\n<p><strong>About Engineering at LawnStarter</strong></p>\n<p>We've spent the last two years rebuilding the platform from the ground up: new customer app, new Pro onboarding, job distribution engine, and data infrastructure. The foundation is solid. Now we're moving into expanded service verticals, dynamic pricing, and AI-powered features at scale. Quality needs to keep up.</p>\n<p>Our stack is PHP (Laravel) and React/React Native, with Cypress as our primary test framework. We actively use Claude Code as part of our engineering workflow, not as an experiment, but as a core part of how we work.</p>\n<p> </p>\n<p><strong>The Role</strong></p>\n<p>As we scale into new service verticals and grow the engineering team, quality can't be reactive. This role exists to make quality proactive: owning the automation coverage, shaping the bug process, and partnering closely with Product, Design, and the Data team to catch problems before they reach customers.</p>\n<p>You'll report to the Engineering Manager and be embedded across the engineering organization. This is hands-on and strategic, helping raise the quality ceiling for the whole team.</p>\n<p><strong>What makes this role different:</strong></p>\n<ul style=\"\">\n<li style=\"\"><strong>Cross-functional influence</strong>: You work directly with engineers, PMs, Designers, and the Data team to surface risks early, understand requirements deeply, and propose better solutions. You may be embedded in one or two delivery teams.</li>\n<li style=\"\"><st",
+    "pre_score": 9.7,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "ai-powered"
+      ],
+      "C": [
+        "claude",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async",
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "78379092048371823835ed0b4a0e0a78",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Quality Engineer (Belo Horizonte)",
+    "company": "LawnStarter",
+    "url": "https://remotive.com/remote-jobs/qa/senior-quality-engineer-belo-horizonte-2090996",
+    "source": "Remotive",
+    "description": "<p><strong>This is a remote role for candidates located in Belo Horizonte, Brazil</strong></p>\n<p> </p>\n<p><strong>About LawnStarter</strong></p>\n<p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $100M in annual bookings. We're expanding beyond lawn care to become the one-stop shop for all home services, operating across three brands (LawnStarter, Lawn Love, Home Gnome) on a single shared platform.</p>\n<p><strong>About Engineering at LawnStarter</strong></p>\n<p>We've spent the last two years rebuilding the platform from the ground up: new customer app, new Pro onboarding, job distribution engine, and data infrastructure. The foundation is solid. Now we're moving into expanded service verticals, dynamic pricing, and AI-powered features at scale. Quality needs to keep up.</p>\n<p>Our stack is PHP (Laravel) and React/React Native, with Cypress as our primary test framework. We actively use Claude Code as part of our engineering workflow, not as an experiment, but as a core part of how we work.</p>\n<p> </p>\n<p><strong>The Role</strong></p>\n<p>As we scale into new service verticals and grow the engineering team, quality can't be reactive. This role exists to make quality proactive: owning the automation coverage, shaping the bug process, and partnering closely with Product, Design, and the Data team to catch problems before they reach customers.</p>\n<p>You'll report to the Engineering Manager and be embedded across the engineering organization. This is hands-on and strategic, helping raise the quality ceiling for the whole team.</p>\n<p><strong>What makes this role different:</strong></p>\n<ul style=\"\">\n<li style=\"\"><strong>Cross-functional influence</strong>: You work directly with engineers, PMs, Designers, and the Data team to surface risks early, understand requirements deeply, and propose better solutions. You may be embedded in one or two delivery teams.</li>\n<li style=\"\"><strong>Automation ownership</strong>: Y",
+    "pre_score": 9.7,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "ai-powered"
+      ],
+      "C": [
+        "claude",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async",
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "a1b246bff1d7af1e8c517999f5bd4b9d",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Quality Engineer (Campinas)",
+    "company": "LawnStarter",
+    "url": "https://remotive.com/remote-jobs/qa/senior-quality-engineer-campinas-2090998",
+    "source": "Remotive",
+    "description": "<div class=\"h3\"><strong><span style=\"\">This is a remote role for candidates located in </span><span style=\"\">Campinas, Brazil.</span></strong></div>\n<p> </p>\n<p><strong>About LawnStarter</strong></p>\n<p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $100M in annual bookings. We're expanding beyond lawn care to become the one-stop shop for all home services, operating across three brands (LawnStarter, Lawn Love, Home Gnome) on a single shared platform.</p>\n<p><strong>About Engineering at LawnStarter</strong></p>\n<p>We've spent the last two years rebuilding the platform from the ground up: new customer app, new Pro onboarding, job distribution engine, and data infrastructure. The foundation is solid. Now we're moving into expanded service verticals, dynamic pricing, and AI-powered features at scale. Quality needs to keep up.</p>\n<p>Our stack is PHP (Laravel) and React/React Native, with Cypress as our primary test framework. We actively use Claude Code as part of our engineering workflow, not as an experiment, but as a core part of how we work.</p>\n<p> </p>\n<p><strong>The Role</strong></p>\n<p>As we scale into new service verticals and grow the engineering team, quality can't be reactive. This role exists to make quality proactive: owning the automation coverage, shaping the bug process, and partnering closely with Product, Design, and the Data team to catch problems before they reach customers.</p>\n<p>You'll report to the Engineering Manager and be embedded across the engineering organization. This is hands-on and strategic, helping raise the quality ceiling for the whole team.</p>\n<p><strong>What makes this role different:</strong></p>\n<ul style=\"\">\n<li style=\"\"><strong>Cross-functional influence</strong>: You work directly with engineers, PMs, Designers, and the Data team to surface risks early, understand requirements deeply, and propose better solutions. You may be embedded in one or two delivery teams.</li>",
+    "pre_score": 9.7,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "ai-powered"
+      ],
+      "C": [
+        "claude",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async",
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "8fcd6f9ffbe1f5d1b6f8d1f7b1b8fb08",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Quality Engineer (Porto Alegre)",
+    "company": "LawnStarter",
+    "url": "https://remotive.com/remote-jobs/qa/senior-quality-engineer-porto-alegre-2090997",
+    "source": "Remotive",
+    "description": "<p><strong>This is a remote role for candidates located in Porto Alegre, Brazil</strong></p>\n<p> </p>\n<p><strong>About LawnStarter</strong></p>\n<p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $100M in annual bookings. We're expanding beyond lawn care to become the one-stop shop for all home services, operating across three brands (LawnStarter, Lawn Love, Home Gnome) on a single shared platform.</p>\n<p><strong>About Engineering at LawnStarter</strong></p>\n<p>We've spent the last two years rebuilding the platform from the ground up: new customer app, new Pro onboarding, job distribution engine, and data infrastructure. The foundation is solid. Now we're moving into expanded service verticals, dynamic pricing, and AI-powered features at scale. Quality needs to keep up.</p>\n<p>Our stack is PHP (Laravel) and React/React Native, with Cypress as our primary test framework. We actively use Claude Code as part of our engineering workflow, not as an experiment, but as a core part of how we work.</p>\n<p> </p>\n<p><strong>The Role</strong></p>\n<p>As we scale into new service verticals and grow the engineering team, quality can't be reactive. This role exists to make quality proactive: owning the automation coverage, shaping the bug process, and partnering closely with Product, Design, and the Data team to catch problems before they reach customers.</p>\n<p>You'll report to the Engineering Manager and be embedded across the engineering organization. This is hands-on and strategic, helping raise the quality ceiling for the whole team.</p>\n<p><strong>What makes this role different:</strong></p>\n<ul style=\"\">\n<li style=\"\"><strong>Cross-functional influence</strong>: You work directly with engineers, PMs, Designers, and the Data team to surface risks early, understand requirements deeply, and propose better solutions. You may be embedded in one or two delivery teams.</li>\n<li style=\"\"><strong>Automation ownership</strong>: You",
+    "pre_score": 9.7,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "ai-powered"
+      ],
+      "C": [
+        "claude",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async",
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "beaa12d81f5a45ff8b1bea0e4d9a34de",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "AI Operations Manager",
+    "company": "Storm Ideas",
+    "url": "https://www.workingnomads.com/job/go/1645565/",
+    "source": "Working Nomads",
+    "description": "<p>🇬🇧 <strong>Up to £32,500 </strong>per year, on a full-time, permanent employment contract<br/>🌎 Edinburgh office or fully remote working from anywhere in the UK!  <br/>🏖️ 33 Days Paid Leave and Benefits<br/>✨ Working with globally recognisable brands in US Entertainment  <br/>💻 High-end, fast computer  <br/>💡 All the latest software and productivity tools you’ll need<br/><br/><strong>About the Role </strong></p>\n<p>We are hiring a manager to relentlessly drive Storm's AI tooling operations forward. This role sits within our AI Operations team and is focused on the operational management of the AI tools, AI platforms, and AI-enabled workflows used across the business. It is a high-accountability operating role focused on AI tooling operations, AI platform reliability, and the technical standards that keep Storm's AI stack running well.<br/><br/>AI is moving relentlessly. We need someone who can stay on top of that pace, understand what is changing in the AI tooling landscape, decide what matters for Storm's AI stack, and continuously adapt how our AI tools are configured, run, and used as platforms, costs, risks, and capabilities shift.<br/><br/>A significant part of this role is making sure AI tooling is configured well, used correctly, and operationally reliable. You will work with teams that use AI tools day-to-day, understand where AI tooling is causing friction, identify the practical technical levers that will improve how those tools perform, and follow through on the detailed, sometimes tedious operational work that makes an AI stack dependable.<br/><br/>This role is for someone who wants real responsibility for the operational quality of our AI tooling. You will be expected to bring order to messy AI tooling operations, push through technical improvements, and keep Storm in control of fast-moving AI platform developments rather than reacting too late to them. Strong organisation and judgment are not enough on their own; the role requires practical technica",
+    "pre_score": 9.7,
+    "encontrados": {
+      "A": [
+        "ai workflow",
+        "ai operations"
+      ],
+      "B": [
+        "ai tools",
+        "llm"
+      ],
+      "C": [
+        "make"
+      ],
+      "async": [],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "42aaa38c069f7d454bfb4634ddf48305",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Quality Engineer",
+    "company": "LawnStarter",
+    "url": "https://jobicy.com/jobs/147511-senior-quality-engineer",
+    "source": "Jobicy",
+    "description": "<h3>Senior Quality Engineer</h3><p><a href=\"https://github.com/lawnstarter/brain/blob/main/docs/job-descriptions/senior-quality-engineer.md#senior-quality-engineer\" rel=\"nofollow noreferrer noopener\"></a></p><p><strong>About LawnStarter</strong></p><p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $100M in annual bookings. We're expanding beyond lawn care to become the one-stop shop for all home services, operating across three brands (LawnStarter, Lawn Love, Home Gnome) on a single shared platform.</p><p><strong>About Engineering at LawnStarter</strong></p><p>We've spent the last two years rebuilding the platform from the ground up: new customer app, new Pro onboarding, job distribution engine, and data infrastructure. The foundation is solid. Now we're moving into expanded service verticals, dynamic pricing, and AI-powered features at scale. Quality needs to keep up.</p><p>Our stack is PHP (Laravel) and React/React Native, with Cypress as our primary test framework. We actively use Claude Code as part of our engineering workflow, not as an experiment, but as a core part of how we work.</p><p></p><p><strong>The Role</strong></p><p>As we scale into new service verticals and grow the engineering team, quality can't be reactive. This role exists to make quality proactive: owning the automation coverage, shaping the bug process, and partnering closely with Product, Design, and the Data team to catch problems before they reach customers.</p><p>You'll report to the Engineering Manager and be embedded across the engineering organization. This is hands-on and strategic, helping raise the quality ceiling for the whole team.</p><p><strong>What makes this role different:</strong></p><ul><li><strong>Cross-functional influence</strong>: You work directly with engineers, PMs, Designers, and the Data team to surface risks early, understand requirements deeply, and propose better solutions. You may be embedded in one or two ",
+    "pre_score": 9.7,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "ai-powered"
+      ],
+      "C": [
+        "claude",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async",
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "dab1072e43dc4176af2e7f3a25166696",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "AI Filmmaker",
+    "company": "Foxelli Group",
+    "url": "https://remoteOK.com/remote-jobs/remote-ai-filmmaker-foxelli-group-1134232",
+    "source": "Remote OK",
+    "description": "<strong>Please be informed that Foxelli Group hires exclusively in-house and doesn't work with any external recruitment agencies. Any company or individual claiming to recruit on behalf of Foxelli Group is not affiliated with us.<br><br></strong>At Foxelli, weâre building more than e-commerce brands - weâre building a tribe of thoughtful humans: AI enthusiasts, curious builders, and ambitious minds who care about doing meaningful work together. Ten years in, our D2C brands reach millions and generate over $20M annually. Our focus stays simple: create products customers love and a team that actually enjoys building them.<br><br>If you love to learn, experiment, think boldly, make decisions, and build things that matter - youâll feel at home with us.<br><br><strong>WHY JOIN FOXELLI?<br><br></strong>Foxelli is a place for people who think deeply, learn quickly, automate repetitive work, enjoy spending time together, and build things that matter. We work hard, joke often, and donât take ourselves too seriously.<br><br>If youâre excited about AI, eager to learn, and want to create work that genuinely means something with people who care, youâll feel right at home with us - no matter where you are in your career.<br><br><strong>THE ROLE<br><br></strong>You will be creating short-form vertical video series for TikTok, Instagram Reels, and YouTube Shorts. The content includes dark romance, horror, thriller, and fantasy micro-dramas - serialized stories published daily, each episode 60-90 seconds long.<br><br>This is not a traditional production role. You'll move fast, iterate constantly, and use cutting-edge AI video tools. Quality and speed both matter here.<br><br><strong>What You'll Do<br><br></strong><ul><li>Generate scenes using the latest AI video tools</li><li>Edit footage into finished episodes in vertical 9:16 format</li><li>Maintain character consistency across episodes using approved reference assets</li><li>Sync music and sound effects to match the t",
+    "pre_score": 9.6,
+    "encontrados": {
+      "A": [
+        "prompt engineer",
+        "prompt engineering"
+      ],
+      "B": [
+        "ai tools"
+      ],
+      "C": [
+        "personal development",
+        "python",
+        "make"
+      ],
+      "async": [],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "4b3a03b0699aa3c3791762c53e3f7ef1",
+    "score": 9.6,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Product Manager",
+    "company": "Yei Finance",
+    "url": "https://weworkremotely.com/remote-jobs/yei-finance-product-manager",
+    "source": "We Work Remotely (Operations)",
+    "description": "\n\n<p>\n  <strong>Headquarters:</strong> Spain\n</p>\n\n<p><strong>About the Project:</strong><br>Yei Finance is a decentralized, non-custodial money market protocol built on the Sei network, offering innovative and flexible financial solutions. Users benefit from competitive yield, can access over-collateralized or flash loans, and manage risk with advanced tools—all leveraging Sei’s speed and efficiency.</p><p></p><p>Clovis is the latest product by Yei Finance, achieving over $400M TVL at its peak, $5.5M in protocol revenue over the past year, and standing as the largest protocol on Sei. Yei also pioneered the first lending-boosted DEX on Sei, with YeiSwap compounding YeiLend yields to drive $230M+ monthly trading volume and $147M in cross-chain bridge flow. Now, Clovis will expand this model across multiple chains, aiming to become DeFi’s cross-chain prime brokerage layer, supported by top-tier partnerships.</p><p></p><p><strong>Who We Are:</strong></p><ul><li><p>A team of builders from leading Web3 organizations, including AAVE, Wormhole, Venus Labs, OKX, and more</p></li><li><p>Backed by investors such as Outlier Ventures, Manifold, DWF Ventures, and the Sei Foundation</p></li><li><p>Partnered with industry leaders like Circle, OKX Wallet, Binance Wallet, Frax, Stargate, and others</p></li></ul><p></p><p><strong>The Opportunity</strong><br>As the Product Manager for Clovis, you will own the full product lifecycle—discovery, design, execution, and growth—across Clovis’ modules: Clovis Market, Exchange, Transport, and Vault. You’ll operate at the intersection of engineering, design, data, business, and community, helping scale a platform that’s shaping the future of cross-chain DeFi.</p><p></p><p><strong>What You’ll Do:</strong></p><ul><li><p>Define and drive the long-term product vision, strategy, and quarterly roadmaps for Clovis.</p></li><li><p>Collaborate with engineering and design teams to deliver seamless cross-chain lending, liquidity, and asset management exp",
+    "pre_score": 9.5,
+    "encontrados": {
+      "A": [],
+      "B": [],
+      "C": [
+        "mission-driven",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async",
+        "asynchronous",
+        "flexible hours"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "27a0e2ada4c8c889b032c19f25317787",
+    "score": 9.5,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Mid/Senior AI Cinematic Video Editor",
+    "company": "EverAI",
+    "url": "https://remotive.com/remote-jobs/all-others/mid-senior-ai-cinematic-video-editor-2091035",
+    "source": "Remotive",
+    "description": "<p> </p>\n<p class=\"_descriptionText_5yu8i_201\" style=\"box-sizing: border-box; line-height: 0; margin-bottom: 32px; color: #373e4d; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"> </p>\n<div class=\"h1\" style=\"box-sizing: border-box; margin: 0px; line-height: 28px; padding: 0px; font-weight: 500;\">Our Vision &amp; Products</div>\n<p style=\"box-sizing: border-box; line-height: 24px; margin: 8px 0px 0px; padding: 0px; min-height: 1.5em;\"><em style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box; font-weight: 600;\">🚀 EverAI — Building the Future of AI Companionship</strong></em></p>\n<p style=\"box-sizing: border-box; line-height: 24px; margin: 8px 0px 0px; padding: 0px; min-height: 1.5em;\"><em style=\"box-sizing: border-box;\">One of the Top 15 Largest &amp; Fastest-Growing AI Companies in the World</em></p>\n<p style=\"box-sizing: border-box; line-height: 24px; margin: 8px 0px 0px; padding: 0px; min-height: 1.5em;\"><em style=\"box-sizing: border-box;\">50 Million Users in 2 years — Help Us Reach 100M first, 500M next</em></p>\n<p style=\"box-sizing: border-box; line-height: 24px; margin: 8px 0px 0px; padding: 0px; min-height: 1.5em;\">At <strong style=\"box-sizing: border-box; font-weight: 600;\">EverAI</strong>, we’re shaping what it means to connect with AI. With <strong style=\"box-sizing: border-box; font-weight: 600;\">50 million users and counting</strong>, we're not just building products — we're creating entirely new categories.</p>\n<p style=\"box-sizing: border-box; line-height: 24px; margin: 8px 0px 0px; padding: 0px; min-height: 1.5em;\">Our flagship product is the <strong style=\"box-sizing: border-box; font-weight: 600;\">world’s largest ",
+    "pre_score": 9.2,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "llm",
+        "content lead"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "chatgpt"
+      ],
+      "async": [
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "c7a8f44463bb0073303c453dbcac6114",
+    "score": 9.2,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Mid/Senior AI Cinematic Video Editor (Full Remote - Worldwide)",
+    "company": "EverAI Limited",
+    "url": "https://www.workingnomads.com/job/go/1687327/",
+    "source": "Working Nomads",
+    "description": "<h1>Our Vision &amp; Products</h1>\n<p><em><strong>🚀 EverAI — Building the Future of AI Companionship</strong></em></p>\n<p><em>One of the Top 15 Largest &amp; Fastest-Growing AI Companies in the World</em></p>\n<p><em>50 Million Users in 2 years — Help Us Reach 100M first, 500M next</em></p>\n<p> </p>\n<p>At <strong>EverAI</strong>, we’re shaping what it means to connect with AI. With <strong>50 million users and counting</strong>, we're not just building products — we're creating entirely new categories.</p>\n<p>Our flagship product is the <strong>world’s largest AI companionship platform</strong>, redefining relationships for millions. It is governed by our proprietary moderation system, EverGuard — an internal AI designed to ensure everything we build is <strong>safe, ethical, and human-first</strong>.</p>\n<p><em>And we’re only just getting started!</em></p>\n<p> </p>\n<h1>Our Team</h1>\n<p>We are an enthusiastic, passionate and hardworking team of ≈ 75 people. Our founding team has strong entrepreneurial experience building and scaling web products from 0 to IPO.</p>\n<p> </p>\n<p><strong>Alexis Soulopoulos </strong>[CEO]</p>\n<p><em>• 10+ years in Tech Executive Leadership</em></p>\n<p><em>• Co-Founder Mad Paws Holdings (from 0 to IPO)</em></p>\n<p><em>• Forbes 30 under 30 + Deloitte TechFast50 ’22 &amp; ‘23</em></p>\n<p> </p>\n<p><strong>Michael Monin</strong> [Co-founder &amp; CTO]</p>\n<p><em>• 10+ years as CTO / COO (web2/web3), 1+ year in AI/LLM</em></p>\n<p><em>• Serial-entrepreneur: MTK Digital (exited / 0-&gt;$20m revenue) and Zipchat (AI Chatbot for E-commerce brands)</em></p>\n<p> </p>\n<p><strong>Thomas Lacroix </strong>[Co-founder &amp; CMO]</p>\n<p><em>• 8+ years in Customer Acquisition &amp; E-commerce Growth</em></p>\n<p><em>• Serial-entrepreneur: Curatible (sold to Blackstone) and MTK Digital (exited / 0-&gt;$20m revenue)</em></p>\n<p> </p>\n<p><strong>Maruša Fasano </strong>[CFO/Legal]</p>\n<p><em>• 25+ years in Finance, Strategy, M&amp;A</em></p>\n<p><em>• Ex-CFO/M&a",
+    "pre_score": 9.2,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "llm",
+        "content lead"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "chatgpt"
+      ],
+      "async": [
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "63e212530254503571036cc59e786e79",
+    "score": 9.2,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "AI Systems Engineering Subject Matter Expert",
+    "company": "TripleTen",
+    "url": "https://jobicy.com/jobs/144479-ai-systems-engineering-subject-matter-expert",
+    "source": "Jobicy",
+    "description": "<h2>Description</h2><p>At <a href=\"https://tripleten.com/es-mex/\" rel=\"nofollow ugc noopener\" target=\"_blank\">TripleTen</a>, we're building an international platform of digital re-skilling products to help people from diverse backgrounds learn new professions and build sustainable careers in tech.</p><p></p><p><em>Our program graduates have landed jobs at top companies like Tesla, Spotify, PlayStation, Google, and Microsoft. So far, over 5,000 students have chosen TripleTen, and hundreds of new students are joining us each month. We believe everyone can jumpstart a new career, which is why we produce quality educational content and offer intensive courses in tech complete with full access to an interactive platform, code reviews, and support from industry practitioners.</em></p><p></p><p>We're building a program for experienced engineers transitioning into system architecture roles. We need <strong>AI Systems Engineering practitioners</strong> who can do more than just know their craft — they need to help build the curriculum and turn their expertise into content others can learn from.</p><p></p><p>This is a content authoring role. You'll start by shaping the program syllabus based on our existing draft, then move into producing lessons using AI-gen tools — following our content guidelines, reviewing the output, and fine-tuning it until it's accurate and teachable. An LX designer will review your content and send comments back; you'll iterate from there. The best candidates are people who are opinionated about what good systems engineering looks like and what engineers need to learn, can spot when something is oversimplified or wrong, and are comfortable working in a structured production process and keeping up with deadlines.</p><p></p><p><strong>Your audience:</strong> experienced engineers looking to level up to system architecture roles. They will spot shallow content instantly.</p><p><strong>Format:</strong> async-first, project-based, estimated 4-6 months. We ",
+    "pre_score": 9.0,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools"
+      ],
+      "C": [
+        "impact",
+        "notion",
+        "make"
+      ],
+      "async": [
+        "async",
+        "flexible hours"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "53fa02907cfe8186b32c8e564da5a824",
+    "score": 9.0,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Forward Deployed Engineer - Technology",
+    "company": "Truelogic",
+    "url": "https://jobicy.com/jobs/146271-forward-deployed-engineer-technology",
+    "source": "Jobicy",
+    "description": "<h2><strong>About Truelogic</strong></h2><p>At Truelogic we are a leading provider of nearshore staff augmentation services headquartered in New York. For over two decades, we’ve been delivering top-tier technology solutions to companies of all sizes, from innovative startups to industry leaders, helping them achieve their digital transformation goals.</p><p>Our team of 600+ highly skilled tech professionals, based in Latin America, drives digital disruption by partnering with U.S. companies on their most impactful projects. Whether collaborating with Fortune 500 giants or scaling startups, we deliver results that make a difference.</p><p>By applying for this position, you’re taking the first step in joining a dynamic team that values your expertise and aspirations. We aim to align your skills with opportunities that foster exceptional career growth and success while contributing to transformative projects that shape the future.</p><h2><strong>Our Client</strong></h2><p>The client is a digital product, brand, and customer experience consultancy that helps leading companies design and build digital experiences, products, platforms, and growth initiatives. The company operates with a distributed workforce model and manages a large network of freelancers, contractors, and full-time employees across multiple disciplines.</p><h2><br><strong>Job Summary</strong></h2><p>The Forward Deployed Engineer will partner directly with Talent and Resourcing leadership to evaluate and optimize the organization's talent operations ecosystem. Working across tools such as Airtable, Lever, and other internal systems, this individual will identify opportunities to improve workflows, automate manual processes, and leverage AI-driven solutions to increase efficiency and decision-making. Acting as a consultant-builder, the FDE will work closely with stakeholders to understand business challenges, define technical solutions, and lead initiatives from discovery through implementation.</p><h2><",
+    "pre_score": 9.0,
+    "encontrados": {
+      "A": [
+        "ai workflow",
+        "workflow automation"
+      ],
+      "B": [
+        "ai-powered",
+        "llm"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "openai",
+        "python",
+        "sql",
+        "airtable",
+        "make"
+      ],
+      "async": [],
+      "neg_media": [],
+      "neg_fuerte": [
+        "software engineer"
+      ]
+    },
+    "_id": "afe61e35e9b230124e4c3753c48df2df",
+    "score": 9.0,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Full-Stack Engineer (TypeScript/AI Automation) - Real Estate - LATAM",
+    "company": "Truelogic",
+    "url": "https://jobicy.com/jobs/146294-senior-full-stack-engineer-typescript-ai-automation-real-estate-latam",
+    "source": "Jobicy",
+    "description": "<h2><strong>About Truelogic</strong></h2><p>At Truelogic we are a leading provider of nearshore staff augmentation services headquartered in New York. For over two decades, we’ve been delivering top-tier technology solutions to companies of all sizes, from innovative startups to industry leaders, helping them achieve their digital transformation goals.</p><p>Our team of 600+ highly skilled tech professionals, based in Latin America, drives digital disruption by partnering with U.S. companies on their most impactful projects. Whether collaborating with Fortune 500 giants or scaling startups, we deliver results that make a difference.</p><p>By applying for this position, you’re taking the first step in joining a dynamic team that values your expertise and aspirations. We aim to align your skills with opportunities that foster exceptional career growth and success while contributing to transformative projects that shape the future.</p><h2><strong>Our Client</strong></h2><p>This company is far more than a traditional real estate brokerage — it is a tech-powered media company reinventing how real estate is bought, sold, and experienced, combining elite sales talent, cutting-edge technology, and world-class content creation to build a completely new industry approach; its ecosystem spans luxury residential real estate, a powerful education platform, and an in-house creative agency, forming a vertically integrated model that is reshaping the real estate landscape, while offering engineers the opportunity to join an organization that treats technology as a core strategic differentiator, empowers small, autonomous, high-impact teams with full ownership, and values great design, clean code, and exceptional user experience, all within a company that is actively building the future of real estate.<br /><strong>Job Summary</strong><br>We are seeking a Senior Full-Stack Engineer to join a fast-growing, tech-driven company that is transforming the real estate experience through in",
+    "pre_score": 8.8,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai-powered",
+        "llm"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "2682f75b2a962427aa4cccd9ca678b9f",
+    "score": 8.8,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Python Developer (Fullstack, BE-Heavy)",
+    "company": "Proxify",
+    "url": "https://www.workingnomads.com/job/go/1641402/",
+    "source": "Working Nomads",
+    "description": "<h3><strong>About us:</strong></h3>\n<p> </p>\n<p>Talent has no borders. Proxify's mission is to connect top developers around the world with opportunities they deserve. So, it doesn't matter where you are; we are here to help you fast-track your independent career in the right direction. 🙂</p>\n<p>Since our launch, Proxify's developers have successfully worked with 1200+ happy clients to build their products and growth features. 5000+ talented developers trust Proxify and its network to fulfill their dreams and objectives.</p>\n<p>Proxify is shaped by a global network of supportive, talented developers interested in remote full-time jobs. Our Glassdoor (4.5/5) and Trustpilot (4.8/5) ratings reflect the trust developers place in us and our commitment to our members' success.</p>\n<p><br/> </p>\n<p><strong>The Role:</strong></p>\n<p> </p>\n<p>We are looking for a Senior Python Developer (Fullstack, Backend-Heavy) to join one of our high-growth client teams as a core software architect. In this role, you will be responsible for designing, scaling, and maintaining high-throughput backend systems while having the fullstack dexterity to build out the corresponding frontends.</p>\n<p> </p>\n<p>You will handle everything from high-performance asynchronous API design and background task orchestration to state management on the client side. This is an ideal role for an engineer who loves the clean syntax and processing capabilities of Python but values the completeness of delivering a seamless end-to-end user experience.</p>\n<p> </p>\n<p><strong>What we are looking for:</strong></p>\n<p> </p>\n<ul>\n<li>5+ years of production experience with modern Python, with a deep understanding of advanced concepts (metaclasses, generators, decorators) and asynchronous programming (asyncio).</li>\n<li>Mastery of FastAPI for high-performance microservices or Django (including Django REST Framework) for robust, feature-rich monolithic web applications.</li>\n<li>Solid, hands-on experience with modern fron",
+    "pre_score": 8.7,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "llm"
+      ],
+      "C": [
+        "python",
+        "sql"
+      ],
+      "async": [
+        "async",
+        "asynchronous"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "c22283d8e2c7d8e7388dec902ba5a691",
+    "score": 8.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Software Engineer, AI Agent Platform",
+    "company": "QAD, Inc.",
+    "url": "https://jobicy.com/jobs/147582-software-engineer-ai-agent-platform",
+    "source": "Jobicy",
+    "description": "<h2>Company Description</h2><p><strong>Redzone is the #1 Connected Workforce Solution </strong>for manufacturers big and small. We work to improve efficiency in plants, provide coaching for best practices, and enable the front-line worker to improve the quality of their work and their work life by providing them with tools, processes, and collaboration tools to keep their manufacturing lines running smoothly and efficiently. </p><p>At Redzone we focus on the customer experience, listening to the customer, and providing solutions that create great outcomes. We are a combination of great leadership, years of manufacturing experience, and an incredible technology team that all work together to create great products. </p><p>This role is fully remote.</p><h2>Job Description</h2><p>ChampionAI is QAD | Redzone agentic platform, purpose-built for manufacturing and utilized by the various business units within QAD | Redzone. This engineer joins the core platform team with three main areas of focus: building new capabilities into the platform, helping Applied AI teams at partner business units build and ship Champions correctly, and directly building Champion agents for business-unit use cases when needed.<br>\nYou will work in the same codebase as the Applied AI engineers you support, which keeps the enablement work<br>\npractical and the platform work focused on real problems.</p><p>\n<strong>Key Responsibilities</strong><br>\n<strong>Platform Development</strong></p><ul><li>Build and ship features across the Champion platform repositories</li><li> Improve developer experience: tooling, scaffolding, internal documentation, and onboarding paths for Applied AI engineers.</li><li>Maintain and evolve the MCP tool server and agent infrastructure that BU teams depend on.</li><li>Identify and address friction points that slow down Champion development or deployment</li></ul><p><strong>Applied AI Enablement</strong></p><ul><li>Support BU Applied AI engineers in building, deploying, and",
+    "pre_score": 8.6,
+    "encontrados": {
+      "A": [
+        "prompt engineer",
+        "prompt engineering"
+      ],
+      "B": [
+        "llm"
+      ],
+      "C": [
+        "claude",
+        "python",
+        "sql",
+        "make"
+      ],
+      "async": [
+        "async"
+      ],
+      "neg_media": [],
+      "neg_fuerte": [
+        "software engineer"
+      ]
+    },
+    "_id": "cadd7d0ff8a2ac742be4176952cf4fb1",
+    "score": 8.6,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "AI Engineer (Latam, Remote)",
+    "company": "Kubikware",
+    "url": "https://jobicy.com/jobs/144246-ai-engineer-latam-remote",
+    "source": "Jobicy",
+    "description": "<strong>We are Kubikware™</strong><p>, a digital agency with 20+ years of experience designing and developing web and mobile platforms, as well as video games, AR/VR apps, and AI/ML. We are headquartered in Miami, FL with a strong South American team, and have clients and partners in the US market of all sizes and verticals. Among other accolades, we are a 5-time <em>Inc. 5000 Fastest Growing Companies in America</em> honoree.<br>We are looking to expand our amazing roster with a <strong>AI Engineer</strong>, located in Latin America. </p><p>As we are currently working with multiple companies on many different products, we have quite a few projects where someone like you could make a difference.</p><br><strong>We are looking for:</strong><ul><li>4+ years of experience in Software Engineering, AI Integrations, Automation, or Backend Development</li><li>Strong hands-on experience with:<ul><li>Open AI Whisper API for transcription and speech processing</li><li>Claude AI and LLM integrations</li><li>n8n for workflow automation and orchestration</li><li>Replit for rapid app/web development and prototyping</li><li>Supabase for database management, authentication, and backend services</li></ul></li><li>Experience building AI-driven workflows and integrating third-party APIs</li><li>Strong understanding of prompt engineering and AI tool orchestration</li><li>Experience developing lightweight web applications and internal tools</li><li>Ability to work independently and move quickly in a fast-paced environment</li><li>Strong communication skills and experience collaborating with distributed teams</li></ul><br><strong>We offer:</strong><ul><li>Fully remote position (LATAM)</li><li>Part-time engagement with flexibility</li><li>Opportunity to work on cutting-edge AI initiatives and real-world implementations</li><li>Collaboration with U.S.-based teams</li><li>High level of ownership and autonomy</li><li>Compensation in U.S. Dollars</li></ul><p>If you are as excited to learn more",
+    "pre_score": 8.6,
+    "encontrados": {
+      "A": [
+        "workflow automation",
+        "prompt engineer",
+        "prompt engineering"
+      ],
+      "B": [
+        "llm"
+      ],
+      "C": [
+        "claude",
+        "make",
+        "n8n"
+      ],
+      "async": [],
+      "neg_media": [],
+      "neg_fuerte": [
+        "software engineer"
+      ]
+    },
+    "_id": "9df417abbdf2ce125a3092053a4201b9",
+    "score": 8.6,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior AI Vertical Mini-Series Director (Full Remote - Worldwide)",
+    "company": "EverAI Limited",
+    "url": "https://www.workingnomads.com/job/go/1687328/",
+    "source": "Working Nomads",
+    "description": "<h1>Our Vision &amp; Products</h1>\n<p><em><strong>🚀 EverAI — Building the Future of AI Companionship</strong></em></p>\n<p><em>One of the Top 15 Largest &amp; Fastest-Growing AI Companies in the World</em></p>\n<p><em>50 Million Users in 2 years — Help Us Reach 100M first, 500M next</em></p>\n<p> </p>\n<p>At <strong>EverAI</strong>, we’re shaping what it means to connect with AI. With <strong>50 million users and counting</strong>, we're not just building products — we're creating entirely new categories.</p>\n<p>Our flagship product is the <strong>world’s largest AI companionship platform</strong>, redefining relationships for millions. It is governed by our proprietary moderation system, EverGuard — an internal AI designed to ensure everything we build is <strong>safe, ethical, and human-first</strong>.</p>\n<p><em>And we’re only just getting started!</em></p>\n<p> </p>\n<h1>Our Team</h1>\n<p>We are an enthusiastic, passionate and hardworking team of ≈ 75 people. Our founding team has strong entrepreneurial experience building and scaling web products from 0 to IPO.</p>\n<p> </p>\n<p><strong>Alexis Soulopoulos </strong>[CEO]</p>\n<p><em>• 10+ years in Tech Executive Leadership</em></p>\n<p><em>• Co-Founder Mad Paws Holdings (from 0 to IPO)</em></p>\n<p><em>• Forbes 30 under 30 + Deloitte TechFast50 ’22 &amp; ‘23</em></p>\n<p> </p>\n<p><strong>Michael Monin</strong> [Co-founder &amp; CTO]</p>\n<p><em>• 10+ years as CTO / COO (web2/web3), 1+ year in AI/LLM</em></p>\n<p><em>• Serial-entrepreneur: MTK Digital (exited / 0-&gt;$20m revenue) and Zipchat (AI Chatbot for E-commerce brands)</em></p>\n<p> </p>\n<p><strong>Thomas Lacroix </strong>[Co-founder &amp; CMO]</p>\n<p><em>• 8+ years in Customer Acquisition &amp; E-commerce Growth</em></p>\n<p><em>• Serial-entrepreneur: Curatible (sold to Blackstone) and MTK Digital (exited / 0-&gt;$20m revenue)</em></p>\n<p> </p>\n<p><strong>Maruša Fasano </strong>[CFO/Legal]</p>\n<p><em>• 25+ years in Finance, Strategy, M&amp;A</em></p>\n<p><em>• Ex-CFO/M&a",
+    "pre_score": 8.5,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "llm"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "chatgpt"
+      ],
+      "async": [
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "fcad4e49f2a65785f53b4d55a164c35f",
+    "score": 8.5,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Product Designer",
+    "company": "CodePath",
+    "url": "https://jobicy.com/jobs/146799-senior-product-designer-7",
+    "source": "Jobicy",
+    "description": "<div><p>CodePath is an AI-native organization building pathways into tech for the next generation of engineers, CTOs, and founders. We deliver industry-vetted technical courses and programs to learners across the country.</p>\n<p>We operate with the pace and ownership culture of a technical startup. Our team runs on Claude, partners with Anthropic, and uses AI as a core part of how we work. The problems here are technically hard, the impact is visible, and the people are sharp.<br />With 40,000+ learners and alumni from 1,100+ colleges now working at 4,050 companies, including Amazon, Google, and Meta, we are reshaping who leads tech and how the industry gets built.</p></div><p><strong>About the Role</strong></p><p><strong>Location:</strong> Remote (United States, Europe, Canada, or LATAM)</p><p><strong>Role Type:</strong> Full-Time </p><p><strong>Reporting to:</strong> VP of Engineering</p><p><strong>Compensation:</strong> $148,000 to $190,000 per year for US-based applicants. Adjusted contingent on location for applicants based in Canada, LATAM, and Europe.</p><p>CodePath's educational programs run on our learning platform, a set of applications with functionality spanning admissions, course delivery, grading, career coaching, and reporting. These tools have been amazingly effective, but we’re increasingly seeing our limited design bandwidth holding us back in our efforts to take them further.</p><p>We're looking for our first <strong>Senior Product Designer</strong> to own the experience design of the platform: how a flow is structured, how people navigate, how an interaction feels. You'll also own the design system that keeps everything coherent as the platform grows.</p><p>This is a hands-on individual contributor role. You'll own the work end to end: talk to the people who use our products, decide how an experience should work, and hand engineers something they can build from.</p><p>We focus on what's most impactful for our students: the quality of the experien",
+    "pre_score": 8.5,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai-powered",
+        "llm"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "make"
+      ],
+      "async": [
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "a262c219f7c5fb7b740936831cd87f28",
+    "score": 8.5,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Performance Marketer (Full Remote - Worldwide)",
+    "company": "EverAI Limited",
+    "url": "https://www.workingnomads.com/job/go/1687329/",
+    "source": "Working Nomads",
+    "description": "<h1>Our Vision &amp; Products</h1>\n<p><em><strong>🚀 EverAI — Building the Future of AI Companionship</strong></em></p>\n<p><em>One of the Top 15 Largest &amp; Fastest-Growing AI Companies in the World</em></p>\n<p><em>50 Million Users in 2 years — Help Us Reach 100M first, 500M next</em></p>\n<p> </p>\n<p>At <strong>EverAI</strong>, we’re shaping what it means to connect with AI. With <strong>50 million users and counting</strong>, we're not just building products — we're creating entirely new categories.</p>\n<p>Our flagship product is the <strong>world’s largest AI companionship platform</strong>, redefining relationships for millions. It is governed by our proprietary moderation system, EverGuard — an internal AI designed to ensure everything we build is <strong>safe, ethical, and human-first</strong>.</p>\n<p><em>And we’re only just getting started!</em></p>\n<p> </p>\n<h1>Our Team</h1>\n<p>We are an enthusiastic, passionate and hardworking team of ≈ 75 people. Our founding team has strong entrepreneurial experience building and scaling web products from 0 to IPO.</p>\n<p> </p>\n<p><strong>Alexis Soulopoulos </strong>[CEO]</p>\n<p><em>• 10+ years in Tech Executive Leadership</em></p>\n<p><em>• Co-Founder Mad Paws Holdings (from 0 to IPO)</em></p>\n<p><em>• Forbes 30 under 30 + Deloitte TechFast50 ’22 &amp; ‘23</em></p>\n<p> </p>\n<p><strong>Michael Monin</strong> [Co-founder &amp; CTO]</p>\n<p><em>• 10+ years as CTO / COO (web2/web3), 1+ year in AI/LLM</em></p>\n<p><em>• Serial-entrepreneur: MTK Digital (exited / 0-&gt;$20m revenue) and Zipchat (AI Chatbot for E-commerce brands)</em></p>\n<p> </p>\n<p><strong>Thomas Lacroix </strong>[Co-founder &amp; CMO]</p>\n<p><em>• 8+ years in Customer Acquisition &amp; E-commerce Growth</em></p>\n<p><em>• Serial-entrepreneur: Curatible (sold to Blackstone) and MTK Digital (exited / 0-&gt;$20m revenue)</em></p>\n<p> </p>\n<p><strong>Maruša Fasano </strong>[CFO/Legal]</p>\n<p><em>• 25+ years in Finance, Strategy, M&amp;A</em></p>\n<p><em>• Ex-CFO/M&a",
+    "pre_score": 8.1,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools",
+        "llm"
+      ],
+      "C": [
+        "impact",
+        "funnel",
+        "cohort",
+        "claude",
+        "chatgpt"
+      ],
+      "async": [
+        "work from anywhere"
+      ],
+      "neg_media": [
+        "paid media"
+      ],
+      "neg_fuerte": []
+    },
+    "_id": "440470b9805cc6157f67b7bd0c25a41f",
+    "score": 8.1,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Technical Account Manager",
+    "company": "CommandLink",
+    "url": "https://jobicy.com/jobs/144713-technical-account-manager-5",
+    "source": "Jobicy",
+    "description": "<p><u><b><strong>About Command|Link</strong></b></u></p><p></p><p>Command|Link is a global SaaS Platform providing network, voice services, and IT security solutions, helping corporations consolidate their core infrastructure into a single vendor and layering on a proprietary single pane of glass platform. Command|Link has revolutionized the IT industry by tackling the problems our competitors create. In recognition for our unprecedented innovation and dedication, Command|Link was recognized as the SD-WAN Product of the Year, ITSM Visionary Spotlight, UCaaS Product of the Year, NaaS Product of the Year, Supplier of the Year, and the AT&amp;T Strategic Growth Partner. Command|Link has built the only IT platform for scale that solves ISP vendor sprawl and IT headaches. We make it easy for our customers to get more done, maximize uptime and improve the bottom line.</p><p></p><p>Learn more about us <a href=\"https://www.commandlink.com/\" target=\"_blank\" rel=\"nofollow ugc noopener\">here</a>!</p><p></p><p><b><strong>This is a 100% remote position. </strong></b></p><p></p><p><b><strong>About the Role</strong></b> </p><p>We are seeking a hands-on, execution-driven Technical Account Manager (TAM) to partner with enterprise customers on onboarding, workflow configuration, monitoring, and ongoing adoption of the CommandLink ITSM platform. </p><p></p><p>This role is ideal for someone who thrives on personal ownership of customer success — driving projects from demo to adoption, solving technical challenges directly, and ensuring customers realize maximum value from our platform. You won’t just advise; you’ll roll up your sleeves, configure, troubleshoot, and deliver. </p><p></p><p>You will work closely with sales and solution engineering teams, but you are the primary technical owner for your accounts, accountable for successful onboarding, seamless integrations, and continuous improvement. </p><p><b><strong>What You’ll Do:</strong></b> </p><ul><li>Lead enterprise onboarding ses",
+    "pre_score": 8.1,
+    "encontrados": {
+      "A": [
+        "workflow automation"
+      ],
+      "B": [
+        "ai tools"
+      ],
+      "C": [
+        "impact",
+        "python",
+        "make"
+      ],
+      "async": [],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "3ed6135f2e05e2d8c6697651479ccffb",
+    "score": 8.1,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Engineering Project and QA Manager",
+    "company": "CodePath",
+    "url": "https://jobicy.com/jobs/146796-engineering-project-and-qa-manager",
+    "source": "Jobicy",
+    "description": "<div><p>CodePath is an AI-native organization building pathways into tech for the next generation of engineers, CTOs, and founders. We deliver industry-vetted technical courses and programs to learners across the country.</p>\n<p>We operate with the pace and ownership culture of a technical startup. Our team runs on Claude, partners with Anthropic, and uses AI as a core part of how we work. The problems here are technically hard, the impact is visible, and the people are sharp.<br />With 40,000+ learners and alumni from 1,100+ colleges now working at 4,050 companies, including Amazon, Google, and Meta, we are reshaping who leads tech and how the industry gets built.</p></div><p><strong>About the Role</strong></p><p><strong>Location:</strong> Remote (United States, Europe, Canada, or LATAM)</p><p><strong>Role Type:</strong> Full-Time </p><p><strong>Reporting to:</strong> VP of Engineering</p><p><strong>Compensation:</strong> $140,000 to $178,000 per year for US-based applicants. Adjusted contingent on location for applicants based in Canada, LATAM, and Europe.</p><p>CodePath's educational programs run on our learning platform, a set of applications spanning admissions, course delivery, grading, career coaching, and reporting. A small engineering team builds and maintains all of it. As we build more and serve more learners, we need someone whose job is to keep that work organized, tested, and moving.</p><p>We're looking for an <strong>Engineering Project and QA Manager</strong> who works alongside our engineers day to day. You'll keep projects organized and moving, make sure what we build gets tested and bugs get fixed, and keep the engineers, the product team, and the internal teams who use our tools in sync.</p><p><strong>Key Activities</strong></p><ul>\n<li>\n<p>Keep engineering projects organized and moving: track what's in flight, flag what's blocked, and help the team stay clear on what's next</p>\n</li>\n<li>\n<p>Own quality: test what we build, use AI to automate th",
+    "pre_score": 7.8,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "ai tools"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "make"
+      ],
+      "async": [
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "8df1cbaedfd40374ade5161285d62a3b",
+    "score": 7.8,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Hands-On Tech Lead – PropTech & Real Estate Media",
+    "company": "Truelogic",
+    "url": "https://jobicy.com/jobs/146290-hands-on-tech-lead-proptech-real-estate-media",
+    "source": "Jobicy",
+    "description": "<h2><strong>About Truelogic</strong></h2><p>At Truelogic we are a leading provider of nearshore staff augmentation services headquartered in New York. For over two decades, we’ve been delivering top-tier technology solutions to companies of all sizes, from innovative startups to industry leaders, helping them achieve their digital transformation goals.</p><p>Our team of 600+ highly skilled tech professionals, based in Latin America, drives digital disruption by partnering with U.S. companies on their most impactful projects. Whether collaborating with Fortune 500 giants or scaling startups, we deliver results that make a difference.</p><p>By applying for this position, you’re taking the first step in joining a dynamic team that values your expertise and aspirations. We aim to align your skills with opportunities that foster exceptional career growth and success while contributing to transformative projects that shape the future.</p><h2><strong>Our Client</strong></h2><p>Our client is an elite, tech-powered real estate media company and brokerage that is completely reinventing how real estate is bought, sold, and experienced. Founded by an industry pioneer, they have built a vertically integrated ecosystem combining luxury residential sales, a powerful global education platform, and an in-house creative agency. They treat technology as a core differentiator, empowering lean, autonomous engineering teams to ship quickly, write clean code, and build the future of real estate tech.</p><h2><br><strong>Job Summary</strong></h2><p>The Hands-On Tech Lead is an elite full-stack \"Unicorn\" Generalist who leads technical execution from the front by writing code every single day. In this role, you will sidestep endless theoretical debates and take complete ownership of end-to-end features, building high-performance TypeScript APIs, custom state-machine-driven backend systems, and the user-facing web experiences that connect them. This position requires an expert-level engineer w",
+    "pre_score": 7.8,
+    "encontrados": {
+      "A": [],
+      "B": [
+        "llm"
+      ],
+      "C": [
+        "impact",
+        "claude",
+        "make"
+      ],
+      "async": [
+        "async"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "bc8c32ebb74af6e76eeba7f72d8d9b7b",
+    "score": 7.8,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Business Analyst",
+    "company": "Elite Software Automation",
+    "url": "https://weworkremotely.com/remote-jobs/elite-software-automation-business-analyst-2",
+    "source": "We Work Remotely (Operations)",
+    "description": "<img src=\"https://we-work-remotely.imgix.net/logos/0083/7653/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" />\n\n<p>\n  <strong>Headquarters:</strong> Virtual\n    <br /><strong>URL:</strong> <a href=\"https://jobs.elitesoftwareautomation.com/\">https://jobs.elitesoftwareautomation.com/</a>\n</p>\n\n<p class=\"text-muted-foreground italic mb-4\">(Remote, Full-Time, Anywhere in the World)</p>\n<p class=\"text-foreground mb-1\">Starting Pay:&nbsp;USD $110-150K/year for Advanced/Senior level, $80-100K/year for Mid-level (details below)</p>\n<p class=\"text-foreground mb-6\">Further pay promotions available based on performance once on the job</p>\n<p class=\"text-foreground font-semibold mb-1\">We are only accepting experienced candidates at this time.</p>\n<p class=\"text-foreground font-semibold mb-6\">If you are a beginner, your application will be rejected.</p>\n<p class=\"text-muted-foreground italic text-sm mt-6 mb-10\"><strong>Note:</strong> this job listing is incomplete due to the job board's word limit. Click \"Apply\" to see the full job description and application on our jobs site.</p>\n\n<h2 class=\"text-[28px] font-semibold text-foreground tracking-tight mb-6\">Introduction</h2>\n<div class=\"space-y-4 text-foreground leading-relaxed\">\n<p>Elite Software Automation (ESA) is a boutique consulting firm that transforms successful, fast-growing businesses into dominant market players through comprehensive operational optimization.</p>\n<p>Our clients are established 7 and 8 figure enterprises with service-intensive business models. They excel at client acquisition and sales, but face severe operational challenges as they scale. Their back-end operations struggle with process effectiveness, system inadequacy, and automation deficiency. Growth creates chaos. Chaos forces stabilization. Stabilization stalls growth. The cycle repeats, each iteration more expensive and less effective.</p>\n<p>This is where we come in.</p>\n<p>We don't implement cookie-cutter solutions or recycle m",
+    "pre_score": 7.7,
+    "encontrados": {
+      "A": [],
+      "B": [],
+      "C": [
+        "make"
+      ],
+      "async": [
+        "flexible schedule",
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "0550651d867f1fc4c91630d1ef9599f6",
+    "score": 7.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Senior Backend Rust Developer",
+    "company": "Proxify",
+    "url": "https://www.workingnomads.com/job/go/1641422/",
+    "source": "Working Nomads",
+    "description": "<h3><strong>About us:</strong></h3>\n<p> </p>\n<p>Talent has no borders. Proxify's mission is to connect top developers around the world with the opportunities they deserve. So, it doesn't matter where you are; we are here to help you fast-track your independent career in the right direction. 🙂</p>\n<p>Since our launch, Proxify's developers have successfully worked with 1200+ happy clients to build their products and growth features. 5000+ talented developers trust Proxify and its network to fulfill their dreams and objectives.</p>\n<p>Proxify is shaped by a global network of supportive, talented developers interested in remote full-time jobs. Our Glassdoor (4.5/5) and Trustpilot (4.8/5) ratings reflect the trust developers place in us and our commitment to our members' success.</p>\n<p> </p>\n<p><strong>The Role:</strong></p>\n<p> </p>\n<p>We are looking for a Senior Backend Rust Developer to join one of our high-growth client teams as a technical lead for their core systems. In an era where performance and memory safety are non-negotiable, you will be responsible for architecting and building low-latency, high-throughput services that serve as the backbone of the client's platform.</p>\n<p> </p>\n<p>You will lead the transition from legacy services to high-performance Rust microservices, leveraging the ownership model to eliminate data races and ensure memory safety. This is a role for a developer who loves \"getting close to the metal\" while maintaining the productivity of a modern web stack.</p>\n<p> </p>\n<p><strong>What we are looking for:</strong></p>\n<p> </p>\n<ul>\n<li>Professional experience building production-grade applications in Rust. You should have a deep understanding of ownership, borrowing, lifetimes, and the Send/Sync traits.</li>\n<li>Strong experience with the Tokio ecosystem and asynchronous programming patterns.</li>\n<li>Proficiency with modern Rust web frameworks such as Axum, Actix-web, or Rocket.</li>\n<li>Proven ability to design distributed systems using",
+    "pre_score": 7.7,
+    "encontrados": {
+      "A": [],
+      "B": [],
+      "C": [
+        "sql"
+      ],
+      "async": [
+        "async",
+        "asynchronous"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "617aee50368f58f3ebc98b5cadf95c55",
+    "score": 7.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Staff Product Engineer (São Paulo)",
+    "company": "LawnStarter",
+    "url": "https://remotive.com/remote-jobs/product/staff-product-engineer-sao-paulo-2091000",
+    "source": "Remotive",
+    "description": "<p><strong>This is a remote role for candidates located in </strong><span style=\"white-space: normal;\"><strong>São Paulo</strong></span><strong>, Brazil.</strong></p>\n<p> </p>\n<p><strong>LawnStarter</strong></p>\n<p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $100M in annual bookings. We're expanding beyond lawn care to become the one-stop shop for all home services — operating across three brands (LawnStarter, Lawn Love, Home Gnome) on a single shared platform.</p>\n<p> </p>\n<p><strong>About Engineering at LawnStarter</strong></p>\n<p>We build in small, focused initiative teams: a Product Engineer working alongside a PM and a designer, supported by an Engineering Manager who helps you grow. You'll also work shoulder-to-shoulder with engineering peers across initiatives in a shared codebase. The whole team owns whether the work moves its metric.</p>\n<p>AI coding agents are a force multiplier here — they give a small, senior team the leverage to ship more, faster, and at a higher bar for quality. We hire engineers who are wired for ownership and energized by shipping to a real marketplace with customers and pros on both sides.</p>\n<p> </p>\n<p><strong>The Role</strong></p>\n<p>You're the engineering anchor of an initiative — working as part of a tight team with your PM and designer, and alongside engineering peers on adjacent initiatives. You have a hand in the full lifecycle: shaping the problem, deciding the technical approach, directing AI agents to implement much of the code, shipping to production, and — with your team — owning the outcome.</p>\n<p>You're measured by impact, not by lines of code merged. When an agent can ship something safely, your job is to make sure it's done right and the metric moves. When the work calls for careful, hand-written code in a sensitive area, you write it yourself.</p>\n<p><strong>What makes this role exciting:</strong></p>\n<ul style=\"\">\n<li style=\"\"><strong>You ship end-to-en",
+    "pre_score": 7.4,
+    "encontrados": {
+      "A": [],
+      "B": [],
+      "C": [
+        "impact",
+        "funnel",
+        "claude",
+        "make"
+      ],
+      "async": [
+        "work from anywhere"
+      ],
+      "neg_media": [],
+      "neg_fuerte": []
+    },
+    "_id": "13382ddd8246f707884cb022d2354be2",
+    "score": 7.4,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  }
+]

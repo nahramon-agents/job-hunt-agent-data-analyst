@@ -35,15 +35,16 @@ KEYWORDS_B = [
     "generative ai", "llm", "content lead",
 ]
 
-# Nivel C (+0.3) — Solo stack técnico y valores de empresa (NO títulos de roles genéricos)
+# Nivel C (+0.3) — Solo herramientas de IA/contenido y señales de cultura
+# IMPORTANTE: Python y SQL NO están acá — inflan scores de roles de ingeniería
 KEYWORDS_C = [
     "personal development", "personal growth", "mindfulness",
     "sustainability", "impact", "mission-driven", "purpose-driven",
     "funnel", "creator brand", "online education", "cohort",
-    # Stack de Nahuel
+    # Stack de IA y contenido de Nahuel (no técnico genérico)
     "claude", "chatgpt", "notion", "canva", "mailerlite",
-    "perplexity", "openai", "python", "sql", "zapier", "make.com",
-    "airtable", "make", "n8n",
+    "perplexity", "openai", "zapier", "make.com", "airtable", "n8n",
+    "ai-assisted", "ai-powered", "ai tools", "ai-first",
 ]
 
 # Bonus modalidad (+1.2) — señal fuerte de diseño de vida compatible
@@ -121,7 +122,7 @@ def pre_score(title: str, description: str) -> dict:
     Devuelve score y listas para contexto.
     """
     texto = (title + " " + description).lower()
-    score = 5.0
+    score = 2.0  # base baja — el score debe ganarse con keywords reales
     encontrados = {"A": [], "B": [], "C": [], "async": [], "neg_media": [], "neg_fuerte": []}
 
     # Filtro duro: industrias bloqueadas
@@ -198,21 +199,21 @@ PERFIL REAL DE NAHUEL:
 - Ubicación: Córdoba, Argentina — solo 100% remoto
 - Situación actual: Sus roles son freelance/colaboración, NO tiene experiencia como empleado en empresa corporativa en estos roles. Es autodidacta en IA, no tiene certificaciones formales de empresas tech.
 
-NO-NEGOCIABLES:
-- 100% remoto (no híbrido)
-- Sin micromanagement ni estructura rígida
-- Sin trabajar fines de semana
+NO-NEGOCIABLES (estos sí son vetos duros):
+- 100% remoto — descartá solo si dice EXPLÍCITAMENTE "on-site", "hybrid", "in-office", "presencial"
+- Sin trabajar fines de semana — descartá solo si lo dice explícitamente
+- Roles de ingeniería de software pura, diseño UX/UI, ventas puras sin componente estratégico
 
-EMPRESAS QUE SÍ:
-- Desarrollo personal, bienestar, educación transformacional
-- IA con propósito: herramientas que empoderan personas
-- Creator economy con valores, startups que democratizan oportunidades
-- Salud mental, mindfulness, sostenibilidad real
+RESTRICCIONES GEOGRÁFICAS — REGLA CRÍTICA:
+Solo marcá restricción geográfica si la oferta lo dice EXPLÍCITAMENTE con frases como "must be located in", "US only", "requires work authorization", "must reside in". 
+Si la empresa es de Australia, UK o USA pero NO dice que el candidato debe estar ahí — NO es restricción. Marcalo como "Verificar con la empresa" en red_flags, pero NO bajes el score por eso. Muchas empresas globales contratan remoto worldwide aunque tengan sede en otro país.
 
-EMPRESAS QUE NO:
-- Extractivistas, farmacéuticas corporativas, consumo masivo sin propósito
-- Tecnología de vigilancia o manipulación
-- Gambling, tabaco, alcohol, fast fashion
+FILTRO DE VALORES — SOLO VETA LO EXPLÍCITAMENTE DAÑINO:
+Descartá con score bajo ÚNICAMENTE si la empresa opera en: gambling, tabaco, alcohol, tecnología de vigilancia/manipulación masiva, industrias extractivistas (minería, petróleo), fast fashion sin propósito.
+Una empresa B2B de software, finanzas, salud corporativa, hardware, o cualquier industria "neutral" NO es motivo de descarte. El tipo de empresa no es un veto — solo lo es si hay daño explícito. Nahuel necesita trabajar y puede hacerlo en empresas de distintos sectores.
+
+TIPO DE EMPRESA — NO ES CRITERIO DE DESCARTE:
+Que sea corporativa, grande, orientada a ventas B2B, o que no sea "creator economy" — ninguna de esas cosas descarta una oferta. El agente evalúa el ROL, no la cultura de la empresa. Una oferta de Content Operations Manager en una empresa tech B2B puede ser perfectamente válida.
 
 GRUPOS DE ROLES — clasificá la oferta en UNO de estos grupos:
 
@@ -220,19 +221,21 @@ GRUPO 1 — AI Content & Story Researcher
 Roles: AI content researcher, story researcher, YouTube researcher, content research specialist, AI-assisted research, narrative researcher, documentary researcher. Empresas: YouTube studios, creator agencies, media companies, content networks, podcasters, documentalistas.
 
 GRUPO 2 — AI Content & Operations Strategist
-Roles: AI content strategist, marketing operations + AI, content operations manager, AI marketing strategist, fractional content strategist, AI workflows for content, revenue operations content. Empresas: agencias de marketing, B2B SaaS, fractional CMO setups, startups de contenido.
+Roles: AI content strategist, marketing operations + AI, content operations manager, AI marketing strategist, fractional content strategist, AI workflows for content, revenue operations content, marketing automation specialist. Empresas: agencias de marketing, B2B SaaS, fractional CMO setups, startups de contenido, empresas tech de cualquier industria.
 
 GRUPO 3 — AI Workflow & Automation Specialist
-Roles: AI automation specialist, AI workflow architect, prompt engineer (contenido/ops), content automation specialist, knowledge workflow automation, AI ops specialist. Empresas: startups, agencias, cualquier empresa que automatice flujos de conocimiento con IA.
+Roles: AI automation specialist, AI workflow architect, prompt engineer (contenido/ops), content automation specialist, knowledge workflow automation, AI ops specialist, marketing automation specialist. Empresas: startups, agencias, cualquier empresa que automatice flujos con IA.
 
 GRUPO 4 — Data & Growth Analyst (Content & Creator)
-Roles: marketing data analyst, growth analyst, content analytics, product analytics media/creator economy, data analyst marketing, funnel performance analyst. Empresas: creator economy, SaaS de marketing, agencias de growth.
+Roles: marketing data analyst, growth analyst, content analytics, product analytics, data analyst marketing, funnel performance analyst. Empresas: cualquier empresa con foco en marketing data o growth.
 
 GRUPO 5 — Digital Strategy & Growth Lead (Creator & Education)
-Roles: digital marketing strategist educación/creator, growth lead online courses, funnel strategist, content & lifecycle marketing, digital strategy para coaches/info-products. Empresas: coaching brands, creator educators, cohort-based courses, solopreneur agencies.
+Roles: digital marketing strategist, growth lead, funnel strategist, content & lifecycle marketing, digital strategy. Empresas: cualquier empresa con foco en marketing digital o crecimiento.
 
 GRUPO 0 — No encaja en ningún grupo
-Usá este grupo si la oferta no tiene fit real con ninguno de los 5 grupos anteriores, independientemente del score.
+Usá este grupo SOLO si el rol es claramente incompatible con el perfil de Nahuel: ingeniería de software, diseño UX/UI, ventas puras, roles presenciales confirmados, roles que requieren certificaciones técnicas específicas que Nahuel no tiene.
+
+IMPORTANTE: Sé generoso con los grupos. Si un rol tiene elementos de contenido, estrategia, automatización o datos aplicados a marketing — probablemente encaja en algún grupo. La duda se resuelve a favor de incluirlo.
 
 Tu tarea: evaluar la oferta y devolver ÚNICAMENTE un JSON válido, sin texto antes ni después, sin backticks, sin markdown.
 
@@ -244,8 +247,8 @@ El JSON debe tener exactamente estas claves:
   "por_que_encaja": "(1-2 líneas honestas sobre el fit real)",
   "brecha_stack": "(honesto y directo: qué pide el puesto que Nahuel no tiene o tiene débil. Si no hay brecha significativa, decí 'Stack suficiente para este rol')",
   "posibilidad_real": "(una de estas tres: 'Alta', 'Media', 'Baja') + 1 línea explicando por qué",
-  "red_flags": ["lista de red flags detectadas, puede ser lista vacía []"],
-  "location_restriction": "(si detectás que es USA/UK/AU/CA only aunque esté implícito o escondido, describilo. Si no hay restricción clara: 'Sin restricción detectada')",
+  "red_flags": ["lista de red flags — solo hechos explícitos de la oferta, no suposiciones. Máximo 3."],
+  "location_restriction": "(SOLO si la oferta lo dice explícitamente. Si no, escribí: 'Sin restricción explícita — verificar si aplica remoto global')",
   "modalidad": "(una de: full-time / part-time / contract / freelance / unclear)",
   "salario": "(lo que diga la oferta textualmente, o 'No especificado')"
 }"""

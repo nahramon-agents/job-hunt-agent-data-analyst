@@ -1,201 +1,72 @@
 [
   {
-    "title": "Business Operations Analyst",
-    "company": "TextUs",
-    "url": "https://remoteOK.com/remote-jobs/remote-business-operations-analyst-textus-1134500",
+    "title": "CRO specialist",
+    "company": "sofatutor",
+    "url": "https://remoteOK.com/remote-jobs/remote-cro-specialist-sofatutor-1134522",
     "source": "Remote OK",
-    "description": "<strong>WHY TEXTUS<br><br></strong>TextUs on a mission to revolutionize business communication by enabling seamless and impactful engagement between workers and consumers. With a focus on innovation, ease of use, and delivering measurable results, our strategy is rooted in creating tools that outperform other messaging solutions while fostering trust and value for our customers and stakeholders.<br><br>At TextUs, every team member is empowered to make a difference. Our collaborative and data-driven culture, combined with the guidance of a proven leadership team, ensures you have the resources and support to excel. Together, weâre building the future of mobile-first, conversational engagement and redefining whatâs possible for businesses and their stakeholders.<br><br>As our Business Operations Analyst, you'll play a key role in supporting the systems and processes that keep our business running smoothly. Reporting to the Revenue Operations Manager, you'll partner with teams across Sales, Marketing, Customer Success, Finance, and Operations to improve workflows, maintain business systems, and ensure our teams have the tools and data they need to be successful.<br><br>You enjoy solving operational challenges through technology, process improvement, and data. You're naturally curious, embrace new tools, and are excited to explore how automation and AI can help teams work smarter and scale more efficiently.<br><br><strong>CORE RESPONSIBILITIES<br><br></strong><strong>Business Operations &amp; Systems Support<br><br></strong><ul><li>Partner with cross-functional teams to optimize business processes and improve operational efficiency across the organization.</li><li>Support the day-to-day administration and continuous improvement of our business systems, including CRM, ERP, marketing automation, and internal tools.</li><li>Troubleshoot system issues, manage enhancement requests, and recommend process improvements that improve the employee experience.</li><li>Help eval",
-    "pre_score": 6.6,
-    "encontrados": {
-      "A": [
-        "workflow automation",
-        "marketing automation"
-      ],
-      "B": [
-        "ai-powered"
-      ],
-      "C": [
-        "impact",
-        "zapier",
-        "ai-powered"
-      ],
-      "async": [],
-      "neg_media": [],
-      "neg_fuerte": []
-    },
-    "_id": "885a91a0ab367e818fb6e7607e22917e",
-    "score": 5.5,
-    "grupo": 4,
-    "resumen": "Rol de analista de operaciones de negocio en TextUs, una empresa B2B SaaS de mensajería conversacional para empresas. El puesto reporta al Revenue Operations Manager y se enfoca en administrar sistemas (CRM, ERP, automatización), análisis de datos y mejora de procesos internos.",
-    "por_que_encaja": "El perfil de Nahuel como Data Analyst con 4 años de experiencia y manejo de SQL encaja con las responsabilidades de análisis y datos. Su experiencia con automatización y herramientas de IA también es relevante para la exploración de eficiencias que menciona el rol.",
-    "brecha_stack": "El rol pide administración de CRM/ERP (Salesforce probablemente) y sistemas empresariales que Nahuel no ha operado en contexto corporativo. No tiene experiencia como empleado interno en Revenue Operations ni en soporte de sistemas B2B. Su background es freelance/colaborativo, no de analista de operaciones en empresa SaaS.",
-    "posibilidad_real": "Media — Las habilidades técnicas de datos encajan, pero la falta de experiencia corporativa en RevOps y administración de CRM empresarial es una brecha real que puede pesar en el proceso de selección.",
-    "red_flags": [
-      "Descripción truncada — no se puede evaluar el stack requerido completo ni el rango salarial",
-      "Rol muy orientado a operaciones internas corporativas (CRM, ERP, soporte de sistemas) — puede alejarse del perfil de contenido/IA de Nahuel",
-      "Sin restricción geográfica explícita, pero empresa con sede en USA — verificar si contratan remoto global"
-    ],
-    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
-    "modalidad": "full-time",
-    "salario": "No especificado"
-  },
-  {
-    "title": "AI Content Writer",
-    "company": "",
-    "url": "https://himalayas.app/jobs/",
-    "source": "Himalayas",
-    "description": "<h3>This is a remote position.</h3><div><div><div><div><div dir=\"auto\"><div><div><h3>Content Writer &amp; AI Content Specialist (Accounting, Tax &amp; Business Education)</h3><h3>About <a href=\"https://himalayas.app/companies/business-financial-group\">Business Financial Group</a> (BFG)</h3><p><a href=\"https://himalayas.app/companies/business-financial-group\">Business Financial Group</a> (BFG) is a fast-growing U.S.-based accounting, tax, payroll, CFO advisory, IRS resolution, and business consulting firm serving business owners across the United States. We help entrepreneurs reduce taxes, improve profitability, and build stronger businesses through technology-driven financial systems.</p><p>In addition to our professional services, we are launching <b>BFG Tax School</b>, an education platform designed to train the next generation of U.S. tax and accounting professionals. We are building an AI-first marketing team that creates educational content across websites, social media, email campaigns, webinars, business guides, and online courses.</p><h3>Position Overview<p>We are seeking a talented <b>Content Writer &amp; AI Content Specialist</b> to join our growing marketing team. This role is ideal for someone who enjoys writing, researching business topics, simplifying complex concepts, and using AI tools to create high-quality content efficiently.</p><p>You will collaborate with marketing leaders and subject matter experts to develop educational and marketing content for both <a href=\"https://himalayas.app/companies/business-financial-group\">Business Financial Group</a> and BFG Tax School.</p></h3><h3>Experience Required<ul><li>3–5 years of professional content writing experience</li><li>Experience in one or more of the following areas:  <ul><li>Business</li><li>Finance</li><li>Accounting</li><li>Taxation</li><li>Professional Services</li><li>Technology (SaaS)</li><li>Education</li><li>B2B Marketing</li></ul></li><li>Experience writing long-form educational and SEO con",
-    "pre_score": 5.5,
+    "description": "<p>Design and run A/B tests that directly impact subscription growth for one of Europe's leading EdTech platforms â 1M+ users, real experiments, measurable results.</p><p><br /></p><p>Weâre looking for aÂ <strong>Conversion Rate Optimization (CRO) Specialist (gn)</strong>Â to join our Product Growth Team and help drive one of sofatutorâs most important goals: turning more parents into customers who trust us to support their childrenâs learning journey. In this role, your work will have a direct and measurable impact on the companyâs success. By designing and running smart, strategic A/B tests, youâll help increase user acquisition, activation, and retention across our subscription-based learning products. Youâll collaborate closely with designers, developers, data analysts, and senior leadership to uncover high-potential growth opportunities and turn insights into real results.</p><p><br />ðÂ <strong>100% remote (EMEA)Â </strong>| â³Â <strong>32-40h/week</strong></p><p><br /></p><h3>Your Tasks:</h3><ul><li><p><strong>Define and implement growth experiments across the funnel â</strong>Â from hypothesis to launch and evaluation.</p></li><li><p><strong>Maintain a clear pipeline of experiments</strong>Â based on impact, effort, and learning value.</p></li><li><p><strong>Collaborate closely with design, engineering</strong>, and keyÂ <strong>stakeholders</strong>Â to translate testing concepts into high-quality experiments.</p></li><li><p><strong>Leverage analytics, user research, competitor insights</strong>, and best practices to identify opportunities and build strong hypotheses.</p></li><li><p><strong>Share</strong>Â experimentÂ <strong>results, insights, and learnings</strong>Â transparently with the team and stakeholders to drive alignment and continuous improvement.</p></li></ul><h2 class=\"sc-1npqnwg-4 sc-1npqnwg-5 sc-1uwf3m5-0 sc-1uwf3m5-1 bvUNBQ custom-css-style-job-requirements\">What you bring to the table:</h2><div class=\"sc-1fwbcuw-0 dzeKP",
+    "pre_score": 5.7,
     "encontrados": {
       "A": [],
       "B": [
-        "email marketing",
-        "ai tools"
-      ],
-      "C": [
-        "claude",
-        "chatgpt",
-        "canva",
-        "perplexity",
-        "ai-assisted",
-        "ai tools",
-        "ai-first"
-      ],
-      "async": [],
-      "neg_media": [],
-      "neg_fuerte": []
-    },
-    "_id": "5113f6f82db7adb1a58bf0c0feb13686",
-    "score": 5.5,
-    "grupo": 2,
-    "resumen": "Rol de Content Writer con componente de IA para una firma contable/fiscal y su plataforma educativa BFG Tax School. Empresa B2B de servicios financieros en crecimiento con enfoque en educación para emprendedores.",
-    "por_que_encaja": "Nahuel tiene experiencia real en AI content research y producción de contenido educativo. El uso de herramientas de IA y la simplificación de conceptos complejos son parte de su stack habitual.",
-    "brecha_stack": "El rol pide 3-5 años de experiencia en content writing profesional — Nahuel tiene experiencia real pero freelance/colaborativa, no como empleado corporativo. Además, el dominio de temas contables/fiscales/tributarios de USA es una brecha temática importante que no se resuelve solo con IA.",
-    "posibilidad_real": "Media — El fit técnico con IA existe, pero la especialización en contabilidad/impuestos USA y la falta de experiencia formal en content writing pueden ser obstáculos concretos en la selección.",
-    "red_flags": [
-      "La empresa es US-based y el contenido es específico de regulaciones fiscales/contables estadounidenses — requiere conocimiento del sistema tributario de USA que Nahuel no tiene orgánicamente.",
-      "Descripción truncada: no se puede ver el stack requerido completo ni condiciones de compensación.",
-      "No especifica si contratan fuera de USA explícitamente — el foco en 'U.S. tax professionals' sugiere posible preferencia por candidatos con contexto local."
-    ],
-    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
-    "modalidad": "full-time",
-    "salario": "No especificado"
-  },
-  {
-    "title": "Digital Marketing Specialist",
-    "company": "Wish You Were Here Group",
-    "url": "https://remoteOK.com/remote-jobs/remote-digital-marketing-specialist-wish-you-were-here-group-1134403",
-    "source": "Remote OK",
-    "description": "<br><p>Digital Marketing Manager </p><p><br></p><p>Wish You Were Here Group</p><p><br></p><p>Location: TBD</p><p>Employment Type: Full-Time</p><p><br></p><p><br></p><p>About Wish You Were Here Group</p><p><br></p><p>Wish You Were Here Group is an internationally recognized hospitality company behind some of the industryâs most celebrated restaurants, cafÃ©s and lifestyle destinations.</p><p><br></p><p>Our brands create memorable experiences through exceptional hospitality, design, food and culture. As we continue to expand across the United States and internationally, weâre looking for an ambitious digital leader to build the next chapter of our digital growth.</p><p><br></p><p><br></p><p>The Opportunity</p><p><br></p><p>We are seeking an experienced Digital Marketing Manager to lead the digital marketing strategy across our entire portfolio of brands.</p><p><br></p><p>Reporting directly to senior leadership, this role will own our digital ecosystemâfrom paid media and CRM to websites, SEO, analytics, reservations, online ordering and guest acquisition.</p><p><br></p><p>Youâll work alongside our Senior Marketing Manager, Social Media Manager, creative team, agency partners and restaurant leadership to develop digital strategies that drive measurable revenue growth while maintaining the premium positioning of each brand.</p><p><br></p><p>This is a highly strategic, commercially focused leadership role suited to someone who loves combining creativity, technology and data to build best-in-class hospitality brands.</p><p><br></p><p><br></p><p>Key Responsibilities</p><p><br></p><p>Digital Strategy &amp; Growth</p><p><br></p><p>Develop and execute the Group-wide digital marketing strategy across all brands.</p><p>Drive guest acquisition, retention and lifetime value.</p><p>Build annual digital marketing plans aligned with business objectives.</p><p>Identify emerging digital trends, technologies and opportunities.</p><p>Develop scalable systems to support future op",
-    "pre_score": 5.4,
-    "encontrados": {
-      "A": [
-        "workflow automation",
-        "marketing automation"
-      ],
-      "B": [
-        "digital strategy",
-        "email marketing",
-        "ai tools",
-        "lifecycle marketing"
+        "edtech"
       ],
       "C": [
         "impact",
-        "ai tools"
-      ],
-      "async": [],
-      "neg_media": [
-        "paid media",
-        "google ads",
-        "meta ads"
-      ],
-      "neg_fuerte": []
-    },
-    "_id": "c46023cc55b82d535b2e2be503e9b769",
-    "score": 5.2,
-    "grupo": 5,
-    "resumen": "Digital Marketing Manager para una empresa de hospitalidad (restaurantes y lifestyle) con presencia en USA e internacional. El rol lidera toda la estrategia digital: paid media, CRM, SEO, analytics, email, reservas y adquisición de guests a nivel de todo el portfolio de marcas.",
-    "por_que_encaja": "Tiene componentes de estrategia digital, automatización de marketing y analytics que Nahuel maneja. Su experiencia en funnels, email marketing y estrategia de contenido con IA es relevante parcialmente.",
-    "brecha_stack": "El rol pide experiencia sólida en paid media (Google Ads, Meta Ads) y gestión de CRM corporativo — áreas donde Nahuel no tiene historial demostrable. También requiere experiencia liderando equipos y agencias, y manejo de plataformas de reservas/e-commerce específicas de hospitalidad. Su background no es de marketing digital corporativo tradicional.",
-    "posibilidad_real": "Baja — el rol es un puesto de liderazgo senior con foco en paid media, CRM y revenue para industria de hospitalidad; Nahuel no tiene experiencia corporativa ni en ese vertical específico.",
-    "red_flags": [
-      "Location: TBD — no está claro si será remoto o presencial; la empresa opera restaurantes físicos, lo cual sugiere posible componente presencial",
-      "Rol de manager senior con gestión de equipos y agencias — nivel de experiencia corporativa que Nahuel no tiene",
-      "Industria de hospitalidad/restaurantes: nicho muy específico con métricas y plataformas propias (reservas, POS, ordering) que no forman parte del stack de Nahuel"
-    ],
-    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
-    "modalidad": "full-time",
-    "salario": "No especificado"
-  },
-  {
-    "title": "Founder Ghostwriter for a U.S. based Google Ads Agency",
-    "company": "Paired",
-    "url": "https://remoteOK.com/remote-jobs/remote-founder-ghostwriter-for-a-u-s-based-google-ads-agency-paired-1134487",
-    "source": "Remote OK",
-    "description": "Paired is a global staffing and recruiting agency that pairs remote work with top-tier talent. We admire the importance of innovative social media strategies and are committed to connecting talented individuals with great companies that need their unique skills. Our mission is to provide great jobs to gifted people, regardless of location.<br><br><strong>About The Client<br><br></strong>Our client is the fastest-growing Google Ads agency in the world. Led by founder and CEO Jem, the agency manages nine figures in annual ad spend across more than 180 eCommerce and DTC brands, powered by direct relationships with Google's product teams and access to alpha and beta features that most agencies never touch. Their strategies aren't public, their standards are exceptionally high, and their results speak for themselves.<br><br>The agency has grown rapidly because of the quality of its work while intentionally maintaining a senior, highly selective team. Their average client retention extends well beyond a yearâan uncommon achievement in the industry. Joining the team means working alongside some of the best operators in performance marketing and collaborating directly with a founder whose personal brand is quickly becoming one of the most influential voices in the space.<br><br><strong>About The Role<br><br></strong>The voice already exists. It is defined, documented, and unmistakable. Your core focus is scripting LinkedIn and Twitter across every content pillar, at volume, without it ever reading like a content calendar and without it ever reading like AI. From there you will write Instagram video scripts and help shape where the personal brand goes next. This is not a role for someone who needs a brief for every post. It is for a writer who reads the founder's world, catches what is worth saying before anyone else does, helps steer the direction, and says it in his voice better than he would have.<br><br>Key Responsibilities<br><br><ul><li>Script LinkedIn and Twitter in",
-    "pre_score": 3.7,
-    "encontrados": {
-      "A": [],
-      "B": [],
-      "C": [
-        "claude"
+        "funnel"
       ],
       "async": [
         "flexible hours",
-        "work from anywhere"
+        "flexible work"
       ],
-      "neg_media": [
-        "google ads"
-      ],
+      "neg_media": [],
       "neg_fuerte": []
     },
-    "_id": "ced633401febfb4742fe33b162917236",
-    "score": 5.5,
-    "grupo": 1,
-    "resumen": "Rol de ghostwriter para el fundador de una agencia de Google Ads, enfocado en crear contenido para LinkedIn, Twitter e Instagram en voz del CEO. No es investigación ni estrategia de contenido — es escritura creativa de marca personal en inglés, a volumen y con voz definida.",
-    "por_que_encaja": "Nahuel tiene experiencia creando contenido con IA para LarisaMagica y para el canal de YouTube de Ethan, lo que muestra familiaridad con voz de marca y formatos de redes. Sin embargo, el foco aquí es ghostwriting puro en inglés, no estrategia ni investigación.",
-    "brecha_stack": "El rol exige dominio de escritura creativa en inglés nativo o near-native con voz específica — más allá de C1 funcional. No pide habilidades técnicas de IA ni datos. Nahuel no tiene portfolio demostrable de ghostwriting en inglés para fundadores o marcas personales. Esa es la brecha central.",
-    "posibilidad_real": "Media — el inglés de Nahuel es sólido pero el rol exige que el contenido nunca 'suene a IA ni a planilla de contenido', lo que demanda un nivel de craft en escritura en inglés que no está documentado en su perfil.",
+    "_id": "f55b43766755105510a9bd65c7adcb41",
+    "score": 5.2,
+    "grupo": 4,
+    "resumen": "Rol de CRO Specialist enfocado en diseñar y ejecutar A/B tests para aumentar conversiones en una plataforma EdTech europea con +1M usuarios. Es un puesto técnico dentro del equipo de Product Growth, orientado a experimentos de funnel y análisis de datos.",
+    "por_que_encaja": "El background de Nahuel en data analytics y su experiencia con funnels en LarisaMagica le dan base real. Sin embargo, el rol requiere expertise técnico específico en CRO y experimentación estadística que Nahuel no ha ejercido profesionalmente.",
+    "brecha_stack": "CRO puro no es el core de Nahuel — no tiene experiencia demostrable en A/B testing sistemático ni herramientas especializadas (Optimizely, VWO, Google Optimize, etc.). El rol requiere pensamiento estadístico aplicado a experimentos, que va más allá de su perfil de data analyst generalista. Brecha real.",
+    "posibilidad_real": "Baja — el rol es técnicamente especializado en experimentación y CRO; Nahuel tiene elementos relacionados pero no el perfil exacto que busca una empresa de este tamaño.",
     "red_flags": [
-      "Se busca escritura 100% en inglés con voz de fundador — demanda altísima de naturalidad idiomática",
-      "Sin brief: el escritor debe anticipar qué vale la pena decir — requiere contexto muy profundo del mundo del fundador",
-      "Paired es staffing agency intermediaria — las condiciones reales del cliente no están todas detalladas"
+      "100% remoto EMEA — restricción geográfica explícita que excluye a candidatos fuera de Europa y Medio Oriente/África",
+      "Rol muy técnico y especializado en CRO puro, lejos del core de AI Content & Operations de Nahuel"
     ],
-    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
-    "modalidad": "unclear",
+    "location_restriction": "Restricción explícita: '100% remote (EMEA)' — Nahuel está en Argentina (LATAM), queda fuera de la región requerida",
+    "modalidad": "full-time",
     "salario": "No especificado"
   },
   {
-    "title": "Data Services Analyst",
-    "company": "Cloudbeds",
-    "url": "https://jobicy.com/jobs/147600-data-services-analyst",
-    "source": "Jobicy",
-    "description": "<div><p><strong>What Makes Us Unique </strong></p>\n<p>At Cloudbeds, we're not just building software, we’re transforming hospitality. Our intelligently designed platform powers properties across 150 countries, processing billions in bookings annually. From independent properties to hotel groups, we help hoteliers transform operations and uplevel their commercial strategy through a unified platform that integrates with hundreds of partners. And we do it with a completely remote team. Imagine working alongside global innovators to build AI-powered solutions that solve hoteliers' biggest challenges. Since our founding in 2012, we've become the World's Best Hotel PMS Solutions Provider and landed on Deloitte's Technology Fast 500 again in 2024 but we're just getting started. </p></div><p><strong>How You'll Make an Impact:</strong></p><p>We are seeking a dynamic Data Import &amp; Reporting Analyst to join our customer success team. This role bridges the gap between data services and business intelligence.</p><p>Your mission is two-fold: first, you will orchestrate smooth data migrations, helping new clients transition their historical data (reservations, guest profiles, inventory) from legacy systems to Cloudbeds. Second, you will act as a reporting strategist, coaching clients on how to leverage Cloudbeds’ reporting features to extract meaningful insights, track KPIs, and drive data-backed business decisions from day one.</p><p><strong>Our Data Services Team:</strong></p><p>We are a collaborative, remote-first team energised by solving complex data puzzles and transforming technical transitions into seamless, empowering experiences for hoteliers worldwide. We thrive on cross-functional teamwork, blending analytical precision with a passion for client education so that no property is left in the dark. If you love deep-diving into spreadsheets just as much as celebrating a client’s \"aha!\" moment when their data reporting clicks, these are your people.</p><p><strong>What Y",
-    "pre_score": 3.3,
+    "title": "Email + SMS Marketing Strategist",
+    "company": "Bebonia",
+    "url": "https://www.workingnomads.com/job/go/1713292/",
+    "source": "Working Nomads",
+    "description": "<p><strong>Remote · Reports to Founder/CEO + Marketing Lead</strong></p>\n<p><strong>About Bebonia</strong></p>\n<p>Bebonia is the #1-rated curly hair extensions brand — voted best by InStyle, Byrdie, Allure, Glamour, Brides, and NaturallyCurly. Founded in 2017 by Soleil, a Dominican woman who built the product she couldn’t find, Bebonia has served 75,000+ customers and is run by a small, close-knit team of curly-haired women.</p>\n<p>We believe curly hair should be enhanced, not erased. Every product we make, every email we send, and every campaign we create is grounded in that belief.<br/> </p>\n<p><strong>The Role</strong></p>\n<p>We’re looking for a strategic, creative, and detail-oriented Email + SMS Marketing Strategist to lead Bebonia’s owned marketing program across campaigns, flows, segmentation, testing, and optimization.</p>\n<p>This role is more than writing and sending emails. We’re looking for someone who can think like a marketer, understand our customer journey, identify revenue opportunities, and translate insights into campaigns that feel personal, premium, and deeply curl-literate.</p>\n<p>You’ll work closely with our marketing lead and marketing team to shape the email + SMS calendar, strengthen lifecycle flows, improve customer retention, and ensure every touchpoint reflects the Bebonia brand. You should be equally comfortable zooming out to build strategy and zooming in to write, design, test, and execute.<br/> </p>\n<p><strong>What You’ll Do</strong></p>\n<p>Email + SMS Strategy</p>\n<p>Own Bebonia’s email + SMS strategy across campaigns, flows, segmentation, and testing</p>\n<p>Build and manage the email calendar with a balance of brand storytelling, education, product discovery, launches, promotions, and retention moments</p>\n<p>Identify opportunities to improve customer engagement, repeat purchase, conversion, and lifetime value</p>\n<p>Use performance data, customer behavior, and business priorities to recommend what we send, who we send it to, and wh",
+    "pre_score": 3.0,
     "encontrados": {
       "A": [],
       "B": [
-        "ai-powered"
+        "email marketing"
       ],
       "C": [
-        "impact",
-        "ai-powered"
+        "canva"
       ],
       "async": [],
       "neg_media": [],
       "neg_fuerte": []
     },
-    "_id": "d0f78870a595ca25746f2b2e718ef6dd",
-    "score": 5.8,
-    "grupo": 4,
-    "resumen": "Rol de analista de datos enfocado en migraciones de datos de clientes y coaching de reporting dentro del equipo de customer success de Cloudbeds, una plataforma SaaS para gestión hotelera con presencia en 150 países y equipo 100% remoto.",
-    "por_que_encaja": "El background de 4 años como Data Analyst de Nahuel es directamente relevante para la parte de reporting y análisis de KPIs. La empresa es 100% remota y el rol combina análisis de datos con comunicación con clientes, algo manejable con su perfil.",
-    "brecha_stack": "El rol está muy orientado a migraciones de datos técnicas (ETL, data import desde sistemas legacy) y customer success, no a marketing analytics ni growth. Nahuel no tiene experiencia en migraciones de datos ni en soporte técnico a clientes. Además, el foco en hospitalidad/hotelería es un dominio que desconoce.",
-    "posibilidad_real": "Media — tiene el background analítico requerido, pero el énfasis en data migrations técnicas y customer success es una desviación significativa de su trayectoria en content/marketing analytics.",
+    "_id": "38eaa1ec37516f9d9264d4c0b142f50e",
+    "score": 5.5,
+    "grupo": 5,
+    "resumen": "Rol de Email + SMS Marketing Strategist para Bebonia, marca DTC de extensiones para cabello rizado con 75k+ clientes. Es un puesto de lifecycle marketing enfocado en Klaviyo, campañas, flows, segmentación y retención de clientes en ecommerce.",
+    "por_que_encaja": "Nahuel tiene experiencia real en email marketing (MailerLite, funnels, lifecycle en LarisaMagica) y pensamiento estratégico de contenido. El componente de estrategia, datos de comportamiento y automatización de flows es territorio conocido.",
+    "brecha_stack": "La oferta probablemente requiere Klaviyo (herramienta estándar en DTC ecommerce) — Nahuel usa MailerLite, no Klaviyo. También falta experiencia en SMS marketing y en ecommerce DTC específicamente. Son brechas reales pero no insalvables.",
+    "posibilidad_real": "Media — el fit estratégico existe pero la falta de experiencia en Klaviyo + DTC ecommerce + SMS son gaps concretos que una marca establecida con 75k clientes probablemente no va a ignorar.",
     "red_flags": [
-      "El rol es esencialmente customer success técnico disfrazado de analyst — implica soporte a clientes y onboarding, no análisis estratégico",
-      "Foco en migraciones de datos legacy (hospitality PMS) requiere conocimiento de dominio específico que Nahuel no tiene",
-      "No hay componente de IA, contenido ni marketing — es análisis operativo puro en verticales que no alinean con su trayectoria"
+      "La empresa es una marca de nicho muy específico (cabello rizado/curly hair) — la 'curl literacy' que mencionan como requisito puede ser una barrera cultural real para Nahuel",
+      "Equipo pequeño de mujeres con fuerte identidad de marca — fit cultural puede ser exigente para un perfil externo",
+      "No se menciona salario ni rango de compensación en la descripción"
     ],
     "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
     "modalidad": "full-time",

@@ -1,72 +1,118 @@
 [
   {
-    "title": "CRO specialist",
-    "company": "sofatutor",
-    "url": "https://remoteOK.com/remote-jobs/remote-cro-specialist-sofatutor-1134522",
+    "title": "CRM & Lifecycle Manager",
+    "company": "Joko",
+    "url": "https://remoteOK.com/remote-jobs/remote-crm-lifecycle-manager-joko-1134710",
     "source": "Remote OK",
-    "description": "<p>Design and run A/B tests that directly impact subscription growth for one of Europe's leading EdTech platforms â 1M+ users, real experiments, measurable results.</p><p><br /></p><p>Weâre looking for aÂ <strong>Conversion Rate Optimization (CRO) Specialist (gn)</strong>Â to join our Product Growth Team and help drive one of sofatutorâs most important goals: turning more parents into customers who trust us to support their childrenâs learning journey. In this role, your work will have a direct and measurable impact on the companyâs success. By designing and running smart, strategic A/B tests, youâll help increase user acquisition, activation, and retention across our subscription-based learning products. Youâll collaborate closely with designers, developers, data analysts, and senior leadership to uncover high-potential growth opportunities and turn insights into real results.</p><p><br />ðÂ <strong>100% remote (EMEA)Â </strong>| â³Â <strong>32-40h/week</strong></p><p><br /></p><h3>Your Tasks:</h3><ul><li><p><strong>Define and implement growth experiments across the funnel â</strong>Â from hypothesis to launch and evaluation.</p></li><li><p><strong>Maintain a clear pipeline of experiments</strong>Â based on impact, effort, and learning value.</p></li><li><p><strong>Collaborate closely with design, engineering</strong>, and keyÂ <strong>stakeholders</strong>Â to translate testing concepts into high-quality experiments.</p></li><li><p><strong>Leverage analytics, user research, competitor insights</strong>, and best practices to identify opportunities and build strong hypotheses.</p></li><li><p><strong>Share</strong>Â experimentÂ <strong>results, insights, and learnings</strong>Â transparently with the team and stakeholders to drive alignment and continuous improvement.</p></li></ul><h2 class=\"sc-1npqnwg-4 sc-1npqnwg-5 sc-1uwf3m5-0 sc-1uwf3m5-1 bvUNBQ custom-css-style-job-requirements\">What you bring to the table:</h2><div class=\"sc-1fwbcuw-0 dzeKP",
-    "pre_score": 5.7,
+    "description": "<p style=\"min-height:1.5em\">At Joko, we help consumers shop smarter<strong>. </strong>Our mission is to revolutionize shopping, empowering people to find what they need, make informed decisions, and save money.</p><p style=\"min-height:1.5em\">Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000+ merchants with Joko.</p><p style=\"min-height:1.5em\">From cashback and automatic coupons to price alerts and carbon tracking, we keep expanding our products to make shopping smarter. Weâre now building an AI-powered shopping assistant to help users find the best products by price, quality, and environmental impact.</p><p style=\"min-height:1.5em\">Having reached profitability in our core market, weâre now scaling globally,  with a strong focus on the US.<br /><br /><strong>Itâs still day 1, come build the future of shopping with us!</strong></p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><em>This position is remote-friendly.</em></p><p style=\"min-height:1.5em\"></p><h3><strong>ð§ Our Marketing team</strong></h3><p style=\"min-height:1.5em\">No one is more creative and data-driven than this team; they truly combine the best of both worlds. The Marketing teamâs mission is to put our product into the hearts and hands of millions of users around the world.</p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">The Growth Team builds and scales innovative growth engines to conquer markets, attract, and retain users.</p></li><li><p style=\"min-height:1.5em\">The Brand &amp; Communications Team shapes Joko's long-term vision and builds a lasting emotional connection with users.</p></li><li><p style=\"min-height:1.5em\">The Campaign &amp; Merchandising Team drives our B2C campaign calendar and elevates the shopping experience.</p></li><li><p style=\"min-height:1.5em\">The B2B Marketing Team positions Joko as the top",
+    "pre_score": 6.1,
     "encontrados": {
       "A": [],
       "B": [
-        "edtech"
+        "lifecycle marketing",
+        "ai-powered"
       ],
       "C": [
         "impact",
-        "funnel"
+        "funnel",
+        "cohort",
+        "notion",
+        "ai-powered"
       ],
       "async": [
-        "flexible hours",
-        "flexible work"
+        "work from anywhere"
       ],
       "neg_media": [],
       "neg_fuerte": []
     },
-    "_id": "f55b43766755105510a9bd65c7adcb41",
-    "score": 5.2,
-    "grupo": 4,
-    "resumen": "Rol de CRO Specialist enfocado en diseñar y ejecutar A/B tests para aumentar conversiones en una plataforma EdTech europea con +1M usuarios. Es un puesto técnico dentro del equipo de Product Growth, orientado a experimentos de funnel y análisis de datos.",
-    "por_que_encaja": "El background de Nahuel en data analytics y su experiencia con funnels en LarisaMagica le dan base real. Sin embargo, el rol requiere expertise técnico específico en CRO y experimentación estadística que Nahuel no ha ejercido profesionalmente.",
-    "brecha_stack": "CRO puro no es el core de Nahuel — no tiene experiencia demostrable en A/B testing sistemático ni herramientas especializadas (Optimizely, VWO, Google Optimize, etc.). El rol requiere pensamiento estadístico aplicado a experimentos, que va más allá de su perfil de data analyst generalista. Brecha real.",
-    "posibilidad_real": "Baja — el rol es técnicamente especializado en experimentación y CRO; Nahuel tiene elementos relacionados pero no el perfil exacto que busca una empresa de este tamaño.",
+    "_id": "02d6bd7e91ae72c9f9fb626eec37de5b",
+    "score": 5.5,
+    "grupo": 5,
+    "resumen": "Rol de CRM y lifecycle marketing para una app B2C de cashback/compras inteligentes con 6M+ usuarios. Empresa tech francesa (B Corp) en expansión global, con foco en retención de usuarios vía email, push y automatizaciones.",
+    "por_que_encaja": "Nahuel tiene experiencia real en email marketing, funnels y automatizaciones desde LarisaMagica. El componente de lifecycle y CRM es compatible con su stack operativo, aunque la escala B2C masiva es nueva para él.",
+    "brecha_stack": "El rol probablemente exige experiencia con plataformas CRM enterprise (Braze, Iterable, Klaviyo, Customer.io) que Nahuel no menciona. Además, gestión de lifecycle a escala millones de usuarios es un salto grande vs. su experiencia en marca personal pequeña. La falta de experiencia corporativa formal en este rol es una brecha real.",
+    "posibilidad_real": "Baja — el rol requiere CRM a escala B2C masiva con herramientas enterprise que Nahuel no tiene, y probablemente buscan candidatos con track record en empresas de producto digital.",
     "red_flags": [
-      "100% remoto EMEA — restricción geográfica explícita que excluye a candidatos fuera de Europa y Medio Oriente/África",
-      "Rol muy técnico y especializado en CRO puro, lejos del core de AI Content & Operations de Nahuel"
+      "No especifica compensación — empresa en expansión agresiva puede tener expectativas de dedicación intensa",
+      "Foco fuerte en expansión US desde empresa europea — posible preferencia por candidatos en zonas horarias compatibles",
+      "Descripción truncada — no se puede evaluar el stack técnico requerido completo"
     ],
-    "location_restriction": "Restricción explícita: '100% remote (EMEA)' — Nahuel está en Argentina (LATAM), queda fuera de la región requerida",
+    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
     "modalidad": "full-time",
     "salario": "No especificado"
   },
   {
-    "title": "Email + SMS Marketing Strategist",
-    "company": "Bebonia",
-    "url": "https://www.workingnomads.com/job/go/1713292/",
-    "source": "Working Nomads",
-    "description": "<p><strong>Remote · Reports to Founder/CEO + Marketing Lead</strong></p>\n<p><strong>About Bebonia</strong></p>\n<p>Bebonia is the #1-rated curly hair extensions brand — voted best by InStyle, Byrdie, Allure, Glamour, Brides, and NaturallyCurly. Founded in 2017 by Soleil, a Dominican woman who built the product she couldn’t find, Bebonia has served 75,000+ customers and is run by a small, close-knit team of curly-haired women.</p>\n<p>We believe curly hair should be enhanced, not erased. Every product we make, every email we send, and every campaign we create is grounded in that belief.<br/> </p>\n<p><strong>The Role</strong></p>\n<p>We’re looking for a strategic, creative, and detail-oriented Email + SMS Marketing Strategist to lead Bebonia’s owned marketing program across campaigns, flows, segmentation, testing, and optimization.</p>\n<p>This role is more than writing and sending emails. We’re looking for someone who can think like a marketer, understand our customer journey, identify revenue opportunities, and translate insights into campaigns that feel personal, premium, and deeply curl-literate.</p>\n<p>You’ll work closely with our marketing lead and marketing team to shape the email + SMS calendar, strengthen lifecycle flows, improve customer retention, and ensure every touchpoint reflects the Bebonia brand. You should be equally comfortable zooming out to build strategy and zooming in to write, design, test, and execute.<br/> </p>\n<p><strong>What You’ll Do</strong></p>\n<p>Email + SMS Strategy</p>\n<p>Own Bebonia’s email + SMS strategy across campaigns, flows, segmentation, and testing</p>\n<p>Build and manage the email calendar with a balance of brand storytelling, education, product discovery, launches, promotions, and retention moments</p>\n<p>Identify opportunities to improve customer engagement, repeat purchase, conversion, and lifetime value</p>\n<p>Use performance data, customer behavior, and business priorities to recommend what we send, who we send it to, and wh",
-    "pre_score": 3.0,
+    "title": "Semi Senior Project Manager - Digital Marketing & Advertising",
+    "company": "Truelogic",
+    "url": "https://jobicy.com/jobs/149186-semi-senior-project-manager-digital-marketing-advertising",
+    "source": "Jobicy",
+    "description": "<h2><strong>About Truelogic</strong></h2><p>At Truelogic we are a leading provider of nearshore staff augmentation services headquartered in New York. For over two decades, we’ve been delivering top-tier technology solutions to companies of all sizes, from innovative startups to industry leaders, helping them achieve their digital transformation goals.</p><p>Our team of 600+ highly skilled tech professionals, based in Latin America, drives digital disruption by partnering with U.S. companies on their most impactful projects. Whether collaborating with Fortune 500 giants or scaling startups, we deliver results that make a difference.</p><p>By applying for this position, you’re taking the first step in joining a dynamic team that values your expertise and aspirations. We aim to align your skills with opportunities that foster exceptional career growth and success while contributing to transformative projects that shape the future.</p><p></p><h2><strong>Our Client</strong></h2><p>This is an award-winning creative and social media agency known for developing innovative, culture-driven campaigns for some of the world's leading brands. The agency specializes in social media marketing, influencer partnerships, content production, and digital storytelling, helping brands connect with audiences through impactful and engaging campaigns. With a fast-paced and collaborative environment, the company focuses on creativity, strategic thinking, and operational excellence to deliver large-scale projects that drive measurable results.</p><h2><br><strong>Job Summary</strong></h2><p>This role sits within the New Business &amp; Marketing team and serves as the operational backbone of the company’s growth efforts. The position supports both inbound business development opportunities and marketing initiatives, partnering closely with executive leadership, business development leads, and marketing strategists.</p><p></p><h2><strong>Responsibilities</strong></h2><ul><li><p>Manage inbound bu",
+    "pre_score": 4.8,
     "encontrados": {
-      "A": [],
+      "A": [
+        "workflow automation"
+      ],
       "B": [
-        "email marketing"
+        "ai tools"
       ],
       "C": [
-        "canva"
+        "impact",
+        "ai tools"
       ],
       "async": [],
       "neg_media": [],
       "neg_fuerte": []
     },
-    "_id": "38eaa1ec37516f9d9264d4c0b142f50e",
+    "_id": "30d450eb15c978af338eaa5e2fb66ed2",
     "score": 5.5,
-    "grupo": 5,
-    "resumen": "Rol de Email + SMS Marketing Strategist para Bebonia, marca DTC de extensiones para cabello rizado con 75k+ clientes. Es un puesto de lifecycle marketing enfocado en Klaviyo, campañas, flows, segmentación y retención de clientes en ecommerce.",
-    "por_que_encaja": "Nahuel tiene experiencia real en email marketing (MailerLite, funnels, lifecycle en LarisaMagica) y pensamiento estratégico de contenido. El componente de estrategia, datos de comportamiento y automatización de flows es territorio conocido.",
-    "brecha_stack": "La oferta probablemente requiere Klaviyo (herramienta estándar en DTC ecommerce) — Nahuel usa MailerLite, no Klaviyo. También falta experiencia en SMS marketing y en ecommerce DTC específicamente. Son brechas reales pero no insalvables.",
-    "posibilidad_real": "Media — el fit estratégico existe pero la falta de experiencia en Klaviyo + DTC ecommerce + SMS son gaps concretos que una marca establecida con 75k clientes probablemente no va a ignorar.",
+    "grupo": 2,
+    "resumen": "Rol de Project Manager Semi Senior dentro del equipo de New Business & Marketing de una agencia creativa/social media. Truelogic es una empresa de staff augmentation nearshore que provee profesionales de LATAM a clientes en USA.",
+    "por_que_encaja": "Tiene componentes de operaciones de marketing y coordinación de proyectos digitales que se alinean parcialmente con el background de Nahuel en ops y estrategia de contenido. Su experiencia en LarisaMagica y con Ethan muestra capacidad de gestionar proyectos de contenido y marketing de punta a punta.",
+    "brecha_stack": "El rol pide experiencia formal como Project Manager en agencia creativa/publicidad, manejo de herramientas de PM (Asana, Monday, Jira u otras), y coordinación de equipos en entornos corporativos — áreas donde Nahuel no tiene historial comprobable como empleado. Sin certificaciones de PM (PMP, CAPM). El foco en 'inbound business development' puede requerir habilidades de ventas/pitch que no son su fuerte.",
+    "posibilidad_real": "Media — El background de Nahuel cubre la parte de marketing digital y operaciones, pero le falta experiencia formal en gestión de proyectos en agencia y el componente de business development puede ser un obstáculo.",
     "red_flags": [
-      "La empresa es una marca de nicho muy específico (cabello rizado/curly hair) — la 'curl literacy' que mencionan como requisito puede ser una barrera cultural real para Nahuel",
-      "Equipo pequeño de mujeres con fuerte identidad de marca — fit cultural puede ser exigente para un perfil externo",
-      "No se menciona salario ni rango de compensación en la descripción"
+      "Descripción cortada — no se ven todas las responsabilidades ni requisitos completos",
+      "El componente de 'New Business' puede implicar soporte a ventas, lo que se acerca a un rol de ventas sin suficiente componente estratégico",
+      "Truelogic es staff augmentation: Nahuel quedaría como contratado de Truelogic trabajando para un cliente, con menos control sobre el tipo de proyectos asignados a futuro"
+    ],
+    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
+    "modalidad": "full-time",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Social Media & Community Analyst - Truelogic",
+    "company": "Truelogic",
+    "url": "https://jobicy.com/jobs/149148-social-media-community-analyst-truelogic",
+    "source": "Jobicy",
+    "description": "<h2><strong>About Truelogic</strong></h2><p>At Truelogic we are a leading provider of nearshore staff augmentation services headquartered in New York. For over two decades, we’ve been delivering top-tier technology solutions to companies of all sizes, from innovative startups to industry leaders, helping them achieve their digital transformation goals.</p><p>Our team of 600+ highly skilled tech professionals, based in Latin America, drives digital disruption by partnering with U.S. companies on their most impactful projects. Whether collaborating with Fortune 500 giants or scaling startups, we deliver results that make a difference.</p><p>By applying for this position, you’re taking the first step in joining a dynamic team that values your expertise and aspirations. We aim to align your skills with opportunities that foster exceptional career growth and success while contributing to transformative projects that shape the future.</p><h2></h2><h2><br><strong>Job Summary</strong></h2><p>This role <strong>Social Media &amp; Community Specialist </strong>is responsible for managing and growing the digital presence of Truelogic and its CEO within the US B2B tech market. The position focuses on executing social media strategies, creating engaging content, and actively managing the online community to drive brand awareness and audience growth.</p><p>Additionally, the role provides support in the implementation of digital marketing initiatives within HubSpot, including basic automation, campaign execution, and performance reporting, in collaboration with the Growth Marketing team.</p><p></p><h2><strong>Responsibilities</strong></h2><p> <strong>Social Media &amp; Strategy (Core)</strong></p><ul><li><p>Manage and grow Truelogic’s and the CEO’s social media accounts.</p></li><li><p>Develop and execute content strategies aligned with business objectives.</p></li><li><p>Plan, create, and schedule content across different platforms.</p></li><li><p>Adapt tone of voice based on each",
+    "pre_score": 3.5,
+    "encontrados": {
+      "A": [
+        "marketing automation"
+      ],
+      "B": [
+        "growth marketing"
+      ],
+      "C": [
+        "impact"
+      ],
+      "async": [],
+      "neg_media": [
+        "paid media"
+      ],
+      "neg_fuerte": []
+    },
+    "_id": "0ce89e21b2425e332cfd84f549c89a38",
+    "score": 5.2,
+    "grupo": 2,
+    "resumen": "Rol de Social Media & Community Analyst en Truelogic, empresa de staff augmentation nearshore con sede en NY y equipo en Latam. Combina gestión de redes sociales, creación de contenido B2B y soporte en HubSpot para el equipo de Growth Marketing.",
+    "por_que_encaja": "Nahuel tiene experiencia en contenido, estrategia digital y email marketing que se superponen parcialmente. Sin embargo, el core del rol es community management y redes sociales operativas, que no es su fuerte ni su dirección profesional.",
+    "brecha_stack": "HubSpot es explícito en la descripción y Nahuel no lo menciona en su stack (usa MailerLite). Gestión de comunidades y redes sociales B2B como actividad central no está en su experiencia real. El rol es más ejecutor de social media que estratega de IA o contenido.",
+    "posibilidad_real": "Media — Nahuel puede hacer partes del rol, pero el foco en social media operativo y HubSpot lo aleja de su perfil real. Compite con perfiles más específicos en community management.",
+    "red_flags": [
+      "HubSpot requerido y Nahuel no tiene experiencia documentada con esa herramienta",
+      "El rol es mayormente ejecución de redes sociales, no estrategia de contenido ni IA — riesgo de mismatch de expectativas",
+      "La descripción está cortada, no se pueden ver todas las responsabilidades ni requisitos completos"
     ],
     "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
     "modalidad": "full-time",

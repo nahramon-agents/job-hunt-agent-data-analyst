@@ -7,11 +7,11 @@ from datetime import datetime
 
 
 GRUPOS = {
-    1: {"emoji": "🔬", "nombre": "AI Content & Story Researcher", "fit": "95%"},
-    2: {"emoji": "⚙️",  "nombre": "AI Content & Operations Strategist", "fit": "90%"},
-    3: {"emoji": "🤖", "nombre": "AI Workflow & Automation Specialist", "fit": "85%"},
-    4: {"emoji": "📊", "nombre": "Data & Growth Analyst — Content & Creator", "fit": "80%"},
-    5: {"emoji": "🚀", "nombre": "Digital Strategy & Growth Lead — Creator & Education", "fit": "80%"},
+    1: {"emoji": "📊", "nombre": "Data Analyst / Data Scientist — BI & Analytics", "fit": "95%"},
+    2: {"emoji": "🧭", "nombre": "Decision Science / Data Consulting", "fit": "90%"},
+    3: {"emoji": "🤖", "nombre": "Business/Process Analyst con IA aplicada", "fit": "80%"},
+    4: {"emoji": "🚀", "nombre": "Forward Deployed / AI Solutions (moonshot)", "fit": "60%"},
+    5: {"emoji": "💰", "nombre": "Financial/Business Planning — FP&A", "fit": "75%"},
     0: {"emoji": "📁", "nombre": "Sin grupo definido", "fit": "—"},
 }
 
@@ -173,7 +173,7 @@ def build_email_html(jobs: list, borderline_count: int = 0) -> str:
         <div style="background:#1e293b; border-radius:10px; padding:14px 20px; margin-bottom:24px;
                     border-left:4px solid #64748b;">
           <p style="margin:0; color:#94a3b8; font-size:13px;">
-            📁 <strong>{borderline_count} ofertas borderline</strong> (score 5.0–5.9 o grupo 0) guardadas en
+            📁 <strong>{borderline_count} ofertas borderline</strong> (score cerca del umbral o grupo 0) guardadas en
             <code style="color:#fcd34d;">borderline_jobs.json</code> en el repo para revisión manual.
           </p>
         </div>"""
@@ -212,7 +212,7 @@ def build_email_html(jobs: list, borderline_count: int = 0) -> str:
 
         <div style="margin-top:32px; text-align:center; color:#334155; font-size:11px; line-height:1.8;">
           <p style="margin:0;">Agente automático · Claude Sonnet · Nahuel Ramon · Córdoba, Argentina</p>
-          <p style="margin:0;">Remote OK · WWR · Remotive · Working Nomads · Jobspresso · Himalayas · Jobicy · Wellfound · Dynamite Jobs · LinkedIn</p>
+          <p style="margin:0;">Remote OK · WWR · Remotive · Working Nomads · Jobspresso · Himalayas · Jobicy · Wellfound · Dynamite Jobs · GetOnBoard · LinkedIn/Indeed/ZipRecruiter/Glassdoor/Google (JobSpy)</p>
         </div>
 
       </div>

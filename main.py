@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Job Hunt Agent — Nahuel Ramon
-Roles estratégicos: AI Content Researcher · Content Ops · Marketing Automation
-Evaluación en dos etapas: keywords ponderadas → Claude como juez final
+Perfil: Data Analyst / Data Scientist — BI, Decision Science, FP&A
+Evaluación en dos etapas: keywords ponderadas por grupo → Claude como juez final
 """
 
 import json
@@ -12,8 +12,8 @@ from src.emailer import send_email
 
 def main():
     print("=" * 55)
-    print("JOB HUNT AGENT v2 — Nahuel Ramon")
-    print("Roles estratégicos 1-2-3 · Claude como juez final")
+    print("JOB HUNT AGENT — Nahuel Ramon")
+    print("Data Analyst / Data Scientist · Claude como juez final")
     print("=" * 55)
 
     jobs_email, jobs_borderline = get_all_jobs()

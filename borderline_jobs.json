@@ -1,96 +1,33 @@
 [
   {
-    "title": "Senior Catalog Manager & PIM - Travel & Hospitality Tech",
-    "company": "Truelogic",
-    "url": "https://jobicy.com/jobs/149170-senior-catalog-manager-pim-travel-hospitality-tech",
-    "source": "Jobicy",
-    "description": "<h2><strong>About Truelogic</strong></h2><p>At Truelogic we are a leading provider of nearshore staff augmentation services headquartered in New York. For over two decades, we’ve been delivering top-tier technology solutions to companies of all sizes, from innovative startups to industry leaders, helping them achieve their digital transformation goals.</p><p>Our team of 600+ highly skilled tech professionals, based in Latin America, drives digital disruption by partnering with U.S. companies on their most impactful projects. Whether collaborating with Fortune 500 giants or scaling startups, we deliver results that make a difference.</p><p>By applying for this position, you’re taking the first step in joining a dynamic team that values your expertise and aspirations. We aim to align your skills with opportunities that foster exceptional career growth and success while contributing to transformative projects that shape the future.</p><p></p><h2><strong>Our Client</strong></h2><p>Our client is an award-winning, leading strategic digital communications and transformation agency operating at the intersection of enterprise-grade technology and creative delivery. As a critical hub within a premier global digital services and marketing network, they collaborate directly with major regional brands, government entities, and large-scale destination enterprises to architect high-impact digital experiences. They specialize in driving large-scale digital transformation across the hospitality, tourism, travel, and commerce sectors.</p><h2><br><strong>Job Summary</strong></h2><p>The Senior Manager, Product Catalog &amp; PIM is a highly strategic business owner and subject matter expert responsible for establishing, governing, and optimizing the enterprise product catalog strategy. This role leads the end-to-end evaluation, design, onboarding, and implementation of a centralized Product Information Management (PIM) ecosystem—specifically utilizing tools like Akeneo—and unifies it wi",
-    "pre_score": 5.4,
+    "title": "Analista Senior de Datos y Modelamiento Oracle BI (Obi)",
+    "company": "Coderslab.io",
+    "url": "https://www.getonbrd.com/jobs/analista-senior-de-datos-odi-obi-coderslab-io-quito",
+    "source": "GetOnBoard",
+    "description": "<div><strong>Lo que necesitas</strong></div><ul><li>Nivel avanzado en Oracle Business Intelligence (OBI) y experiencia probada en modelamiento dimensional.</li><li>SQL avanzado y experiencia en entornos productivos críticos.</li><li>Capacidad para interactuar directamente con áreas de negocio y traducir requerimientos en soluciones analíticas.</li><li>Conocimiento del ecosistema Oracle (DB, ODI) y buenas prácticas de gobernanza de datos.</li><li>Autonomía, liderazgo y criterio profesional para tomar decisiones de modelamiento; capacidad para proponer mejoras y guiar a equipos de diferentes niveles de experiencia.</li><li>Título universitario (Licenciatura, Ingeniería o afín) y mínimo 3 años de experiencia en roles similares. Se valoran especializaciones, posgrados o certificaciones relevantes.</li></ul><div><strong>Deseables</strong></div><ul><li>Experiencia en Retail, Salud o Logística; comprensión sólida de procesos de negocio; experiencia en proyectos de BI orientados a decisiones estratégicas.</li></ul>",
+    "pre_score": 4.7,
     "grupo_scores": {
-      "1": 5.4,
-      "2": 5.4,
-      "3": 4.0,
-      "4": 4.0,
-      "5": 4.0
-    },
-    "geo_modifier": 1.5,
-    "seniority_modifier": 0.5,
-    "encontrados": {
-      "1": {
-        "A": [],
-        "B": [
-          "power bi",
-          "tableau"
-        ]
-      },
-      "2": {
-        "A": [],
-        "B": [
-          "power bi",
-          "tableau"
-        ]
-      },
-      "3": {
-        "A": [],
-        "B": []
-      },
-      "4": {
-        "A": [],
-        "B": []
-      },
-      "5": {
-        "A": [],
-        "B": []
-      }
-    },
-    "_id": "84ab5b582c28e5f291782bc85866b35b",
-    "score": 5.5,
-    "score_claude_raw": 3.5,
-    "grupo": 0,
-    "resumen": "Rol de Senior Manager de catálogo de productos y sistema PIM (Product Information Management) para una agencia de transformación digital en hospitality/travel. Es un puesto centrado en gestión de datos de productos, gobernanza de catálogos y herramientas como Akeneo — más cercano a Product/Data Management que a análisis de datos o ciencia de datos.",
-    "por_que_encaja": "Hay un componente de gestión de datos estructurados y gobernanza que toca áreas familiares, pero el rol es esencialmente de Product Information Management y estrategia de catálogo — no análisis de datos, BI, forecasting ni data science. El fit es muy bajo.",
-    "brecha_stack": "El rol requiere experiencia profunda en PIM (especialmente Akeneo), gestión de catálogos de productos a escala enterprise, y liderazgo de equipos de datos de producto. Nahuel no tiene background en PIM ni en gestión de catálogos — su experiencia es en analytics, forecasting y BI, que son dominios completamente distintos.",
-    "posibilidad_real": "Baja — El rol pide un especialista en PIM/catálogos que Nahuel no es. Aplicar sería perder tiempo.",
-    "red_flags": [
-      "El rol es de 'Senior Manager' de PIM/catálogo — especialización muy específica que Nahuel no tiene",
-      "Herramienta clave requerida (Akeneo) es desconocida en el perfil de Nahuel",
-      "Descripción truncada — no se puede ver la totalidad de requisitos y compensación"
-    ],
-    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
-    "modalidad": "unclear",
-    "salario": "No especificado"
-  },
-  {
-    "title": "Functional Consultant (Finance Systems / ERP Implementation)",
-    "company": "Launchpad Technologies",
-    "url": "https://jobicy.com/jobs/149153-functional-consultant-finance-systems-erp-implementation",
-    "source": "Jobicy",
-    "description": "<div><h2><strong>Who We Are</strong></h2>\n<p><strong>Launchpad Technologies Inc. </strong>is a global technology partner connecting top talent with high-impact projects across North America and beyond. We specialize in Staff Augmentation and product development, helping companies scale with agility while empowering professionals to grow in meaningful, remote-first environments.</p></div><h2>About the Role</h2><p>Have you started your career in Finance, Accounting, Accounts Payable, Procurement, or Business Administration and later discovered that you enjoyed implementing financial systems more than running the processes themselves? Maybe you began as an Accountant, AP Analyst, Financial Analyst, Procurement Specialist, or Business Consultant before transitioning into ERP or SaaS implementations.</p><p><em><strong>If you understand financial operations because you've actually worked in them, and now enjoy helping customers transform those processes through technology, we'd love to meet you.</strong></em></p><p>We are partnering with a global leader in cloud-based Spend Management and Accounts Payable Automation solutions trusted by thousands of organizations worldwide. As part of this strategic partnership, we're building a specialized Professional Services team that will guide international customers through the successful implementation of the AP Automation platform.</p><p>This is a customer-facing consulting role where you'll combine your finance knowledge, analytical thinking, and implementation experience to help organizations modernize the way they purchase, approve invoices, manage suppliers, and automate financial operations.</p><p> <strong>Start date</strong>: Not defined - <em>We are continuously adding new members to this growing team</em><br> <strong>Contract type</strong>: Contractor, Full-Time, 100% Remote<br> <strong>Work hours</strong>: Monday to Friday, 7.30 am to 4.30 pm PST</p><h2>What You’ll Be Doing</h2><p>As a Functional Consultant, you'll becom",
-    "pre_score": 5.4,
-    "grupo_scores": {
-      "1": 5.4,
-      "2": 3.9,
+      "1": 4.7,
+      "2": 3.2,
       "3": 2.5,
       "4": 2.5,
-      "5": 4.0
+      "5": 2.5
     },
-    "geo_modifier": 0.5,
-    "seniority_modifier": 0.0,
+    "geo_modifier": 0.0,
+    "seniority_modifier": 0.5,
     "encontrados": {
       "1": {
         "A": [
           "business intelligence"
         ],
         "B": [
-          "sql",
-          "power bi"
+          "sql"
         ]
       },
       "2": {
         "A": [],
         "B": [
-          "sql",
-          "power bi"
+          "sql"
         ]
       },
       "3": {
@@ -102,100 +39,162 @@
         "B": []
       },
       "5": {
-        "A": [
-          "financial analyst"
-        ],
+        "A": [],
         "B": []
       }
     },
-    "_id": "1d2b0cf8fc1a95fbf89366f8ad42b76c",
-    "score": 6.0,
-    "score_claude_raw": 5.5,
-    "grupo": 0,
-    "resumen": "Rol de consultor funcional para implementación de ERP/SaaS de Spend Management y automatización de Cuentas por Pagar. Launchpad Technologies es una empresa global de staff augmentation que conecta talento con proyectos en Norteamérica.",
-    "por_que_encaja": "Nahuel tiene experiencia en análisis de procesos financieros y presentaciones a dirección, lo que toca tangencialmente el perfil. Sin embargo, el core del rol es implementación de ERP/AP Automation, no análisis de datos ni BI.",
-    "brecha_stack": "El rol exige experiencia directa en implementación de ERP o SaaS (Coupa, SAP, Oracle, Basware u similares), conocimiento profundo de procesos de AP/Procurement/Finance operacional, y consultoría de implementación funcional — nada de esto está en el stack de Nahuel como Data Analyst. Python, SQL, Power BI y forecasting no son relevantes aquí.",
-    "posibilidad_real": "Baja — el rol es de consultor de implementación ERP/finanzas operacionales, no de análisis de datos. Nahuel no tiene experiencia en implementaciones de sistemas ni en AP Automation, que es el núcleo no negociable del puesto.",
-    "red_flags": [
-      "Horario fijo PST (7:30am-4:30pm) puede ser restrictivo desde Córdoba (diferencia de 4-5 horas según horario de verano/invierno)",
-      "El rol requiere experiencia en implementación funcional de ERP/SaaS — una transición de carrera que la oferta describe explícitamente, no el perfil de Nahuel",
-      "Contrato contractor, no empleado — implica gestión fiscal individual"
-    ],
-    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
-    "modalidad": "full-time",
-    "salario": "No especificado"
-  },
-  {
-    "title": "Senior Financial Analyst – Corporate FP&A",
-    "company": "Intelletec Energy",
-    "url": "https://www.linkedin.com/jobs/view/4437901040",
-    "source": "JobSpy (Linkedin)",
-    "description": "None",
-    "pre_score": 5.5,
-    "grupo_scores": {
-      "1": 2.5,
-      "2": 2.5,
-      "3": 2.5,
-      "4": 2.5,
-      "5": 5.5
-    },
-    "geo_modifier": 0.0,
-    "seniority_modifier": 0.5,
-    "encontrados": {
-      "1": {
-        "A": [],
-        "B": []
-      },
-      "2": {
-        "A": [],
-        "B": []
-      },
-      "3": {
-        "A": [],
-        "B": []
-      },
-      "4": {
-        "A": [],
-        "B": []
-      },
-      "5": {
-        "A": [
-          "financial analyst",
-          "fp&a"
-        ],
-        "B": []
-      }
-    },
-    "_id": "ef6d1fb820538f274c9b55c6fdca5f51",
+    "_id": "7d8fb8b091c103bb3fcae2169a0481d4",
     "score": 5.0,
     "score_claude_raw": 4.5,
-    "grupo": 5,
-    "resumen": "Rol de FP&A senior en una empresa de energía llamada Intelletec Energy. La descripción está vacía (None), por lo que no hay información sobre responsabilidades, stack requerido ni modalidad.",
-    "por_que_encaja": "El título es directamente compatible con la experiencia de Nahuel en Novix (empresa de energía, forecasting, reporting a dirección). El sector energía es un match adicional.",
-    "brecha_stack": "Imposible evaluar brecha de stack sin descripción. Un rol 'Senior' de FP&A corporativo suele requerir dominio de herramientas financieras específicas (SAP, Hyperion, Anaplan) que Nahuel probablemente no tiene. Pendiente confirmar.",
-    "posibilidad_real": "Media — el título encaja bien con el perfil y sector, pero sin descripción no se puede confirmar fit real ni modalidad. Riesgo de requisitos senior que excedan el perfil actual.",
+    "grupo": 1,
+    "resumen": "Rol de BI Analyst Senior enfocado en Oracle Business Intelligence (OBI) y modelamiento dimensional, dentro de Coderslab.io, empresa de consultoría tecnológica. El puesto requiere un stack muy específico de Oracle que va mucho más allá de Power BI o Tableau.",
+    "por_que_encaja": "El perfil general de BI Analyst y la experiencia en traducir requerimientos de negocio en soluciones analíticas sí coincide con la experiencia de Nahuel en Novix. El título universitario (Ingeniería) y los más de 4 años de experiencia también cubren los requisitos base.",
+    "brecha_stack": "El gap es significativo y específico: el rol exige Oracle BI (OBI) a nivel avanzado y Oracle DB/ODI — herramientas que Nahuel no menciona haber usado. Su stack de BI es Power BI/Tableau, no el ecosistema Oracle. Además pide modelamiento dimensional probado y liderazgo de equipos, lo cual Nahuel no acredita formalmente.",
+    "posibilidad_real": "Baja — sin experiencia acreditada en OBI/Oracle el filtro técnico es muy probable que lo descarte en etapas tempranas.",
     "red_flags": [
-      "Descripción completamente vacía — no hay información sobre responsabilidades, requisitos ni modalidad",
-      "Título 'Senior' puede implicar expectativas de experiencia financiera corporativa más profunda que la de Nahuel",
-      "Sin dato de modalidad (remoto/híbrido/presencial) — no se puede confirmar que cumpla el no-negociable de remoto o híbrido en Córdoba"
+      "Requiere OBI avanzado y ecosistema Oracle (DB, ODI) — stack que Nahuel no tiene",
+      "Pide liderazgo de equipos y criterio senior de modelamiento dimensional — no está en el perfil actual",
+      "No especifica modalidad ni si acepta candidatos remotos fuera de la región"
     ],
     "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
     "modalidad": "unclear",
     "salario": "No especificado"
   },
   {
-    "title": "Financial Analyst, FP&A & AI Initiatives",
-    "company": "Greenhouse Business Advisors",
-    "url": "https://www.linkedin.com/jobs/view/4430011418",
+    "title": "Power BI- Data Analyst",
+    "company": "nLeague",
+    "url": "https://www.linkedin.com/jobs/view/4400559731",
     "source": "JobSpy (Linkedin)",
     "description": "None",
-    "pre_score": 5.0,
+    "pre_score": 4.2,
+    "grupo_scores": {
+      "1": 4.2,
+      "2": 2.7,
+      "3": 2.0,
+      "4": 2.0,
+      "5": 2.0
+    },
+    "geo_modifier": 0.0,
+    "seniority_modifier": 0.0,
+    "encontrados": {
+      "1": {
+        "A": [
+          "data analyst"
+        ],
+        "B": [
+          "power bi"
+        ]
+      },
+      "2": {
+        "A": [],
+        "B": [
+          "power bi"
+        ]
+      },
+      "3": {
+        "A": [],
+        "B": []
+      },
+      "4": {
+        "A": [],
+        "B": []
+      },
+      "5": {
+        "A": [],
+        "B": []
+      }
+    },
+    "_id": "cc4bd305a7c380cd13fe4aa8405b2a1e",
+    "score": 5.5,
+    "score_claude_raw": 5.5,
+    "grupo": 1,
+    "resumen": "Rol de Data Analyst con foco en Power BI. nLeague es una empresa de staffing/consultoría tecnológica — probablemente colocan a Nahuel en un cliente final.",
+    "por_que_encaja": "Power BI es parte del stack real de Nahuel y el título es exactamente su perfil. El fit en papel es alto.",
+    "brecha_stack": "Sin descripción disponible, no se puede evaluar la brecha de stack con precisión — riesgo de que pidan certificaciones de Microsoft o nivel avanzado de DAX/modelado que Nahuel tiene de forma aplicada pero no certificada.",
+    "posibilidad_real": "Media — el título encaja perfectamente, pero la ausencia total de descripción impide evaluar requisitos reales, modalidad, y si el cliente final es remoto o presencial.",
+    "red_flags": [
+      "Descripción vacía (None) — información insuficiente para evaluar correctamente",
+      "Empresa de staffing: el rol real y las condiciones dependen del cliente final, no de nLeague",
+      "Sin datos de modalidad, salario ni ubicación del cliente"
+    ],
+    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "Data Scientist (Python, GCP, Agentic AI)",
+    "company": "Danta Technologies",
+    "url": "https://www.linkedin.com/jobs/view/4440501343",
+    "source": "JobSpy (Linkedin)",
+    "description": "None",
+    "pre_score": 4.2,
+    "grupo_scores": {
+      "1": 4.2,
+      "2": 2.7,
+      "3": 2.0,
+      "4": 2.0,
+      "5": 2.0
+    },
+    "geo_modifier": 0.0,
+    "seniority_modifier": 0.0,
+    "encontrados": {
+      "1": {
+        "A": [
+          "data scientist"
+        ],
+        "B": [
+          "python"
+        ]
+      },
+      "2": {
+        "A": [],
+        "B": [
+          "python"
+        ]
+      },
+      "3": {
+        "A": [],
+        "B": []
+      },
+      "4": {
+        "A": [],
+        "B": []
+      },
+      "5": {
+        "A": [],
+        "B": []
+      }
+    },
+    "_id": "f603d4a8c87b92866afd9a2ebfdb6bf5",
+    "score": 5.0,
+    "score_claude_raw": 5.0,
+    "grupo": 1,
+    "resumen": "Rol de Data Scientist con foco en Python, Google Cloud Platform y Agentic AI en Danta Technologies. La descripción está vacía, lo que impide evaluar responsabilidades, stack completo y contexto real del puesto.",
+    "por_que_encaja": "El título es exactamente el perfil de Nahuel (Data Scientist) y menciona Python que él maneja, más Agentic AI que alinea con su experiencia freelance en IA. Sin descripción no se puede confirmar el fit real.",
+    "brecha_stack": "GCP (Google Cloud Platform) no está mencionado en el stack de Nahuel — es una brecha potencial relevante si el rol es cloud-heavy. Sin descripción, no se puede saber si Python intermedio alcanza o si piden nivel senior/ML profundo.",
+    "posibilidad_real": "Media — el título encaja directo, pero sin descripción no hay forma de validar requisitos reales ni modalidad; aplicar implica incertidumbre alta.",
+    "red_flags": [
+      "Descripción completamente vacía — imposible evaluar requisitos, responsabilidades o condiciones reales.",
+      "Sin información de modalidad (remoto/híbrido/presencial) ni ubicación requerida.",
+      "Sin dato salarial ni tipo de contrato."
+    ],
+    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  },
+  {
+    "title": "AI Product Engineer – Forward Deployed Engineer",
+    "company": "Nine-67",
+    "url": "https://www.getonbrd.com/jobs/ai-product-engineer-forward-deployed-engineer-nine-67-remote",
+    "source": "GetOnBoard",
+    "description": "<p>• Strong builder mindset—ship fast and learn by doing.<br>• Experience with AI tools and frameworks (LLMs, APIs, prompt systems, agents).<br>• Comfort across the stack; you don’t need to be perfect, but you can figure it out.<br>• Ability to work in ambiguity without waiting for detailed specs.<br>• Strong problem-solving and product intuition.<br>• High ownership and accountability.</p>",
+    "pre_score": 3.8,
     "grupo_scores": {
       "1": 2.0,
       "2": 2.0,
       "3": 2.0,
-      "4": 2.0,
-      "5": 5.0
+      "4": 3.8,
+      "5": 2.0
     },
     "geo_modifier": 0.0,
     "seniority_modifier": 0.0,
@@ -213,89 +212,31 @@
         "B": []
       },
       "4": {
-        "A": [],
+        "A": [
+          "forward deployed"
+        ],
         "B": []
       },
       "5": {
-        "A": [
-          "financial analyst",
-          "fp&a"
-        ],
+        "A": [],
         "B": []
       }
     },
-    "_id": "c20c68766df32877948ecba49b19e488",
-    "score": 5.5,
-    "score_claude_raw": 5.5,
-    "grupo": 5,
-    "resumen": "Rol de Financial Analyst con foco en FP&A e iniciativas de IA en Greenhouse Business Advisors, una firma de consultoría/asesoría de negocios. La descripción está vacía, por lo que no hay detalle sobre responsabilidades, stack requerido ni modalidad.",
-    "por_que_encaja": "El título combina FP&A (directamente lo que Nahuel hizo en Novix con forecasting y reporting) con 'AI Initiatives', que conecta con su experiencia en automatización e IA. Es un Grupo 5 con potencial de cruce al Grupo 3.",
-    "brecha_stack": "Sin descripción no es posible evaluar brecha real. En FP&A típico el riesgo es que pidan Excel avanzado/modelado financiero formal o certificaciones contables (CPA, CFA) que Nahuel no tiene.",
-    "posibilidad_real": "Media — El título es un fit natural con el perfil de Novix, pero sin descripción no hay forma de confirmar modalidad, seniority ni requisitos técnicos concretos.",
+    "_id": "a93c63639fb05ed17aeff17ee736d97e",
+    "score": 4.5,
+    "score_claude_raw": 4.5,
+    "grupo": 4,
+    "resumen": "Rol de Forward Deployed Engineer orientado a construir y deployar soluciones de IA directamente con clientes. Nine-67 parece ser una empresa de consultoría/productos de IA, aunque la descripción es muy escasa para confirmarlo.",
+    "por_que_encaja": "Nahuel tiene experiencia real con LLMs, APIs y automatización (n8n, Make, Claude, ChatGPT) en contextos aplicados — cumple parcialmente. El componente de trabajo con IA y product intuition juega a su favor.",
+    "brecha_stack": "El título dice 'Engineer' y pide 'comfort across the stack' y capacidad de shipear rápido — esto implica desarrollo de software real (backends, integración de APIs a nivel código, deployment) más allá del nivel de Python intermedio/autodidacta de Nahuel. La brecha principal es ingeniería de software: no hay mención de análisis de datos ni BI, que es donde Nahuel es más fuerte.",
+    "posibilidad_real": "Baja — el rol pide un perfil más técnico-ingenieril que analítico; Nahuel puede cubrir el costado de IA aplicada pero le falta el músculo de engineering para shipear productos rápido.",
     "red_flags": [
-      "Descripción completamente vacía — no hay información verificable sobre el rol",
-      "No se especifica modalidad (remoto/híbrido/presencial)",
-      "No se especifica ubicación requerida"
+      "Descripción extremadamente corta — no especifica stack técnico, seniority, compensación ni modalidad real",
+      "El término 'comfort across the stack' sugiere expectativa de ingeniería full-stack que excede el perfil de Nahuel",
+      "No se menciona Córdoba ni modalidad remota explícitamente — empresa desconocida, poco contexto"
     ],
     "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
     "modalidad": "unclear",
-    "salario": "No especificado"
-  },
-  {
-    "title": "Change Management Consultant",
-    "company": "NTT DATA",
-    "url": "https://jobicy.com/jobs/146303-change-management-consultant",
-    "source": "Jobicy",
-    "description": "<p>NTT DATA is a team of more than 190,000 diverse professionals, operating in more than 50 countries throughout the world. The sectors where we have activities include: telecommunications, finance, industry, utilities, energy, public administration and health.</p><p>Our mission? Offer technological solutions, business, strategy, development and maintenance of applications, while being a benchmark in consulting. All thanks to the collaboration between teams, the human quality of our people and the fact that we do not conform to what is established, we always seek innovation that brings us closer to the future.</p><p>Our essence has led us to the forefront of technology, breaking paradigms and providing solutions that truly respond to the needs of each client. Our talent has led us to be one of the top 6 technology companies in the world.</p><p>Because #Greattech, needs #GreatPeople, like you</p><p>NTT DATA is looking for high-achieving team players that are quickly adaptable to new challenges and entrepreneurial ventures. We are looking for a <strong>Change Management Consultant </strong>to work <strong>remotely</strong> in<strong> LATAM </strong>with our global clients.</p><p><strong>Overview:</strong></p><p>We’re seeking a Change Management Consultant to support the successful delivery of digital transformation initiatives across SAP, Salesforce, data, and AI programs. This role works closely with client stakeholders and technical teams to drive adoption, manage change activities, and ensure business outcomes are realized. The position offers hands-on exposure to a dynamic, client-facing environment with opportunities to lead engagement strategies and deliver measurable impact across organizations.</p><p><strong>Responsibilities:</strong></p><ul>\n<li>Define end-to-end Change Management strategy and execution across technology programs.</li>\n<li>Conduct stakeholder identification, mapping, and engagement planning at all levels.</li>\n<li>Perform impact assessments a",
-    "pre_score": 4.9,
-    "grupo_scores": {
-      "1": 3.5,
-      "2": 3.5,
-      "3": 3.5,
-      "4": 3.5,
-      "5": 4.9
-    },
-    "geo_modifier": 1.5,
-    "seniority_modifier": 0.0,
-    "encontrados": {
-      "1": {
-        "A": [],
-        "B": []
-      },
-      "2": {
-        "A": [],
-        "B": []
-      },
-      "3": {
-        "A": [],
-        "B": []
-      },
-      "4": {
-        "A": [],
-        "B": []
-      },
-      "5": {
-        "A": [],
-        "B": [
-          "energy",
-          "utilities"
-        ]
-      }
-    },
-    "_id": "3392a3c851d1411a5b34d6b1e79609d7",
-    "score": 6.0,
-    "score_claude_raw": 4.5,
-    "grupo": 0,
-    "resumen": "Rol de Change Management Consultant para NTT DATA, enfocado en gestión del cambio organizacional en proyectos de transformación digital (SAP, Salesforce, IA). Es consultoría de procesos y adopción tecnológica, no análisis de datos.",
-    "por_que_encaja": "El contexto de transformación digital con IA y la exposición a stakeholders es familiar para Nahuel, pero el rol pide competencias específicas de change management (PROSCI/ADKAR, gestión de adopción organizacional) que no son su perfil central.",
-    "brecha_stack": "El rol no pide Python, SQL, BI ni forecasting — pide metodologías de change management (PROSCI, ADKAR, gestión de comunicaciones organizacionales, planes de training), experiencia en implementaciones SAP/Salesforce y consultoría de adopción. No es un rol de datos.",
-    "posibilidad_real": "Baja — Nahuel tiene experiencia de stakeholder management pero no en change management formal; sin metodologías certificadas ni experiencia en implementaciones SAP/Salesforce, sería candidato débil.",
-    "red_flags": [
-      "El rol es Change Management puro, no data/analytics — el fit de perfil es bajo y competiría contra consultores especializados en PROSCI/ADKAR",
-      "SAP y Salesforce como plataformas centrales del rol son ajenas al stack de Nahuel"
-    ],
-    "location_restriction": "Sin restricción explícita — verificar si aplica remoto global",
-    "modalidad": "full-time",
     "salario": "No especificado"
   }
 ]

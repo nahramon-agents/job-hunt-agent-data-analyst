@@ -123,7 +123,9 @@ def build_grupo_section(grupo_num: int, jobs: list) -> str:
     if not jobs:
         return ""
     g = GRUPOS[grupo_num]
-    jobs_sorted = sorted(jobs, key=lambda x: x.get("score", 0), reverse=True)
+    # Desempate por prioridad_geo (1=LATAM, 2=remoto global/sin dato,
+    # 3=híbrido Córdoba) — nunca afecta el score, solo el orden entre iguales.
+    jobs_sorted = sorted(jobs, key=lambda x: (-x.get("score", 0), x.get("prioridad_geo", 2)))
     cards = "".join(build_job_card(j) for j in jobs_sorted)
     return f"""
     <div style="margin-bottom:32px;">

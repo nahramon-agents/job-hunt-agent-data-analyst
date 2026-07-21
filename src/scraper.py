@@ -25,6 +25,8 @@ GRUPOS_CONFIG = {
         "nivel_a": [
             "data analyst", "data scientist", "business intelligence",
             "bi analyst", "analytics engineer",
+            "analista de datos", "científico de datos", "cientifico de datos",
+            "inteligencia de negocios",
         ],
         "nivel_b": [
             "python", "sql", "pandas", "power bi", "tableau",
@@ -38,6 +40,7 @@ GRUPOS_CONFIG = {
             "decision science", "decision scientist", "data consulting",
             "data consultant", "analytics consultant",
             "strategy & analytics", "strategy and analytics",
+            "consultor de datos", "consultoría de datos", "consultoria de datos",
         ],
         "nivel_b": [
             "python", "sql", "pandas", "power bi", "tableau", "forecasting",
@@ -50,9 +53,11 @@ GRUPOS_CONFIG = {
         # Condición conjunta: título de rol + señal de IA/automatización
         "nivel_a_conjunta": [
             (
-                ["business analyst", "process analyst", "operations analyst"],
+                ["business analyst", "process analyst", "operations analyst",
+                 "analista de negocios", "analista de procesos"],
                 ["ai", "artificial intelligence", "automation", "genai",
-                 "generative ai", "gen ai"],
+                 "generative ai", "gen ai", "inteligencia artificial",
+                 "automatización", "automatizacion"],
             ),
         ],
         "nivel_b": [],
@@ -79,6 +84,8 @@ GRUPOS_CONFIG = {
         "nivel_a": [
             "financial analyst", "business planning", "fp&a", "fpa",
             "forecasting analyst",
+            "analista financiero", "planificación financiera",
+            "planificacion financiera",
         ],
         "nivel_b": ["energy", "utilities", "forecasting"],
     },
@@ -108,81 +115,60 @@ KEYWORDS_PENALIZACION_MEDIA = [
 
 # Penalización fuerte (-2.5) — roles que no encajan
 # NOTA: "data scientist" NO está acá — es keyword core del Grupo 1/2.
-# NOTA: "hybrid" NO está acá — se maneja en calc_geo_modifier (excepción Córdoba).
+# NOTA: modalidad (hybrid/on-site/in-office/in person) NO está acá — es un
+# filtro pasa/no-pasa aparte (ver evaluar_geo_modalidad), no un puntaje.
 KEYWORDS_PENALIZACION_FUERTE = [
     "data engineer", "machine learning engineer", "ml engineer",
     "software engineer", "backend engineer", "frontend engineer",
     "ai engineer", "full stack", "devops",
     "quality engineer", "qa engineer", "qa automation", "test engineer",
     "video editor",
-    "on-site", "onsite", "in-office", "in person",
     "cold calling", "account executive", "sales development",
     "fixed schedule", "9-5", "9 to 5",
 ]
 
-# ── MODIFICADORES TRANSVERSALES (geo + seniority) ─────────────────────────────
-# Se aplican en dos momentos: (1) al pre_score de cada grupo, para el ranking
-# previo a Claude, y (2) como ajuste post-hoc al score final que devuelve Claude.
+# ── FILTRO DE MODALIDAD/GEOGRAFÍA (pasa o no pasa — nunca puntúa) ─────────────
+# El texto del puesto es lo único que define el score y si Claude lo analiza.
+# La geografía solo decide si el puesto entra en el pool y, si entra, en qué
+# orden de prioridad se muestra — nunca suma ni resta puntos.
 
-GEO_BOOST_FUERTE = [
+GEO_LATAM_EXPLICITO = [
     "latam", "latin america", "south america", "argentina",
     "remote (latam)", "remote, latam", "remote - latam", "latam only",
     "latam timezone", "latam time zone",
 ]
 
-GEO_BOOST_MENOR = [
-    "worldwide", "remote worldwide", "work from anywhere",
-    "fully remote", "100% remote", "remote global", "anywhere in the world",
-    "global remote", "remote (global)", "remote, global", "remote, anywhere",
-]
+# Modalidad presencial — no pasa, salvo que sea explícitamente en Córdoba
+MODALIDAD_PRESENCIAL = ["hybrid", "on-site", "onsite", "in-office", "in person"]
 
 
-def calc_geo_modifier(texto: str) -> float:
+def evaluar_geo_modalidad(texto: str) -> dict:
     """
-    +1.5 si LATAM/remoto explícito, o "hybrid" + "Córdoba" juntos (última opción aceptable).
-    +0.5 si remoto global explícito sin restricción de país.
-    -2.5 si "hybrid" aparece SIN Córdoba (mismo peso que la vieja penalización fuerte).
-    0 si no hay dato — nunca se penaliza por ausencia de señal.
+    Pasa/no pasa — no es un puntaje.
+    - No pasa: modalidad híbrida/presencial explícita en cualquier lado que no
+      sea Córdoba, o restricción geográfica explícita (ver GEO_RESTRICTIONS).
+    - Pasa, con prioridad 1: LATAM/remoto explícito.
+    - Pasa, con prioridad 2: sin señal geográfica explícita (no se penaliza
+      la ausencia de dato) o remoto global explícito.
+    - Pasa, con prioridad 3: híbrido/presencial explícito en Córdoba — última
+      opción aceptada, pero al final del orden.
+    La prioridad se usa SOLO para ordenar (ranking y email), nunca para sumar
+    o restar del score.
     """
     t = texto.lower()
-    if "hybrid" in t:
-        return 1.5 if ("cordoba" in t or "córdoba" in t) else -2.5
-    for kw in GEO_BOOST_FUERTE:
-        if kw in t:
-            return 1.5
-    for kw in GEO_BOOST_MENOR:
-        if kw in t:
-            return 0.5
-    return 0.0
+    es_cordoba = "cordoba" in t or "córdoba" in t
 
-
-SENIORITY_PENALTY_SOFT = ["junior", "jr.", "entry level", "entry-level"]
-SENIORITY_PENALTY_STRONG = ["intern", "internship", "new grad", "new graduate"]
-SENIORITY_BOOST = [
-    "senior", "sr.", "semi senior", "semi-senior",
-    "mid level", "mid-level", "mid senior", "mid-senior",
-]
-
-
-def calc_seniority_modifier(title: str) -> float:
-    """
-    -2.5 si el título dice explícitamente Intern/New Grad (penalización fuerte, sin bloqueo).
-    -1.5 si el título dice explícitamente Junior/Entry.
-    +0.5 si el título confirma Mid/Semi Senior/Senior.
-    0 si no hay señal — nunca se penaliza por ausencia.
-    Solo mira el título (no la descripción) para evitar falsos positivos.
-    """
-    t = title.lower()
-    for kw in SENIORITY_PENALTY_STRONG:
+    for kw in MODALIDAD_PRESENCIAL:
         if kw in t:
-            return -2.5
-    for kw in SENIORITY_PENALTY_SOFT:
+            if es_cordoba:
+                return {"pasa": True, "razon": None, "prioridad": 3}
+            return {"pasa": False, "razon": f"modalidad presencial/híbrida sin Córdoba: {kw}", "prioridad": None}
+
+    for kw in GEO_LATAM_EXPLICITO:
         if kw in t:
-            return -1.5
-    for kw in SENIORITY_BOOST:
-        if kw in t:
-            return 0.5
-    return 0.0
+            return {"pasa": True, "razon": None, "prioridad": 1}
+
+    return {"pasa": True, "razon": None, "prioridad": 2}
 
 # Restricciones geográficas — penalización fuerte
 GEO_RESTRICTIONS = [
@@ -241,24 +227,31 @@ def _kw_en_texto(texto: str, kw: str) -> bool:
     return kw in texto
 
 
-def calc_grupo_score(texto: str, grupo_num: int, geo_mod: float, seniority_mod: float) -> tuple:
+def calc_grupo_score(title: str, texto: str, grupo_num: int) -> tuple:
     """
-    Score de keywords para UN grupo específico. Cada uno de los 5 grupos
-    tiene su propio Nivel A/B; los bonus/penalizaciones compartidos
-    (herramientas IA, async, paid media, roles incompatibles, geo, seniority)
-    se aplican por igual a los 5.
+    Score de keywords para UN grupo específico, basado únicamente en el texto
+    del puesto. Nivel A se busca SOLO en el título — es lo que identifica QUÉ
+    ES el rol, y buscarlo en descripciones de miles de caracteres (texto
+    institucional, beneficios, etc.) da falsos positivos (ej. "process
+    analyst" mencionado de pasada en la descripción de un puesto de
+    "Director, Revenue Systems Strategy" que no tiene nada que ver). Nivel B
+    (stack) sí se busca en todo el texto — son señales que naturalmente
+    aparecen en el cuerpo del aviso, no en el título.
+    Geografía y seniority NO entran acá — geografía es un filtro pasa/no-pasa
+    aparte (ver evaluar_geo_modalidad) y seniority no se puntúa.
     """
     cfg = GRUPOS_CONFIG[grupo_num]
     score = 2.0
     encontrados = {"A": [], "B": []}
+    titulo = title.lower()
 
     for kw in cfg.get("nivel_a", []):
-        if _kw_en_texto(texto, kw):
+        if _kw_en_texto(titulo, kw):
             score += 1.5
             encontrados["A"].append(kw)
 
     for roles, condiciones in cfg.get("nivel_a_conjunta", []):
-        rol_match = next((r for r in roles if _kw_en_texto(texto, r)), None)
+        rol_match = next((r for r in roles if _kw_en_texto(titulo, r)), None)
         if rol_match and any(_kw_en_texto(texto, c) for c in condiciones):
             score += 1.5
             encontrados["A"].append(f"{rol_match} + IA/automation")
@@ -269,10 +262,10 @@ def calc_grupo_score(texto: str, grupo_num: int, geo_mod: float, seniority_mod: 
             encontrados["B"].append(kw)
 
     # Los bonus de cultura/herramientas (IA, async) solo suman si el grupo ya
-    # tiene algún match de rol (Nivel A/B) — si no, un rol de ingeniería que
-    # mencione "async" y "Claude Code" de pasada podría inflarse por encima
-    # del umbral en los 5 grupos sin tener ninguna señal real de encaje.
-    if encontrados["A"] or encontrados["B"]:
+    # tiene un match de Nivel A (título) — un solo keyword de Nivel B (ej.
+    # "sql" o "energy" mencionado una vez en una descripción larga) no alcanza
+    # para desbloquear todo el resto de la pila de bonus.
+    if encontrados["A"]:
         for kw in KEYWORDS_C:
             if _kw_en_texto(texto, kw):
                 score += 0.3
@@ -285,11 +278,16 @@ def calc_grupo_score(texto: str, grupo_num: int, geo_mod: float, seniority_mod: 
         if _kw_en_texto(texto, kw):
             score -= 1.0
 
-    for kw in KEYWORDS_PENALIZACION_FUERTE:
-        if _kw_en_texto(texto, kw):
-            score -= 2.5
+    # Techo, no solo resta: en descripciones largas (texto institucional de
+    # la empresa, secciones de beneficios, etc.) los bonus de cultura/
+    # herramientas pueden acumular más que el -2.5 y "tapar" la señal de que
+    # el rol es de otro tipo (ej. "Account Executive" con mucho texto de
+    # marketing terminaba en 5.3 pese a la penalización). Si matchea, el
+    # score de ESE grupo no puede superar 1.5 — no importa cuánto acumuló.
+    penalizacion_fuerte = any(_kw_en_texto(texto, kw) for kw in KEYWORDS_PENALIZACION_FUERTE)
+    if penalizacion_fuerte:
+        score = min(score, 1.5)
 
-    score += geo_mod + seniority_mod
     score = round(min(max(score, 0), 10), 1)
     return score, encontrados
 
@@ -297,40 +295,40 @@ def calc_grupo_score(texto: str, grupo_num: int, geo_mod: float, seniority_mod: 
 def pre_score(title: str, description: str) -> dict:
     """
     Scoring por keywords ponderadas, calculado independientemente para cada
-    uno de los 5 grupos. Actúa como pre-filtro antes de Claude — cada grupo
-    tiene su propio ranking (ver CUPO_POR_GRUPO en get_all_jobs).
+    uno de los 5 grupos, basado solo en el texto del puesto. Actúa como
+    pre-filtro antes de Claude — cada grupo tiene su propio ranking (ver
+    CUPO_POR_GRUPO en get_all_jobs). La modalidad/geografía se evalúa aparte
+    como pasa/no-pasa (ver evaluar_geo_modalidad) y determina "prioridad_geo",
+    que se usa solo para ordenar, nunca para puntuar.
     """
     texto = (title + " " + description).lower()
+
+    def _bloqueada(razon: str) -> dict:
+        return {
+            "bloqueada": True, "razon_bloqueo": razon,
+            "grupo_scores": {}, "max_score": 0,
+            "prioridad_geo": None, "encontrados": {},
+        }
 
     # Filtro duro: industrias bloqueadas
     for ind in INDUSTRIAS_BLOQUEADAS:
         if ind in texto:
-            return {
-                "bloqueada": True,
-                "razon_bloqueo": f"industria bloqueada: {ind}",
-                "grupo_scores": {}, "max_score": 0,
-                "geo_modifier": 0.0, "seniority_modifier": 0.0,
-                "encontrados": {},
-            }
+            return _bloqueada(f"industria bloqueada: {ind}")
 
-    # Filtro duro: restricciones geo en texto
+    # Filtro duro: restricciones geo explícitas en texto
     for geo in GEO_RESTRICTIONS:
         if geo in texto:
-            return {
-                "bloqueada": True,
-                "razon_bloqueo": f"restricción geográfica: {geo}",
-                "grupo_scores": {}, "max_score": 0,
-                "geo_modifier": 0.0, "seniority_modifier": 0.0,
-                "encontrados": {},
-            }
+            return _bloqueada(f"restricción geográfica: {geo}")
 
-    geo_mod = calc_geo_modifier(texto)
-    seniority_mod = calc_seniority_modifier(title)
+    # Filtro duro: modalidad presencial/híbrida sin Córdoba
+    geo_eval = evaluar_geo_modalidad(texto)
+    if not geo_eval["pasa"]:
+        return _bloqueada(geo_eval["razon"])
 
     grupo_scores = {}
     encontrados = {}
     for grupo_num in GRUPOS_CONFIG:
-        score, matched = calc_grupo_score(texto, grupo_num, geo_mod, seniority_mod)
+        score, matched = calc_grupo_score(title, texto, grupo_num)
         grupo_scores[grupo_num] = score
         encontrados[grupo_num] = matched
 
@@ -339,8 +337,7 @@ def pre_score(title: str, description: str) -> dict:
         "razon_bloqueo": None,
         "grupo_scores": grupo_scores,
         "max_score": max(grupo_scores.values()),
-        "geo_modifier": geo_mod,
-        "seniority_modifier": seniority_mod,
+        "prioridad_geo": geo_eval["prioridad"],
         "encontrados": encontrados,
     }
 
@@ -515,7 +512,7 @@ def scrape_remoteok() -> list:
                 continue
             title = item.get("position", "")
             company = item.get("company", "")
-            description = item.get("description", "")
+            description = item.get("description") or ""
             url = item.get("url", "")
             tags = " ".join(item.get("tags", []))
             full_text = f"{title} {tags} {description} {location}"
@@ -527,8 +524,7 @@ def scrape_remoteok() -> list:
                     "description": description[:2000],
                     "pre_score": pre["max_score"],
                     "grupo_scores": pre["grupo_scores"],
-                    "geo_modifier": pre["geo_modifier"],
-                    "seniority_modifier": pre["seniority_modifier"],
+                    "prioridad_geo": pre["prioridad_geo"],
                     "encontrados": pre["encontrados"],
                 })
     except Exception as e:
@@ -562,8 +558,7 @@ def scrape_weworkremotely() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
         except Exception as e:
@@ -583,7 +578,7 @@ def scrape_remotive() -> list:
             for item in data.get("jobs", []):
                 title = item.get("title", "")
                 company = item.get("company_name", "")
-                description = item.get("description", "")
+                description = item.get("description") or ""
                 url = item.get("url", "")
                 tags = " ".join(item.get("tags", []))
                 location = item.get("candidate_required_location", "")
@@ -598,8 +593,7 @@ def scrape_remotive() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
     except Exception as e:
@@ -619,7 +613,7 @@ def scrape_workingnomads() -> list:
             for item in data:
                 title = item.get("title", "")
                 company = item.get("company_name", "")
-                description = item.get("description", "")
+                description = item.get("description") or ""
                 url = item.get("url", "")
                 # Working Nomads: el campo location viene en la oferta
                 location = item.get("location", "") or ""
@@ -634,8 +628,7 @@ def scrape_workingnomads() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
     except Exception as e:
@@ -663,8 +656,7 @@ def scrape_jobspresso() -> list:
                     "description": description[:2000],
                     "pre_score": pre["max_score"],
                     "grupo_scores": pre["grupo_scores"],
-                    "geo_modifier": pre["geo_modifier"],
-                    "seniority_modifier": pre["seniority_modifier"],
+                    "prioridad_geo": pre["prioridad_geo"],
                     "encontrados": pre["encontrados"],
                 })
     except Exception as e:
@@ -697,7 +689,7 @@ def scrape_himalayas() -> list:
                 seen_ids.add(job_id_val)
                 title = item.get("title", "")
                 company = item.get("company", {}).get("name", "")
-                description = item.get("description", "") or item.get("descriptionHtml", "")
+                description = item.get("description") or item.get("descriptionHtml") or ""
                 url = item.get("applicationUrl", "") or f"https://himalayas.app/jobs/{item.get('slug','')}"
                 employment_type = item.get("employmentType", "")
                 location = item.get("location", "") or ""
@@ -712,8 +704,7 @@ def scrape_himalayas() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
         except Exception as e:
@@ -762,8 +753,7 @@ def scrape_jobicy() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
         except Exception as e:
@@ -799,8 +789,7 @@ def scrape_wellfound() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
         except Exception as e:
@@ -836,8 +825,7 @@ def scrape_dynamitejobs() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
         except Exception as e:
@@ -873,12 +861,16 @@ def scrape_jobspy_sites() -> list:
                     job_type="contract",
                 )
                 for _, row in df.iterrows():
-                    title = str(row.get("title", ""))
-                    company = str(row.get("company", ""))
-                    description = str(row.get("description", ""))
-                    url = str(row.get("job_url", ""))
-                    location = str(row.get("location", ""))
-                    site = str(row.get("site", "jobspy"))
+                    # row.get(key, default) solo usa el default si falta la
+                    # clave — pandas trae la columna presente pero en None/NaN
+                    # para muchas filas, y str(None) da el string "None". Por
+                    # eso "or ''" en vez de confiar en el default de .get().
+                    title = str(row.get("title") or "")
+                    company = str(row.get("company") or "")
+                    description = str(row.get("description") or "")
+                    url = str(row.get("job_url") or "")
+                    location = str(row.get("location") or "")
+                    site = str(row.get("site") or "jobspy")
                     if location_bloqueada(location):
                         continue
                     full_text = f"{title} {description} {location}"
@@ -890,8 +882,7 @@ def scrape_jobspy_sites() -> list:
                             "description": description[:2000],
                             "pre_score": pre["max_score"],
                             "grupo_scores": pre["grupo_scores"],
-                            "geo_modifier": pre["geo_modifier"],
-                            "seniority_modifier": pre["seniority_modifier"],
+                            "prioridad_geo": pre["prioridad_geo"],
                             "encontrados": pre["encontrados"],
                         })
             except Exception as e:
@@ -958,12 +949,196 @@ def scrape_getonboard() -> list:
                         "description": description[:2000],
                         "pre_score": pre["max_score"],
                         "grupo_scores": pre["grupo_scores"],
-                        "geo_modifier": pre["geo_modifier"],
-                        "seniority_modifier": pre["seniority_modifier"],
+                        "prioridad_geo": pre["prioridad_geo"],
                         "encontrados": pre["encontrados"],
                     })
         except Exception as e:
             print(f"[GetOnBoard] Error búsqueda '{term}': {e}")
+    return jobs
+
+
+def scrape_computrabajo_ar() -> list:
+    """
+    Computrabajo Argentina — no tiene API/RSS pública, pero la página de
+    resultados es HTML renderizado del lado del servidor (a diferencia de
+    Bumeran/Zonajobs, que son SPA y no se pueden scrapear sin navegador).
+    LIMITACIÓN CONOCIDA: el listado no trae descripción, solo título/empresa/
+    ubicación — el score se calcula solo contra el título, señal más débil
+    que otras fuentes.
+    """
+    jobs = []
+    searches = [
+        "analista-de-datos", "business-intelligence", "analista-financiero",
+        "cientifico-de-datos", "planificacion-financiera",
+    ]
+    for slug in searches:
+        try:
+            r = requests.get(
+                f"https://ar.computrabajo.com/trabajo-de-{slug}",
+                headers=HEADERS, timeout=15)
+            soup = BeautifulSoup(r.content, "html.parser")
+            for article in soup.find_all("article", class_="box_offer"):
+                link = article.find("a", class_="js-o-link")
+                if not link:
+                    continue
+                title = link.get_text(strip=True)
+                url = "https://ar.computrabajo.com" + (link.get("href", "") or "")
+                company_tag = article.find(attrs={"offer-grid-article-company-url": True})
+                company = company_tag.get_text(strip=True) if company_tag else ""
+                pre = pre_score(title, "")
+                if not pre["bloqueada"] and pre["max_score"] >= 3.0:
+                    jobs.append({
+                        "title": title, "company": company,
+                        "url": url, "source": "Computrabajo Argentina",
+                        "description": "",
+                        "pre_score": pre["max_score"],
+                        "grupo_scores": pre["grupo_scores"],
+                        "prioridad_geo": pre["prioridad_geo"],
+                        "encontrados": pre["encontrados"],
+                    })
+        except Exception as e:
+            print(f"[Computrabajo AR] Error búsqueda '{slug}': {e}")
+    return jobs
+
+
+def scrape_hackernews() -> list:
+    """
+    Hacker News "Ask HN: Who is hiring?" — thread mensual público, vía la API
+    oficial de Firebase (sin autenticación, sin límite de uso razonable).
+    Los comentarios son ofertas posteadas directo por fundadores/CTOs, sin
+    pasar por LinkedIn ni ATS — mucha menos competencia que las fuentes
+    tradicionales.
+    """
+    jobs = []
+    try:
+        r = requests.get(
+            "https://hacker-news.firebaseio.com/v0/user/whoishiring.json",
+            headers=HEADERS, timeout=15)
+        submitted = r.json().get("submitted", [])[:20]
+
+        thread_id = None
+        kids = []
+        for item_id in submitted:
+            item = requests.get(
+                f"https://hacker-news.firebaseio.com/v0/item/{item_id}.json",
+                headers=HEADERS, timeout=15).json()
+            titulo = ((item or {}).get("title") or "").lower()
+            if titulo.startswith("ask hn: who is hiring?"):
+                thread_id = item_id
+                kids = item.get("kids", [])
+                break
+
+        if thread_id is None:
+            print("[HackerNews] No se encontró el thread de este mes")
+            return jobs
+
+        for kid_id in kids[:400]:
+            try:
+                comment = requests.get(
+                    f"https://hacker-news.firebaseio.com/v0/item/{kid_id}.json",
+                    headers=HEADERS, timeout=10).json()
+                if not comment or comment.get("deleted") or comment.get("dead"):
+                    continue
+                raw_text = comment.get("text", "") or ""
+                if not raw_text:
+                    continue
+                texto_plano = BeautifulSoup(raw_text, "html.parser").get_text(separator=" ")
+                # No hay un campo "título" real acá (es texto libre) — el
+                # Nivel A busca solo en el "title", así que si le pasamos
+                # nada más que los primeros 120 caracteres, se pierde
+                # cualquier mención del rol más adelante en el posteo. Le
+                # pasamos el texto completo como "título" también.
+                title_display = texto_plano.strip()[:120]
+                pre = pre_score(texto_plano, texto_plano)
+                if not pre["bloqueada"] and pre["max_score"] >= 3.0:
+                    jobs.append({
+                        "title": title_display, "company": "",
+                        "url": f"https://news.ycombinator.com/item?id={kid_id}",
+                        "source": "Hacker News (Who is Hiring)",
+                        "description": texto_plano[:2000],
+                        "pre_score": pre["max_score"],
+                        "grupo_scores": pre["grupo_scores"],
+                        "prioridad_geo": pre["prioridad_geo"],
+                        "encontrados": pre["encontrados"],
+                    })
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"[HackerNews] Error: {e}")
+    return jobs
+
+
+# Empresas remote-friendly/LATAM con board público confirmado (verificado en
+# vivo). No existe forma de "buscar en todo Greenhouse/Lever" — cada empresa
+# expone su propio board, así que esto escala agregando empresas a la lista,
+# no con una query abierta.
+EMPRESAS_GREENHOUSE = [
+    "remotecom", "canonical", "nubank", "gitlab", "bitso", "vtex", "webflow",
+]
+EMPRESAS_LEVER = ["xepelin", "dlocal", "kavak"]
+
+
+def scrape_greenhouse_lever() -> list:
+    """
+    Boards públicos de Greenhouse y Lever para la lista curada de arriba.
+    """
+    jobs = []
+
+    for slug in EMPRESAS_GREENHOUSE:
+        try:
+            r = requests.get(
+                f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs",
+                params={"content": "true"}, headers=HEADERS, timeout=15)
+            data = r.json()
+            for item in data.get("jobs", []):
+                title = item.get("title", "")
+                location = (item.get("location") or {}).get("name", "") or ""
+                if location_bloqueada(location):
+                    continue
+                content_html = item.get("content", "") or ""
+                description = BeautifulSoup(content_html, "html.parser").get_text(separator=" ")
+                full_text = f"{title} {description} {location}"
+                pre = pre_score(title, full_text)
+                if not pre["bloqueada"] and pre["max_score"] >= 3.0:
+                    jobs.append({
+                        "title": title, "company": item.get("company_name", slug),
+                        "url": item.get("absolute_url", ""), "source": "Greenhouse",
+                        "description": description[:2000],
+                        "pre_score": pre["max_score"],
+                        "grupo_scores": pre["grupo_scores"],
+                        "prioridad_geo": pre["prioridad_geo"],
+                        "encontrados": pre["encontrados"],
+                    })
+        except Exception as e:
+            print(f"[Greenhouse] Error '{slug}': {e}")
+
+    for slug in EMPRESAS_LEVER:
+        try:
+            r = requests.get(
+                f"https://api.lever.co/v0/postings/{slug}",
+                headers=HEADERS, timeout=15)
+            data = r.json()
+            for item in data:
+                title = item.get("text", "")
+                location = (item.get("categories") or {}).get("location", "") or ""
+                if location_bloqueada(location):
+                    continue
+                description = item.get("descriptionPlain", "") or ""
+                full_text = f"{title} {description} {location}"
+                pre = pre_score(title, full_text)
+                if not pre["bloqueada"] and pre["max_score"] >= 3.0:
+                    jobs.append({
+                        "title": title, "company": slug,
+                        "url": item.get("hostedUrl", ""), "source": "Lever",
+                        "description": description[:2000],
+                        "pre_score": pre["max_score"],
+                        "grupo_scores": pre["grupo_scores"],
+                        "prioridad_geo": pre["prioridad_geo"],
+                        "encontrados": pre["encontrados"],
+                    })
+        except Exception as e:
+            print(f"[Lever] Error '{slug}': {e}")
+
     return jobs
 
 
@@ -1017,6 +1192,9 @@ def get_all_jobs() -> tuple[list, list]:
         ("Dynamite Jobs", scrape_dynamitejobs),
         ("GetOnBoard", scrape_getonboard),
         ("JobSpy (LinkedIn/Indeed/ZipRecruiter/Glassdoor/Google)", scrape_jobspy_sites),
+        ("Computrabajo Argentina", scrape_computrabajo_ar),
+        ("Hacker News (Who is Hiring)", scrape_hackernews),
+        ("Greenhouse/Lever (empresas curadas)", scrape_greenhouse_lever),
     ]
     for name, fn in sources:
         print(f"Scrapeando {name}...")
@@ -1037,10 +1215,15 @@ def get_all_jobs() -> tuple[list, list]:
 
     # Ranking independiente por grupo — así ningún grupo queda opacado por
     # otro al recortar el total de candidatos que se mandan a Claude.
+    # Desempate por prioridad_geo (1=LATAM, 2=remoto global/sin dato,
+    # 3=híbrido Córdoba) — nunca afecta el score, solo el orden entre iguales.
     seleccionados = []
     ids_seleccionados = set()
     for grupo_num, cupo in CUPO_POR_GRUPO.items():
-        ranking = sorted(nuevos, key=lambda j: j["grupo_scores"][grupo_num], reverse=True)
+        ranking = sorted(
+            nuevos,
+            key=lambda j: (-j["grupo_scores"][grupo_num], j["prioridad_geo"]),
+        )
         elegidos_grupo = 0
         for job in ranking:
             if elegidos_grupo >= cupo:
@@ -1087,15 +1270,11 @@ def get_all_jobs() -> tuple[list, list]:
                 jobs_borderline.append(job)
             continue
 
-        score_claude = float(eval_result.get("score", 0))
+        score = float(eval_result.get("score", 0))
         grupo = int(eval_result.get("grupo", 0))
-        geo_mod = job.get("geo_modifier", 0.0)
-        seniority_mod = job.get("seniority_modifier", 0.0)
-        score = round(min(max(score_claude + geo_mod + seniority_mod, 0), 10), 1)
 
         job.update({
             "score": score,
-            "score_claude_raw": score_claude,
             "grupo": grupo,
             "resumen": eval_result.get("resumen", ""),
             "por_que_encaja": eval_result.get("por_que_encaja", ""),
@@ -1107,7 +1286,7 @@ def get_all_jobs() -> tuple[list, list]:
             "salario": eval_result.get("salario", "No especificado"),
         })
 
-        print(f"    → Claude score: {score_claude} (+{geo_mod} geo +{seniority_mod} seniority = {score}) | Grupo {grupo} | {job['posibilidad_real']}")
+        print(f"    → Claude score: {score} | Grupo {grupo} | prioridad_geo {job['prioridad_geo']} | {job['posibilidad_real']}")
 
         umbral_email = UMBRAL_EMAIL.get(grupo, 6.0)
         umbral_borderline = UMBRAL_BORDERLINE_MIN.get(grupo, 5.0)
@@ -1129,7 +1308,7 @@ def get_all_jobs() -> tuple[list, list]:
         json.dump(jobs_borderline, f, ensure_ascii=False, indent=2)
     print(f"Borderline: {len(jobs_borderline)} guardados en borderline_jobs.json")
 
-    jobs_email.sort(key=lambda x: x["score"], reverse=True)
+    jobs_email.sort(key=lambda x: (-x["score"], x["prioridad_geo"]))
     print(f"Para el email: {len(jobs_email)}")
 
     return jobs_email, jobs_borderline

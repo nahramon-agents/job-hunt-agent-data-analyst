@@ -24,7 +24,7 @@ GRUPOS_CONFIG = {
         "fit": "95%",
         "nivel_a": [
             "data analyst", "data scientist", "business intelligence",
-            "bi analyst", "analytics engineer",
+            "bi analyst", "bi developer", "bi specialist", "analytics engineer",
             "analista de datos", "científico de datos", "cientifico de datos",
             "inteligencia de negocios",
         ],
@@ -1074,6 +1074,7 @@ def scrape_hackernews() -> list:
 # no con una query abierta.
 EMPRESAS_GREENHOUSE = [
     "remotecom", "canonical", "nubank", "gitlab", "bitso", "vtex", "webflow",
+    "valtech",
 ]
 EMPRESAS_LEVER = ["xepelin", "dlocal", "kavak"]
 
@@ -1142,6 +1143,148 @@ def scrape_greenhouse_lever() -> list:
     return jobs
 
 
+# Empresas confirmadas sobre Workday, con su tenant/instancia/sitio exactos
+# (se sacan de la URL: https://{tenant}.{wd_instance}.myworkdayjobs.com/{site}).
+# La API interna de Workday (POST /wday/cxs/...) es la misma para cualquier
+# empresa que use la plataforma — sumar una nueva es agregar una tupla acá,
+# no escribir un scraper nuevo. Límite máximo confirmado: 20 por página.
+EMPRESAS_WORKDAY = [
+    ("Deloitte", "deloitteie", "wd3", "experienced_professionals"),
+    ("DXC", "dxctechnology", "wd1", "DXCJobs"),
+    ("Unisys", "unisys", "wd5", "External"),
+    ("Concentrix", "cnx", "wd1", "external_global"),
+]
+
+WORKDAY_BUSQUEDAS = [
+    "data analyst", "data scientist", "business intelligence",
+    "financial analyst", "business analyst",
+]
+
+# Señal positiva de remoto/LATAM requerida SOLO para Workday — a diferencia
+# del resto de las fuentes (que ya son de por sí boards remotos), estas
+# empresas tipo BPO/consultora publican masivamente puestos presenciales en
+# oficinas de India/Filipinas/etc por default. "locationsText" ahí es una
+# dirección de oficina puntual, no una frase de restricción explícita, así
+# que el filtro geo normal no lo detecta — acá se exige señal positiva en
+# vez de solo descartar por señal negativa.
+WORKDAY_SEÑAL_REMOTO = [
+    "remote", "work at home", "work-at-home", "wfh", "virtual", "anywhere",
+    # Códigos de país ISO-3 como los usa Workday en "locationsText"
+    # (ej. "ARG Work-at-Home", "MEX - Ciudad de Mexico") — los nombres
+    # completos ("argentina") no sirven acá porque Workday no los usa.
+    "arg -", "arg work", "mex -", "mex work", "bra -", "bra work",
+    "col -", "col work", "chl -", "chl work", "per -", "per work",
+    "ury -", "ury work",
+]
+
+
+def scrape_workday() -> list:
+    """
+    API interna de Workday (no documentada públicamente, pero es la misma que
+    usa el widget de búsqueda de cualquier career site de Workday — sin
+    autenticación). Filtra por término en vez de traer todo el catálogo:
+    más preciso y menos requests.
+    """
+    jobs = []
+    for nombre, tenant, wd_instance, site in EMPRESAS_WORKDAY:
+        seen_ids = set()
+        for termino in WORKDAY_BUSQUEDAS:
+            try:
+                r = requests.post(
+                    f"https://{tenant}.{wd_instance}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs",
+                    headers={**HEADERS, "Content-Type": "application/json"},
+                    json={"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": termino},
+                    timeout=15)
+                data = r.json()
+                for item in data.get("jobPostings", []):
+                    ext_path = item.get("externalPath", "")
+                    if not ext_path or ext_path in seen_ids:
+                        continue
+                    seen_ids.add(ext_path)
+                    title = item.get("title", "")
+                    location = item.get("locationsText", "") or ""
+                    if location_bloqueada(location):
+                        continue
+                    if not any(kw in location.lower() for kw in WORKDAY_SEÑAL_REMOTO):
+                        continue
+                    full_text = f"{title} {location}"
+                    pre = pre_score(title, full_text)
+                    if not pre["bloqueada"] and pre["max_score"] >= 3.0:
+                        jobs.append({
+                            "title": title, "company": nombre,
+                            "url": f"https://{tenant}.{wd_instance}.myworkdayjobs.com/{site}{ext_path}",
+                            "source": "Workday",
+                            "description": full_text[:2000],
+                            "pre_score": pre["max_score"],
+                            "grupo_scores": pre["grupo_scores"],
+                            "prioridad_geo": pre["prioridad_geo"],
+                            "encontrados": pre["encontrados"],
+                        })
+            except Exception as e:
+                print(f"[Workday] Error '{nombre}' búsqueda '{termino}': {e}")
+    return jobs
+
+
+def scrape_zoho_recruit() -> list:
+    """
+    Zoho Recruit (Grupo Prominente) — el career site expone todos los avisos
+    ya cargados en un <input type="hidden"> con el JSON completo (título,
+    descripción, ciudad, modalidad remota, fecha) codificado como entidades
+    HTML. No hay API separada: se parsea directo del HTML.
+    """
+    import html as html_lib
+    jobs = []
+    try:
+        r = requests.get(
+            "https://grupoprominente.zohorecruit.com/jobs/Careers",
+            headers=HEADERS, timeout=15)
+        soup = BeautifulSoup(r.content, "html.parser")
+        # Ojo: hay OTRO hidden input ("moduleMeta") que también contiene el
+        # string "Job_Opening_Name" (como definición de campo, no como dato
+        # real) — el que trae los puestos de verdad es específicamente
+        # id="jobs".
+        inp = soup.find("input", attrs={"type": "hidden", "id": "jobs"})
+        if inp is not None:
+            valor = inp.get("value", "")
+            try:
+                postings = json.loads(html_lib.unescape(valor)) if valor else []
+            except (json.JSONDecodeError, TypeError):
+                postings = []
+            for item in postings:
+                title = item.get("Posting_Title") or item.get("Job_Opening_Name") or ""
+                if not title:
+                    continue
+                city = item.get("City") or ""
+                state = item.get("State") or ""
+                remote = item.get("Remote_Job")
+                location = f"{city} {state}".strip()
+                if location_bloqueada(location):
+                    continue
+                description = BeautifulSoup(
+                    item.get("Job_Description", "") or "", "html.parser"
+                ).get_text(separator=" ")
+                modalidad_texto = "remote worldwide" if remote else location
+                full_text = f"{title} {description} {modalidad_texto}"
+                pre = pre_score(title, full_text)
+                if not pre["bloqueada"] and pre["max_score"] >= 3.0:
+                    job_id = item.get("id", "")
+                    url = (f"https://grupoprominente.zohorecruit.com/jobs/Careers/{job_id}"
+                           if job_id else "https://grupoprominente.zohorecruit.com/jobs/Careers")
+                    jobs.append({
+                        "title": title, "company": "Grupo Prominente",
+                        "url": url,
+                        "source": "Zoho Recruit",
+                        "description": description[:2000],
+                        "pre_score": pre["max_score"],
+                        "grupo_scores": pre["grupo_scores"],
+                        "prioridad_geo": pre["prioridad_geo"],
+                        "encontrados": pre["encontrados"],
+                    })
+    except Exception as e:
+        print(f"[Zoho Recruit] Error: {e}")
+    return jobs
+
+
 # ── DEDUP ─────────────────────────────────────────────────────────────────────
 
 def dedup(jobs: list) -> list:
@@ -1195,6 +1338,8 @@ def get_all_jobs() -> tuple[list, list]:
         ("Computrabajo Argentina", scrape_computrabajo_ar),
         ("Hacker News (Who is Hiring)", scrape_hackernews),
         ("Greenhouse/Lever (empresas curadas)", scrape_greenhouse_lever),
+        ("Workday (empresas curadas)", scrape_workday),
+        ("Zoho Recruit (Grupo Prominente)", scrape_zoho_recruit),
     ]
     for name, fn in sources:
         print(f"Scrapeando {name}...")

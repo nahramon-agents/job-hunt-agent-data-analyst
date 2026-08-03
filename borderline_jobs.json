@@ -1,1 +1,69 @@
-[]
+[
+  {
+    "title": "Lead FP&A Analyst",
+    "company": "Amwell",
+    "url": "https://weworkremotely.com/remote-jobs/amwell-lead-fp-a-analyst",
+    "source": "We Work Remotely (Operations)",
+    "description": "\n\n<p>\n  <strong>Headquarters:</strong> Remote - US\n</p>\n\n<div class=\"content-intro\"><p>Company Description</p>\n<p>At Amwell, we’re transforming healthcare for all—powered by technology and inspired by people. Here, your ideas don’t just matter—they drive real change, improving lives on a global scale.</p>\n<p>We marry technology and innovation with clinical excellence to provide trusted solutions that solve the healthcare industry’s biggest pain points and are on a mission to<strong> enable greater access to more convenient, affordable, and effective care. </strong></p>\n<p><strong>We do this through our technology-enabled care platform that is designed to help our clients achieve their digital care ambitions – today and in the future. We offer </strong>programs spanning the <strong>full care continuum</strong>, including urgent, acute and specialty care, behavioral health, and services for the treatment of chronic conditions such as heart and cardiometabolic diseases. Programs are powered by Amwell as well as our growing partner network.</p>\n<p>For almost <strong>two decades,</strong> Amwell has proudly served some of the largest and most sophisticated healthcare organizations in the U.S. and worldwide. Our team is passionate about technology’s role in transforming care delivery and making it more equitable, accessible, efficient, cost-effective and navigable for all.</p></div><p><strong>Brief Overview&nbsp;</strong></p>\n<p>We're seeking a Lead FP&amp;A Analyst to serve as a central figure in our financial planning, reporting, and Adaptive system administrations. This is a high-visibility role supporting consolidation, executive and Board-level reporting, and revenue forecasting for a publicly traded company. Our team is made up of agile, business-minded multi-taskers who move quickly and take ownership. The ideal candidate is systems-savvy and thrives in a fast-paced environment where priorities shift and sound judgment matters — especially on numbers that reach the",
+    "pre_score": 4.8,
+    "grupo_scores": {
+      "1": 4.8,
+      "2": 4.8,
+      "3": 2.0,
+      "4": 2.0,
+      "5": 4.2
+    },
+    "prioridad_geo": 2,
+    "encontrados": {
+      "1": {
+        "A": [],
+        "B": [
+          "python",
+          "sql",
+          "power bi",
+          "forecasting"
+        ]
+      },
+      "2": {
+        "A": [],
+        "B": [
+          "python",
+          "sql",
+          "power bi",
+          "forecasting"
+        ]
+      },
+      "3": {
+        "A": [],
+        "B": []
+      },
+      "4": {
+        "A": [],
+        "B": []
+      },
+      "5": {
+        "A": [
+          "fp&a"
+        ],
+        "B": [
+          "forecasting"
+        ]
+      }
+    },
+    "_id": "aa424b2dc0b2ffbf1bf7af17acfb0a76",
+    "score": 5.5,
+    "grupo": 5,
+    "resumen": "Rol de FP&A senior en Amwell, empresa de telemedicina/healthtech cotizada en bolsa. Enfocado en consolidación financiera, reporting ejecutivo y de Board, forecasting de revenue, y administración del sistema Adaptive (Workday Adaptive Planning).",
+    "por_que_encaja": "El componente de forecasting y reporting a dirección ejecutiva conecta directamente con la experiencia de Nahuel en Novix. Su background en Ingeniería Industrial suma contexto para el análisis financiero.",
+    "brecha_stack": "El rol es explícitamente 'Lead' (senior) en FP&A de empresa cotizada — implica conocimiento profundo de Adaptive Planning (Workday), contabilidad corporativa, y experiencia en reporting para Board de empresa pública. Nahuel tiene forecasting operativo pero probablemente no tiene experiencia en FP&A financiero formal ni en sistemas como Adaptive. Brecha real y relevante.",
+    "posibilidad_real": "Baja — el nivel 'Lead' en FP&A de empresa pública cotizada requiere experiencia financiera corporativa específica que Nahuel no tiene declarada.",
+    "red_flags": [
+      "Headquarters marcado como 'Remote - US' — posible restricción geográfica a candidatos en USA, aunque no dice explícitamente 'must be located in US'",
+      "Rol 'Lead' implica senioridad financiera corporativa (empresa pública, Board reporting) que excede el perfil actual de Nahuel",
+      "Descripción cortada — no se puede evaluar el stack completo requerido"
+    ],
+    "location_restriction": "Headquarters indica 'Remote - US' — posible restricción implícita a residentes en USA. Verificar con la empresa si acepta candidatos internacionales.",
+    "modalidad": "full-time",
+    "salario": "No especificado"
+  }
+]

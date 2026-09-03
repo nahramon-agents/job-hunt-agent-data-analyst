@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "title": "Lokker.com | Data Scientist, Classification and Scoring | REMOTE: North America / Europe, UTC-8 to UTC+2 | Full-time Lok",
+    "company": "",
+    "url": "https://news.ycombinator.com/item?id=49534359",
+    "source": "Hacker News (Who is Hiring)",
+    "description": "Lokker.com | Data Scientist, Classification and Scoring | REMOTE: North America / Europe, UTC-8 to UTC+2 | Full-time Lokker is a privacy platform. We continuously analyze websites, applications, third-party technologies and data flows to identify privacy, security and consent risks in production. We have built a large proprietary dataset from years of observing real-world digital behavior, and we are hiring a data scientist to help us expand and improve the classification, scoring and risk intelligence built on it. You will develop and improve models that classify digital activity, identify meaningful privacy and security behaviors, and assess the confidence and significance of findings. Looking for 2 to 4 years of production experience in data science and  machine learning. Strong Python and SQL, pandas or Polars, scikit-learn and modern classification techniques, familiarity with model evaluation and explainability. Practical experience in training and evaluating supervised classification models on real PRODUCTION data, practical LLM experience beyond simple demonstrations, and curiosity about how websites and internet technologies actually behave. You do not need a privacy or adtech background. We will teach the domain. You will work closely with engineering, product and privacy experts, and what you build goes directly into the product. IMPORTANT: the timezone range above is a hard requirement, not a preference. We cannot make an exception. ON APPLICATIONS: we assume you used AI to help write it. So do we. What we cannot do is verify a claim that exists only in the document you sent us, so make sure the skills you claim are visible somewhere public: LinkedIn with real dates and role detail, GitHub, papers, Kaggle, a writeup, a talk. If your best work is under NDA, say so and describe it in your own words. A human reads every application. No keyword filter, no automated rejection. Apply:  https://lokker.com/careers/openings/data-scientist-classific...",
+    "pre_score": 5.9,
+    "grupo_scores": {
+      "1": 5.9,
+      "2": 4.1,
+      "3": 2.0,
+      "4": 2.0,
+      "5": 2.0
+    },
+    "prioridad_geo": 2,
+    "encontrados": {
+      "1": {
+        "A": [
+          "data scientist"
+        ],
+        "B": [
+          "python",
+          "sql",
+          "pandas"
+        ]
+      },
+      "2": {
+        "A": [],
+        "B": [
+          "python",
+          "sql",
+          "pandas"
+        ]
+      },
+      "3": {
+        "A": [],
+        "B": []
+      },
+      "4": {
+        "A": [],
+        "B": []
+      },
+      "5": {
+        "A": [],
+        "B": []
+      }
+    },
+    "_id": "d3102e5a8e40edb0a7b5bc0f2c3f0a6b",
+    "score": 5.5,
+    "grupo": 1,
+    "resumen": "Rol de Data Scientist enfocado en modelos de clasificación supervisada y scoring de riesgo de privacidad/seguridad digital, aplicado directamente a producto. Lokker es una plataforma de privacidad que analiza comportamiento digital y flujos de datos para detectar riesgos en producción.",
+    "por_que_encaja": "Nahuel tiene el background de Data Scientist/Analyst con Python, SQL, Pandas y experiencia en forecasting y modelos aplicados. El dominio (privacidad/adtech) no es requisito según la oferta, y su nivel de inglés C1 cubre el trabajo en equipo remoto.",
+    "brecha_stack": "El rol pide experiencia en producción con scikit-learn, modelos de clasificación supervisada en datos reales de producción, y LLMs más allá de demostraciones simples. Nahuel tiene Python autodidacta y Pandas, pero no evidencia pública de modelos ML en producción ni uso de scikit-learn documentado. La barra de 'production ML' es la brecha principal.",
+    "posibilidad_real": "Baja — el rol exige ML en producción con scikit-learn y clasificación supervisada documentada públicamente (GitHub, Kaggle, papers); Nahuel no tiene evidencia pública de eso y el stack de ML aplicado es más débil que lo requerido.",
+    "red_flags": [
+      "Timezone hard requirement UTC-8 a UTC+2: Córdoba, Argentina es UTC-3, que cae dentro del rango — pero el énfasis en 'hard requirement, no exception' indica que verificarán esto rigurosamente.",
+      "Exigen evidencia pública de habilidades (LinkedIn con fechas, GitHub, Kaggle, papers): Nahuel deberá tener presencia verificable online o justificar work bajo NDA.",
+      "Requieren experiencia práctica con LLMs 'beyond simple demonstrations': uso de Claude/ChatGPT como herramienta no cuenta para este criterio."
+    ],
+    "location_restriction": "Restricción explícita de timezone UTC-8 a UTC+2, descrita como 'hard requirement'. Córdoba (UTC-3) queda dentro del rango — no hay restricción de residencia por país, solo de zona horaria.",
+    "modalidad": "full-time",
+    "salario": "No especificado"
+  }
+]

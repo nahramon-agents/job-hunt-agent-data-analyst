@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "title": "Senior Data Analyst - Marketing",
+    "company": "Supabase",
+    "url": "https://jobicy.com/jobs/156941-senior-data-analyst-marketing",
+    "source": "Jobicy",
+    "description": "<h3><strong>About <a href=\"https://jobicy.com/company/supabase\" target=\"_blank\" rel=\"noopener\">Supabase</a></strong></h3>\n<p>Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, and Vector Search. All services are deeply integrated and designed for growth.</p>\n<h3>About the Role</h3>\n<p>We're looking for a Senior Data Analyst, Marketing to join our Data Intelligence team and build the measurement foundation that tells us what's actually working across paid and PLG channels. You'll work closely with Marketing, Growth, and channel owners, helping us move past platform-reported metrics and vanity numbers into causal, trusted answers about what drives pipeline and revenue.</p>\n<p>This role is ideal for someone who thrives in async, fast-paced environments, is AI-forward in how they work, and is excited about building a measurement function from the ground up.</p>\n<h3>What You'll Be Responsible for</h3>\n<p><strong>Marketing Measurement Strategy</strong></p>\n<ul>\n<li>\n<p>Own the end-to-end marketing measurement strategy across experimentation, media mix modeling, and attribution for paid and PLG channels</p>\n</li>\n<li>\n<p>Establish and evolve the attribution framework: how platform data, multi-touch attribution, MMM, and experiments work together to inform decisions</p>\n</li>\n<li>\n<p>Translate complex measurement outputs into clear recommendations on where to invest, what to cut, and how to hit pipeline, revenue, and efficiency targets (CAC, payback, LTV to CAC)</p>\n</li>\n<li>\n<p>Serve as the subject matter expert for marketing measurement, educating stakeholders on causality, model uncertainty, and the limitations of platform-reported metrics</p>\n</li>\n</ul>\n<p><strong>Incrementality and Experimentation</strong></p>\n<ul>\n<li>\n<p>Design and run always-on incrementality tests, user-level and geo-level, to quantify the causal impact of key channe",
+    "pre_score": 9.7,
+    "grupo_scores": {
+      "1": 9.7,
+      "2": 3.1,
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.7
+    },
+    "prioridad_geo": 2,
+    "encontrados": {
+      "1": {
+        "A": [
+          "data analyst"
+        ],
+        "B": [
+          "python",
+          "sql",
+          "forecasting"
+        ]
+      },
+      "2": {
+        "A": [],
+        "B": [
+          "python",
+          "sql",
+          "forecasting"
+        ]
+      },
+      "3": {
+        "A": [],
+        "B": []
+      },
+      "4": {
+        "A": [],
+        "B": []
+      },
+      "5": {
+        "A": [],
+        "B": [
+          "forecasting"
+        ]
+      }
+    },
+    "_id": "78035c9c3f213e577ad40b3953abcceb",
+    "score": 9.7,
+    "grupo": 0,
+    "resumen": "Evaluación automática (Claude no disponible)",
+    "por_que_encaja": "—",
+    "brecha_stack": "—",
+    "posibilidad_real": "unclear",
+    "red_flags": [],
+    "location_restriction": "—",
+    "modalidad": "unclear",
+    "salario": "No especificado"
+  }
+]
